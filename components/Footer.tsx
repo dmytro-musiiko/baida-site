@@ -13,7 +13,7 @@ export default function Footer({ dict, lang }: { dict: Dict; lang: Locale }) {
 
   return (
     <footer className="bg-cream border-t border-hairline">
-      <div className="mx-auto max-w-[1440px] px-8 py-20 grid grid-cols-1 md:grid-cols-12 gap-12">
+      <div className="mx-auto max-w-[1440px] px-5 sm:px-8 py-20 grid grid-cols-1 md:grid-cols-12 gap-12">
         {/* Brand */}
         <div className="md:col-span-5">
           <div className="font-serif italic text-3xl tracking-tight leading-none mb-2">
@@ -55,7 +55,7 @@ export default function Footer({ dict, lang }: { dict: Dict; lang: Locale }) {
 
       {/* Bottom bar */}
       <div className="border-t border-hairline">
-        <div className="mx-auto max-w-[1440px] px-8 py-6 flex flex-col md:flex-row items-center justify-between gap-4 label-caps-sm text-ink-muted">
+        <div className="mx-auto max-w-[1440px] px-5 sm:px-8 py-6 flex flex-col md:flex-row items-center justify-between gap-4 label-caps-sm text-ink-muted">
           <span>{dict.footer.copyright}</span>
           <div className="flex items-center gap-4">
             {(Object.keys(localeNames) as Locale[]).map((l, i) => (

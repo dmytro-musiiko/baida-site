@@ -37,7 +37,7 @@ export default function ClinicalHero({ dict }: { dict: Dict }) {
         />
 
         {/* Content */}
-        <div className="relative z-10 w-full max-w-[1400px] mx-auto px-8 lg:px-16 pt-[200px] lg:pt-[216px] pb-28 text-white">
+        <div className="relative z-10 w-full max-w-[1400px] mx-auto px-5 sm:px-8 lg:px-16 pt-[120px] md:pt-[200px] lg:pt-[216px] pb-24 sm:pb-28 text-white">
           <div className="relative max-w-3xl">
             <span aria-hidden className="hidden lg:block absolute -left-12 top-2 bottom-2 w-px bg-white/20" />
 
@@ -62,14 +62,14 @@ export default function ClinicalHero({ dict }: { dict: Dict }) {
             <div className="mt-11 flex flex-col sm:flex-row sm:items-center gap-4">
               <a
                 href="#partnership"
-                className="group inline-flex items-center justify-between gap-6 btn-metallic text-white px-8 py-4 label-caps min-w-[280px]"
+                className="group inline-flex items-center justify-between gap-6 btn-metallic text-white px-8 py-4 label-caps w-full sm:w-auto sm:min-w-[280px]"
               >
                 {t.ctaPartnership}
                 <span className="transition-transform group-hover:translate-x-1">→</span>
               </a>
               <a
                 href="#referral"
-                className="group inline-flex items-center justify-between gap-6 border border-white/30 hover:border-white text-white px-8 py-4 label-caps transition-colors min-w-[280px]"
+                className="group inline-flex items-center justify-between gap-6 border border-white/30 hover:border-white text-white px-8 py-4 label-caps transition-colors w-full sm:w-auto sm:min-w-[280px]"
               >
                 {t.ctaReferral}
                 <span className="transition-transform group-hover:translate-x-1">→</span>

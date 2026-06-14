@@ -4,7 +4,7 @@ export default function Ecosystem({ dict }: { dict: Dict }) {
   const t = dict.clinical.ecosystem;
   return (
     <section id="ecosystem" className="bg-cream py-20 sm:py-28 scroll-mt-24">
-      <div className="mx-auto max-w-[1440px] px-8">
+      <div className="mx-auto max-w-[1440px] px-5 sm:px-8">
         {/* Header */}
         <div className="flex items-center gap-4 mb-12 label-caps-sm text-ink-muted">
           <span>01</span>

@@ -4,7 +4,7 @@ export default function Academic({ dict }: { dict: Dict }) {
   const t = dict.academic;
   return (
     <section id="academic" className="bg-tan-dark text-white py-20 sm:py-28 scroll-mt-24">
-      <div className="mx-auto max-w-[1440px] px-8">
+      <div className="mx-auto max-w-[1440px] px-5 sm:px-8">
         {/* Section header */}
         <div className="flex items-center gap-4 mb-12 label-caps-sm text-white/55">
           <span>04</span>

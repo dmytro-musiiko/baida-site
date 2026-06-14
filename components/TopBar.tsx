@@ -2,8 +2,8 @@ import type { Dict, Locale } from "@/app/i18n";
 
 export default function TopBar({ dict, lang }: { dict: Dict; lang: Locale }) {
   return (
-    <div className="bg-black/20 backdrop-blur-sm text-white/80 border-b border-white/10">
-      <div className="mx-auto max-w-[1440px] px-8 py-3 flex items-center justify-center gap-12 label-caps-sm">
+    <div className="hidden md:block bg-black/20 backdrop-blur-sm text-white/80 border-b border-white/10">
+      <div className="mx-auto max-w-[1440px] px-5 sm:px-8 py-3 flex items-center justify-center gap-6 lg:gap-12 label-caps-sm">
         <a href="mailto:hello@drbaida.ua" className="flex items-center gap-2 hover:text-white transition-colors">
           <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.2">
             <rect x="1.5" y="3.5" width="13" height="9" />

@@ -101,6 +101,15 @@ export default function MobileMenu({
             </a>
           </div>
 
+          <div className="px-6 py-5 border-t border-white/15 space-y-2">
+            <a href="mailto:hello@drbaida.ua" className="block label-caps-sm text-white/70 hover:text-white transition-colors">
+              HELLO@DRBAIDA.UA
+            </a>
+            <a href="tel:+380674321809" className="block label-caps-sm text-white/70 hover:text-white transition-colors">
+              +380 67 432 18 09
+            </a>
+          </div>
+
           <div className="px-6 py-6 border-t border-white/15 flex items-center gap-5">
             {locales.map((loc) => (
               <a

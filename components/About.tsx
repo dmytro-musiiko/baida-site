@@ -35,7 +35,7 @@ export default function About({ dict }: { dict: Dict }) {
   const t = dict.about;
   return (
     <section id="about-doctor" className="bg-cream pt-20 pb-24 sm:pb-32 scroll-mt-24">
-      <div className="mx-auto max-w-[1440px] px-8">
+      <div className="mx-auto max-w-[1440px] px-5 sm:px-8">
         {/* Section header */}
         <div className="flex items-center gap-4 mb-16 label-caps-sm text-ink-muted">
           <span>03</span>

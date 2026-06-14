@@ -4,7 +4,7 @@ export default function StatsBar({ dict }: { dict: Dict }) {
   const stats = dict.statsBar;
   return (
     <section className="bg-cream pb-20 sm:pb-28">
-      <div className="mx-auto max-w-[1440px] px-8">
+      <div className="mx-auto max-w-[1440px] px-5 sm:px-8">
         <div className="relative">
           {/* Offset pad */}
           <div aria-hidden className="absolute inset-0 translate-x-3 translate-y-3 lg:translate-x-5 lg:translate-y-5 bg-tan rounded-[24px]" />

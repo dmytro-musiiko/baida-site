@@ -6,7 +6,7 @@ export default function ClinicalCases({ dict }: { dict: Dict }) {
   const t = dict.clinical.cases;
   return (
     <section id="cases" className="bg-tan-dark text-white py-20 sm:py-28 scroll-mt-24">
-      <div className="mx-auto max-w-[1440px] px-8">
+      <div className="mx-auto max-w-[1440px] px-5 sm:px-8">
         {/* Header */}
         <div className="flex items-center gap-4 mb-12 label-caps-sm text-white/55">
           <span>02</span>
@@ -86,7 +86,7 @@ export default function ClinicalCases({ dict }: { dict: Dict }) {
         <div className="mt-12">
           <a
             href="#partnership"
-            className="group inline-flex items-center justify-between gap-6 border border-white/30 hover:border-white text-white px-7 py-4 label-caps transition-colors min-w-[280px]"
+            className="group inline-flex items-center justify-between gap-6 border border-white/30 hover:border-white text-white px-7 py-4 label-caps transition-colors w-full sm:w-auto sm:min-w-[280px]"
           >
             {t.ctaRequest}
             <span className="transition-transform group-hover:translate-x-1">→</span>

@@ -13,13 +13,13 @@ export default function Treatments({ dict, lang }: { dict: Dict; lang: Locale })
 
   return (
     <section id="treatments" className="bg-tan-dark py-14 sm:py-20 scroll-mt-24">
-      <div className="mx-auto max-w-[1440px] px-8">
+      <div className="mx-auto max-w-[1440px] px-5 sm:px-8">
         {/* Header */}
         <div className="mb-10">
           <div className="label-caps-sm text-white/55 mb-6">
             {t.sectionNum} — {t.sectionLabel}
           </div>
-          <h2 className="font-sans text-white leading-[1.05] tracking-[-0.02em] text-[clamp(1.5rem,3vw,2.75rem)] whitespace-nowrap">
+          <h2 className="font-sans text-white leading-[1.05] tracking-[-0.02em] text-[clamp(1.5rem,3vw,2.75rem)] lg:whitespace-nowrap">
             <span className="font-light">{t.headingLight}</span>
             <span className="font-extrabold">{t.headingBold}</span>
             <span className="font-serif italic font-medium text-tan">.</span>

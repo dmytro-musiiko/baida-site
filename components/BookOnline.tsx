@@ -4,7 +4,7 @@ export default function BookOnline({ dict }: { dict: Dict }) {
   const t = dict.bookOnline;
   return (
     <section id="consultation" className="bg-cream py-20 sm:py-28 scroll-mt-24">
-      <div className="mx-auto max-w-[1440px] px-8">
+      <div className="mx-auto max-w-[1440px] px-5 sm:px-8">
         <div className="relative">
           <div aria-hidden className="absolute inset-0 translate-x-3 translate-y-3 lg:translate-x-5 lg:translate-y-5 bg-tan rounded-[24px]" />
           <div className="relative bg-gradient-to-br from-tan-dark via-tan-dark to-blue text-white rounded-[24px] p-10 lg:p-16 overflow-hidden">
@@ -33,14 +33,14 @@ export default function BookOnline({ dict }: { dict: Dict }) {
               <div className="mt-10 flex flex-col sm:flex-row gap-3">
                 <a
                   href="#"
-                  className="group inline-flex items-center justify-between gap-6 btn-metallic text-white px-7 py-5 label-caps min-w-[280px]"
+                  className="group inline-flex items-center justify-between gap-6 btn-metallic text-white px-7 py-5 label-caps w-full sm:w-auto sm:min-w-[280px]"
                 >
                   {dict.common.ctaPrimary}
                   <span className="transition-transform group-hover:translate-x-1">→</span>
                 </a>
                 <a
                   href="#"
-                  className="group inline-flex items-center justify-between gap-6 border border-white/50 hover:border-white text-white px-7 py-5 label-caps transition-colors min-w-[280px]"
+                  className="group inline-flex items-center justify-between gap-6 border border-white/50 hover:border-white text-white px-7 py-5 label-caps transition-colors w-full sm:w-auto sm:min-w-[280px]"
                 >
                   {t.ctaUpload}
                   <span className="transition-transform group-hover:translate-x-1">→</span>

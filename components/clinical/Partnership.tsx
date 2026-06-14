@@ -6,7 +6,7 @@ export default function Partnership({ dict }: { dict: Dict }) {
   const t = dict.clinical.partnership;
   return (
     <section id="partnership" className="bg-cream py-20 sm:py-28 scroll-mt-24">
-      <div className="mx-auto max-w-[1440px] px-8">
+      <div className="mx-auto max-w-[1440px] px-5 sm:px-8">
         {/* Header */}
         <div className="flex items-center gap-4 mb-12 label-caps-sm text-ink-muted">
           <span>04</span>
@@ -73,7 +73,7 @@ export default function Partnership({ dict }: { dict: Dict }) {
                 <div className="mt-10">
                   <a
                     href="#"
-                    className="group inline-flex items-center justify-between gap-6 btn-metallic text-white px-7 py-5 label-caps min-w-[280px]"
+                    className="group inline-flex items-center justify-between gap-6 btn-metallic text-white px-7 py-5 label-caps w-full sm:w-auto sm:min-w-[280px]"
                   >
                     {t.ctaSend}
                     <span className="transition-transform group-hover:translate-x-1">→</span>

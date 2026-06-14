@@ -28,7 +28,7 @@ export default function Hero({ dict, lang }: { dict: Dict; lang: Locale }) {
         />
 
         {/* Content */}
-        <div className="relative z-10 w-full max-w-[1400px] mx-auto px-8 lg:px-16 pt-[200px] lg:pt-[216px] pb-32 lg:pb-36 text-white">
+        <div className="relative z-10 w-full max-w-[1400px] mx-auto px-5 sm:px-8 lg:px-16 pt-[120px] md:pt-[200px] lg:pt-[216px] pb-28 sm:pb-32 lg:pb-36 text-white">
           <div className="relative max-w-2xl">
             {/* Vertical hairline accent on left */}
             <span aria-hidden className="hidden lg:block absolute -left-12 top-2 bottom-2 w-px bg-white/20" />
@@ -57,14 +57,14 @@ export default function Hero({ dict, lang }: { dict: Dict; lang: Locale }) {
             <div className="mt-12 flex flex-col sm:flex-row sm:items-center gap-6 sm:gap-8">
               <a
                 href={`/${lang}/#consultation`}
-                className="group inline-flex items-center justify-between gap-6 btn-metallic text-white px-8 py-4 label-caps min-w-[280px]"
+                className="group inline-flex items-center justify-between gap-6 btn-metallic text-white px-8 py-4 label-caps w-full sm:w-auto sm:min-w-[280px]"
               >
                 {dict.common.ctaPrimary}
                 <span className="transition-transform group-hover:translate-x-1">→</span>
               </a>
               <a
                 href={`/${lang}/#consultation`}
-                className="group inline-flex items-center justify-between gap-6 border border-white/30 hover:border-white text-white px-8 py-4 label-caps transition-colors min-w-[280px]"
+                className="group inline-flex items-center justify-between gap-6 border border-white/30 hover:border-white text-white px-8 py-4 label-caps transition-colors w-full sm:w-auto sm:min-w-[280px]"
               >
                 {dict.common.ctaSecondary}
                 <span className="transition-transform group-hover:translate-x-1">→</span>

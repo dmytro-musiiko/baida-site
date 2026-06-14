@@ -4,7 +4,7 @@ export default function AboutField({ dict, lang }: { dict: Dict; lang: Locale })
   const t = dict.aboutField;
   return (
     <section id="about-field" className="bg-cream py-20 sm:py-28 scroll-mt-24">
-      <div className="mx-auto max-w-[1440px] px-8">
+      <div className="mx-auto max-w-[1440px] px-5 sm:px-8">
         {/* Section header */}
         <div className="flex items-center gap-4 mb-12 label-caps-sm text-ink-muted">
           <span>01</span>
@@ -35,14 +35,14 @@ export default function AboutField({ dict, lang }: { dict: Dict; lang: Locale })
             <div className="mt-10 flex flex-col sm:flex-row gap-3">
               <a
                 href={`/${lang}/#consultation`}
-                className="group inline-flex items-center justify-between gap-6 btn-metallic text-white px-7 py-4 label-caps min-w-[260px]"
+                className="group inline-flex items-center justify-between gap-6 btn-metallic text-white px-7 py-4 label-caps w-full sm:w-auto sm:min-w-[260px]"
               >
                 {dict.common.ctaPrimary}
                 <span className="transition-transform group-hover:translate-x-1">→</span>
               </a>
               <a
                 href={`/${lang}/#consultation`}
-                className="group inline-flex items-center justify-between gap-6 border border-hairline hover:border-ink text-ink px-7 py-4 label-caps transition-colors min-w-[260px]"
+                className="group inline-flex items-center justify-between gap-6 border border-hairline hover:border-ink text-ink px-7 py-4 label-caps transition-colors w-full sm:w-auto sm:min-w-[260px]"
               >
                 {dict.common.ctaSecondary}
                 <span className="transition-transform group-hover:translate-x-1">→</span>

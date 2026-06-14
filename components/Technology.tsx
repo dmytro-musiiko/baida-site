@@ -4,7 +4,7 @@ export default function Technology({ dict }: { dict: Dict }) {
   const t = dict.technology;
   return (
     <section id="technology" className="bg-paper py-20 sm:py-28 scroll-mt-24">
-      <div className="mx-auto max-w-[1440px] px-8">
+      <div className="mx-auto max-w-[1440px] px-5 sm:px-8">
         {/* Section header */}
         <div className="flex items-center gap-4 mb-12 label-caps-sm text-ink-muted">
           <span>05</span>
