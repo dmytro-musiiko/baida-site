@@ -61,7 +61,7 @@ export default function Hero() {
                 <span className="transition-transform group-hover:translate-x-1">→</span>
               </a>
               <a
-                href="#case-evaluation"
+                href="#consultation"
                 className="group inline-flex items-center justify-between gap-6 border border-white/30 hover:border-white text-white px-8 py-4 label-caps transition-colors min-w-[280px]"
               >
                 Подати запит на оцінку випадку

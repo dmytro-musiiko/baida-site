@@ -44,7 +44,7 @@ export default function BookOnline() {
                   <span className="transition-transform group-hover:translate-x-1">→</span>
                 </a>
                 <a
-                  href="#case-upload"
+                  href="#"
                   className="group inline-flex items-center justify-between gap-6 border border-white/50 hover:border-white text-white px-7 py-5 label-caps transition-colors min-w-[280px]"
                 >
                   Надіслати знімки онлайн

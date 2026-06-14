@@ -40,7 +40,7 @@ export default function Treatments() {
           {cards.map((card) => (
             <a
               key={card.title}
-              href={`#treatment-${card.title}`}
+              href="#consultation"
               className="group relative block aspect-[16/10] overflow-hidden rounded-[8px] bg-navy-90"
             >
               {/* Image or placeholder */}
