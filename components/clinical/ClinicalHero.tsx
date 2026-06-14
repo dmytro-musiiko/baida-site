@@ -1,6 +1,8 @@
 import Image from "next/image";
+import type { Dict } from "@/app/i18n";
 
-export default function ClinicalHero() {
+export default function ClinicalHero({ dict }: { dict: Dict }) {
+  const t = dict.clinical.hero;
   return (
     <section className="relative">
       <div className="relative min-h-[88vh] overflow-hidden surface-navy bg-tan-dark flex items-start">
@@ -40,23 +42,21 @@ export default function ClinicalHero() {
             <span aria-hidden className="hidden lg:block absolute -left-12 top-2 bottom-2 w-px bg-white/20" />
 
             <div className="label-caps text-[12px]! text-tan tracking-[0.22em] mb-7">
-              Для колег · For colleagues
+              {t.eyebrow}
             </div>
 
             <h1 className="font-sans font-light leading-[1.05] tracking-[-0.015em] text-[clamp(2.25rem,4.6vw,4rem)]">
-              Клінічна співпраця у{" "}
-              <span className="font-extrabold">реконструктивній ортопедії</span>
+              {t.headingPre}
+              <span className="font-extrabold">{t.headingBold}</span>
               <span className="font-serif italic font-medium text-tan">.</span>
             </h1>
 
             <p className="mt-8 text-white/90 text-xl lg:text-2xl font-light leading-snug text-balance max-w-[46ch]">
-              Простір для лікарів, академічної спільноти та технологічних партнерів —
-              навколо сучасної reconstruction-екосистеми.
+              {t.subtitle}
             </p>
 
             <p className="mt-6 text-white/80 leading-relaxed text-lg font-light text-balance max-w-[60ch]">
-              Реконструкція та подовження кінцівок, корекція деформацій і контроль осі —
-              як спільна клінічна, академічна та технологічна робота, а не лише окрема практика.
+              {t.body}
             </p>
 
             <div className="mt-11 flex flex-col sm:flex-row sm:items-center gap-4">
@@ -64,14 +64,14 @@ export default function ClinicalHero() {
                 href="#partnership"
                 className="group inline-flex items-center justify-between gap-6 btn-metallic text-white px-8 py-4 label-caps min-w-[280px]"
               >
-                Запит на співпрацю
+                {t.ctaPartnership}
                 <span className="transition-transform group-hover:translate-x-1">→</span>
               </a>
               <a
                 href="#referral"
                 className="group inline-flex items-center justify-between gap-6 border border-white/30 hover:border-white text-white px-8 py-4 label-caps transition-colors min-w-[280px]"
               >
-                Направити пацієнта
+                {t.ctaReferral}
                 <span className="transition-transform group-hover:translate-x-1">→</span>
               </a>
             </div>
@@ -81,14 +81,10 @@ export default function ClinicalHero() {
         {/* Bottom audience bar */}
         <div className="absolute bottom-0 left-0 right-0 z-20 bg-black/30 backdrop-blur-md border-t border-white/15">
           <div className="grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-white/15">
-            {[
-              { k: "01", t: "Лікарям, що направляють" },
-              { k: "02", t: "Академічна співпраця" },
-              { k: "03", t: "MedTech / reconstruction ecosystem" },
-            ].map((a) => (
-              <div key={a.k} className="flex items-center gap-4 px-6 py-5">
-                <span className="font-serif italic text-xl text-tan leading-none">{a.k}</span>
-                <span className="label-caps text-white/80">{a.t}</span>
+            {t.audiences.map((a, i) => (
+              <div key={a} className="flex items-center gap-4 px-6 py-5">
+                <span className="font-serif italic text-xl text-tan leading-none">{`0${i + 1}`}</span>
+                <span className="label-caps text-white/80">{a}</span>
               </div>
             ))}
           </div>

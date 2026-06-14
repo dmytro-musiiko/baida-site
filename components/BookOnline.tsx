@@ -1,13 +1,9 @@
-const channels = [
-  { mono: "TG", label: "Telegram", handle: "—" },
-  { mono: "WA", label: "WhatsApp", handle: "—" },
-  { mono: "IG", label: "Instagram", handle: "—" },
-  { mono: "@", label: "Email", handle: "—" },
-];
+import type { Dict } from "@/app/i18n";
 
-export default function BookOnline() {
+export default function BookOnline({ dict }: { dict: Dict }) {
+  const t = dict.bookOnline;
   return (
-    <section id="consultation" className="bg-cream py-20 sm:py-28">
+    <section id="consultation" className="bg-cream py-20 sm:py-28 scroll-mt-24">
       <div className="mx-auto max-w-[1440px] px-8">
         <div className="relative">
           <div aria-hidden className="absolute inset-0 translate-x-3 translate-y-3 lg:translate-x-5 lg:translate-y-5 bg-tan rounded-[24px]" />
@@ -21,18 +17,17 @@ export default function BookOnline() {
             <div className="lg:col-span-7">
               <div className="flex items-center gap-4 mb-10 label-caps-sm text-white/70">
                 <span className="w-1.5 h-1.5 rounded-full bg-white" />
-                <span>06 — Зверніться</span>
+                <span>{t.sectionLabel}</span>
                 <span className="w-16 h-px bg-white/30" />
               </div>
 
               <h2 className="font-sans font-bold leading-[1.02] tracking-[-0.02em] text-[clamp(2.25rem,5.5vw,4.25rem)] max-w-[12ch]">
-                Індивідуальна консультація та{" "}
-                <span className="font-serif italic font-medium">оцінка випадку</span>.
+                {t.headingPre}
+                <span className="font-serif italic font-medium">{t.headingItalic}</span>.
               </h2>
 
               <p className="mt-8 text-white/85 leading-relaxed max-w-xl text-[15px]">
-                Надішліть свої знімки та коротко опишіть ситуацію — ви отримаєте попередній план
-                лікування з коментарями щодо подальших кроків.
+                {t.body}
               </p>
 
               <div className="mt-10 flex flex-col sm:flex-row gap-3">
@@ -40,14 +35,14 @@ export default function BookOnline() {
                   href="#"
                   className="group inline-flex items-center justify-between gap-6 btn-metallic text-white px-7 py-5 label-caps min-w-[280px]"
                 >
-                  Записатись на консультацію
+                  {dict.common.ctaPrimary}
                   <span className="transition-transform group-hover:translate-x-1">→</span>
                 </a>
                 <a
                   href="#"
                   className="group inline-flex items-center justify-between gap-6 border border-white/50 hover:border-white text-white px-7 py-5 label-caps transition-colors min-w-[280px]"
                 >
-                  Надіслати знімки онлайн
+                  {t.ctaUpload}
                   <span className="transition-transform group-hover:translate-x-1">→</span>
                 </a>
               </div>
@@ -57,11 +52,11 @@ export default function BookOnline() {
             <div className="lg:col-span-5">
               <div className="flex items-center gap-4 mb-8 label-caps-sm text-white/70">
                 <span className="w-12 h-px bg-white/30" />
-                <span>Прямі канали</span>
+                <span>{t.channelsLabel}</span>
               </div>
 
               <div className="divide-y divide-white/15 border-y border-white/15">
-                {channels.map((c) => (
+                {t.channels.map((c) => (
                   <a
                     key={c.label}
                     href="#"

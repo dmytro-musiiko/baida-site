@@ -1,11 +1,7 @@
-const stats = [
-  { value: "—", label: "Років практики" },
-  { value: "—", label: "Реконструкцій" },
-  { value: "—", label: "Наукових публікацій" },
-  { value: "—", label: "Мови прийому" },
-];
+import type { Dict } from "@/app/i18n";
 
-export default function StatsBar() {
+export default function StatsBar({ dict }: { dict: Dict }) {
+  const stats = dict.statsBar;
   return (
     <section className="bg-cream pb-20 sm:pb-28">
       <div className="mx-auto max-w-[1440px] px-8">

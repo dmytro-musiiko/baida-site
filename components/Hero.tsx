@@ -1,6 +1,8 @@
 import Image from "next/image";
+import type { Dict, Locale } from "@/app/i18n";
 
-export default function Hero() {
+export default function Hero({ dict, lang }: { dict: Dict; lang: Locale }) {
+  const t = dict.hero;
   return (
     <section className="relative">
       <div className="relative min-h-screen overflow-hidden bg-tan-dark flex items-start">
@@ -38,33 +40,33 @@ export default function Hero() {
 
             {/* Positioning line */}
             <div className="mt-6 label-caps text-[12px]! text-white/85 tracking-[0.22em]">
-              Modern Orthopaedic Reconstruction
+              {t.eyebrow}
             </div>
 
             {/* Subtitle */}
             <p className="mt-10 text-white/90 text-2xl lg:text-3xl font-light leading-snug text-balance max-w-[34ch]">
-              Сучасна реконструктивна ортопедія, корекція деформацій та подовження кінцівок.
+              {t.subtitle}
             </p>
 
             {/* Body */}
             <p className="mt-6 text-white/85 leading-relaxed text-lg font-light text-balance max-w-[58ch]">
-              Спеціалізований напрямок сучасної ортопедії для пацієнтів із вкороченням кінцівок, деформаціями та порушенням симетрії, а також для функціонального та естетичного подовження кінцівок.
+              {t.body}
             </p>
 
             {/* Primary CTA + secondary text link */}
             <div className="mt-12 flex flex-col sm:flex-row sm:items-center gap-6 sm:gap-8">
               <a
-                href="#consultation"
+                href={`/${lang}/#consultation`}
                 className="group inline-flex items-center justify-between gap-6 btn-metallic text-white px-8 py-4 label-caps min-w-[280px]"
               >
-                Записатись на консультацію
+                {dict.common.ctaPrimary}
                 <span className="transition-transform group-hover:translate-x-1">→</span>
               </a>
               <a
-                href="#consultation"
+                href={`/${lang}/#consultation`}
                 className="group inline-flex items-center justify-between gap-6 border border-white/30 hover:border-white text-white px-8 py-4 label-caps transition-colors min-w-[280px]"
               >
-                Подати запит на оцінку випадку
+                {dict.common.ctaSecondary}
                 <span className="transition-transform group-hover:translate-x-1">→</span>
               </a>
             </div>
@@ -74,11 +76,7 @@ export default function Hero() {
         {/* Bottom trust-bar — experience stats */}
         <div className="absolute bottom-0 left-0 right-0 z-20 bg-black/30 backdrop-blur-md border-t border-white/15">
           <div className="grid grid-cols-3 md:grid-cols-4 divide-x divide-white/15">
-            {[
-              { value: "—", label: "років досвіду" },
-              { value: "—", label: "операцій" },
-              { value: "—", label: "наукових публікацій" },
-            ].map((stat) => (
+            {t.stats.map((stat) => (
               <div
                 key={stat.label}
                 className="flex items-baseline justify-center gap-3 px-6 py-5"
@@ -91,10 +89,10 @@ export default function Hero() {
             ))}
             <div className="hidden md:flex items-center justify-center p-3 btn-metallic">
               <a
-                href="#consultation"
+                href={`/${lang}/#consultation`}
                 className="group flex items-center justify-between gap-6 w-full border border-white/40 hover:border-white text-white px-5 py-2.5 label-caps transition-colors"
               >
-                <span>Записатись</span>
+                <span>{t.ctaBook}</span>
                 <span className="transition-transform group-hover:translate-x-1">→</span>
               </a>
             </div>

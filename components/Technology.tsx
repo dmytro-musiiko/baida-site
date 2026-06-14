@@ -1,39 +1,23 @@
-const miniCards = [
-  {
-    title: "Індивідуальне планування",
-    body: "Аналіз геометрії кінцівки та підбір сценарію реконструкції під конкретний випадок.",
-  },
-  {
-    title: "Контроль симетрії та осі",
-    body: "Відновлення осі, симетрії та біомеханічного балансу нижніх кінцівок.",
-  },
-  {
-    title: "Сучасні reconstruction-системи",
-    body: "Технологічні рішення для корекції й фіксації як частина reconstruction workflow.",
-  },
-  {
-    title: "Функціональне відновлення",
-    body: "Контрольоване відновлення функції й анатомії при деформаціях та подовженні.",
-  },
-];
+import type { Dict } from "@/app/i18n";
 
-export default function Technology() {
+export default function Technology({ dict }: { dict: Dict }) {
+  const t = dict.technology;
   return (
-    <section id="technology" className="bg-paper py-20 sm:py-28">
+    <section id="technology" className="bg-paper py-20 sm:py-28 scroll-mt-24">
       <div className="mx-auto max-w-[1440px] px-8">
         {/* Section header */}
         <div className="flex items-center gap-4 mb-12 label-caps-sm text-ink-muted">
           <span>05</span>
           <span className="w-16 h-px bg-hairline" />
-          <span>Технології</span>
+          <span>{t.sectionLabel}</span>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start mb-16">
           {/* Heading */}
           <div className="lg:col-span-5">
             <h2 className="font-sans leading-[1.05] tracking-[-0.02em] text-[clamp(2rem,4vw,3.25rem)]">
-              <span className="font-light">Сучасні реконструктивні </span>
-              <span className="font-extrabold">технології</span>
+              <span className="font-light">{t.headingLight}</span>
+              <span className="font-extrabold">{t.headingBold}</span>
               <span className="font-serif italic font-medium text-tan">.</span>
             </h2>
           </div>
@@ -41,26 +25,22 @@ export default function Technology() {
           {/* Text + accent */}
           <div className="lg:col-span-7">
             <div className="space-y-5 text-ink leading-relaxed text-lg max-w-2xl">
-              <p>
-                Сучасна реконструктивна ортопедія поєднує індивідуальне планування, контроль осі та
-                симетрії кінцівок, а також сучасні технології корекції й фіксації.
-              </p>
-              <p className="text-ink-muted text-[17px]">
-                Розвиток reconstruction-технологій відкриває нові можливості для більш точного,
-                контрольованого та функціонального відновлення при деформаціях, вкороченнях і
-                подовженні кінцівок.
-              </p>
+              {t.paragraphs.map((p, i) => (
+                <p key={i} className={i === 0 ? "" : "text-ink-muted text-[17px]"}>
+                  {p}
+                </p>
+              ))}
             </div>
 
             <blockquote className="mt-10 pl-6 border-l-2 border-tan font-serif italic text-ink/85 leading-snug text-[clamp(1.25rem,2vw,1.625rem)] max-w-xl">
-              Технології мають не замінювати хірурга, а розширювати можливості реконструкції.
+              {t.quote}
             </blockquote>
           </div>
         </div>
 
         {/* 4 mini-cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-hairline border-y border-hairline">
-          {miniCards.map((card, i) => (
+          {t.miniCards.map((card, i) => (
             <div key={card.title} className="group relative flex flex-col bg-paper p-8 hover:bg-cream transition-colors">
               <span
                 aria-hidden

@@ -1,36 +1,27 @@
-const cards = [
-  {
-    category: "Реконструктивна ортопедія",
-    title: "Подовження кінцівок",
-    image: "/treatment-tech.jpg",
-  },
-  {
-    category: "Реконструктивна ортопедія",
-    title: "Корекція деформацій",
-    image: "/A9A8DB47-608C-4FAB-BEF1-C7D85351E807.png",
-  },
-  {
-    category: "Реконструктивна ортопедія",
-    title: "Відновлення симетрії",
-    image: "/treatment-xray.jpg",
-  },
-  {
-    category: "Реконструктивна ортопедія",
-    title: "Сучасні реконструктивні технології",
-    image: "/treatment-legs.jpg",
-  },
+import type { Dict, Locale } from "@/app/i18n";
+
+const images = [
+  "/treatment-tech.jpg",
+  "/A9A8DB47-608C-4FAB-BEF1-C7D85351E807.png",
+  "/treatment-xray.jpg",
+  "/treatment-legs.jpg",
 ];
 
-export default function Treatments() {
+export default function Treatments({ dict, lang }: { dict: Dict; lang: Locale }) {
+  const t = dict.treatments;
+  const cards = t.cards.map((title, i) => ({ title, image: images[i] }));
+
   return (
-    <section id="treatments" className="bg-tan-dark py-14 sm:py-20">
+    <section id="treatments" className="bg-tan-dark py-14 sm:py-20 scroll-mt-24">
       <div className="mx-auto max-w-[1440px] px-8">
         {/* Header */}
         <div className="mb-10">
-          <div className="label-caps-sm text-white/55 mb-6">02 — Напрямки лікування</div>
+          <div className="label-caps-sm text-white/55 mb-6">
+            {t.sectionNum} — {t.sectionLabel}
+          </div>
           <h2 className="font-sans text-white leading-[1.05] tracking-[-0.02em] text-[clamp(1.5rem,3vw,2.75rem)] whitespace-nowrap">
-            <span className="font-light">Чотири напрямки сучасної </span>
-            <span className="font-extrabold">реконструкції</span>
+            <span className="font-light">{t.headingLight}</span>
+            <span className="font-extrabold">{t.headingBold}</span>
             <span className="font-serif italic font-medium text-tan">.</span>
           </h2>
         </div>
@@ -40,7 +31,7 @@ export default function Treatments() {
           {cards.map((card) => (
             <a
               key={card.title}
-              href="#consultation"
+              href={`/${lang}/#consultation`}
               className="group relative block aspect-[16/10] overflow-hidden rounded-[8px] bg-navy-90"
             >
               {/* Image or placeholder */}

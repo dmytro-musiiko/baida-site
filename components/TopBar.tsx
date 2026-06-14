@@ -1,4 +1,6 @@
-export default function TopBar() {
+import type { Dict, Locale } from "@/app/i18n";
+
+export default function TopBar({ dict, lang }: { dict: Dict; lang: Locale }) {
   return (
     <div className="bg-black/20 backdrop-blur-sm text-white/80 border-b border-white/10">
       <div className="mx-auto max-w-[1440px] px-8 py-3 flex items-center justify-center gap-12 label-caps-sm">
@@ -17,12 +19,12 @@ export default function TopBar() {
           +380 67 432 18 09
         </a>
         <span className="opacity-30">·</span>
-        <a href="/#consultation" className="flex items-center gap-2 hover:text-white transition-colors">
+        <a href={`/${lang}/#consultation`} className="flex items-center gap-2 hover:text-white transition-colors">
           <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.2">
             <circle cx="8" cy="8" r="6" />
             <path d="M8 4v8M4 8h8" />
           </svg>
-          ЗАПИСАТИСЬ ОНЛАЙН
+          {dict.topbar.online}
         </a>
       </div>
     </div>

@@ -1,67 +1,42 @@
-const tracks = [
-  {
-    id: "referral",
-    code: "01",
-    title: "Лікарям, що направляють",
-    body: "Направлення пацієнтів із деформаціями, вкороченням, асиметрією та наслідками травм. Попередня оцінка випадку та зворотний звʼязок щодо reconstruction-сценарію.",
-    points: ["Оцінка випадку за знімками", "Зворотний звʼязок по тактиці", "Супровід направленого пацієнта"],
-  },
-  {
-    id: "cosurgery",
-    code: "02",
-    title: "Спільні операції та second opinion",
-    body: "Професійна консультація у складних випадках, спільні втручання та незалежна думка щодо планування реконструкції й корекції осі.",
-    points: ["Second opinion", "Спільні втручання", "Консультація з планування"],
-  },
-  {
-    id: "medtech",
-    code: "03",
-    title: "MedTech / reconstruction ecosystem",
-    body: "Взаємодія з технологічними партнерами навколо сучасних reconstruction-систем — клінічна апробація, розвиток workflow та професійна співпраця.",
-    points: ["Клінічна апробація", "Розвиток workflow", "Партнерська взаємодія"],
-  },
-];
+import type { Dict } from "@/app/i18n";
 
-const channels = [
-  { mono: "TG", label: "Telegram", handle: "—" },
-  { mono: "WA", label: "WhatsApp", handle: "—" },
-  { mono: "@", label: "Email", handle: "—" },
-];
+const trackIds = ["referral", "cosurgery", "medtech"];
 
-export default function Partnership() {
+export default function Partnership({ dict }: { dict: Dict }) {
+  const t = dict.clinical.partnership;
   return (
-    <section id="partnership" className="bg-cream py-20 sm:py-28">
+    <section id="partnership" className="bg-cream py-20 sm:py-28 scroll-mt-24">
       <div className="mx-auto max-w-[1440px] px-8">
         {/* Header */}
         <div className="flex items-center gap-4 mb-12 label-caps-sm text-ink-muted">
           <span>04</span>
           <span className="w-16 h-px bg-hairline" />
-          <span>Співпраця</span>
+          <span>{t.sectionLabel}</span>
         </div>
 
         <h2 className="font-sans leading-[1.05] tracking-[-0.02em] text-[clamp(2rem,4vw,3.25rem)] max-w-3xl mb-14">
-          <span className="font-light">Три формати професійної </span>
-          <span className="font-extrabold">взаємодії</span>
+          <span className="font-light">{t.headingLight}</span>
+          <span className="font-extrabold">{t.headingBold}</span>
           <span className="font-serif italic font-medium text-tan">.</span>
         </h2>
 
         {/* Tracks */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-hairline border-y border-hairline mb-20">
-          {tracks.map((t) => (
+          {t.tracks.map((track, i) => (
             <div
-              key={t.id}
-              id={t.id}
+              key={trackIds[i]}
+              id={trackIds[i]}
               className="group relative flex flex-col bg-cream p-8 lg:p-10 transition-colors hover:bg-paper scroll-mt-28"
             >
               <span
                 aria-hidden
                 className="absolute top-0 left-0 h-px w-full bg-tan scale-x-0 origin-left transition-transform duration-500 group-hover:scale-x-100"
               />
-              <span className="font-serif italic text-3xl text-hairline-soft leading-none mb-7">{t.code}</span>
-              <h3 className="font-sans font-semibold text-xl mb-3 tracking-tight max-w-[20ch]">{t.title}</h3>
-              <p className="text-ink-muted text-[15px] leading-relaxed mb-7">{t.body}</p>
+              <span className="font-serif italic text-3xl text-hairline-soft leading-none mb-7">{`0${i + 1}`}</span>
+              <h3 className="font-sans font-semibold text-xl mb-3 tracking-tight max-w-[20ch]">{track.title}</h3>
+              <p className="text-ink-muted text-[15px] leading-relaxed mb-7">{track.body}</p>
               <ul className="mt-auto space-y-2.5 border-t border-hairline-soft pt-5">
-                {t.points.map((p) => (
+                {track.points.map((p) => (
                   <li key={p} className="flex items-start gap-3 text-[14px] text-ink">
                     <span aria-hidden className="mt-[7px] w-1.5 h-1.5 rounded-full bg-tan shrink-0" />
                     {p}
@@ -82,18 +57,17 @@ export default function Partnership() {
               <div className="lg:col-span-7">
                 <div className="flex items-center gap-4 mb-9 label-caps-sm text-white/70">
                   <span className="w-1.5 h-1.5 rounded-full bg-white" />
-                  <span>Запит на співпрацю</span>
+                  <span>{t.ctaLabel}</span>
                   <span className="w-16 h-px bg-white/30" />
                 </div>
 
                 <h3 className="font-sans font-bold leading-[1.04] tracking-[-0.02em] text-[clamp(1.875rem,4.5vw,3.25rem)] max-w-[16ch]">
-                  Обговорити клінічний випадок або{" "}
-                  <span className="font-serif italic font-medium">партнерство</span>.
+                  {t.ctaHeadingPre}
+                  <span className="font-serif italic font-medium">{t.ctaHeadingItalic}</span>.
                 </h3>
 
                 <p className="mt-7 text-white/85 leading-relaxed max-w-xl text-[15px]">
-                  Напишіть коротко про випадок, формат співпраці або запит на клінічні матеріали —
-                  ви отримаєте відповідь щодо подальших кроків.
+                  {t.ctaBody}
                 </p>
 
                 <div className="mt-10">
@@ -101,7 +75,7 @@ export default function Partnership() {
                     href="#"
                     className="group inline-flex items-center justify-between gap-6 btn-metallic text-white px-7 py-5 label-caps min-w-[280px]"
                   >
-                    Надіслати запит
+                    {t.ctaSend}
                     <span className="transition-transform group-hover:translate-x-1">→</span>
                   </a>
                 </div>
@@ -110,10 +84,10 @@ export default function Partnership() {
               <div className="lg:col-span-5">
                 <div className="flex items-center gap-4 mb-8 label-caps-sm text-white/70">
                   <span className="w-12 h-px bg-white/30" />
-                  <span>Прямі канали</span>
+                  <span>{t.channelsLabel}</span>
                 </div>
                 <div className="divide-y divide-white/15 border-y border-white/15">
-                  {channels.map((c) => (
+                  {t.channels.map((c) => (
                     <a
                       key={c.label}
                       href="#"
