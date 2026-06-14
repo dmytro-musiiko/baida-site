@@ -1,169 +1,169 @@
 {
   "meta": {
     "homeTitle": "Dr. Maksym Baida, PhD — Modern Orthopaedic Reconstruction",
-    "homeDescription": "Сучасна реконструктивна ортопедія, корекція деформацій та подовження кінцівок. Київ.",
-    "clinicalTitle": "Для колег — Clinical & Reconstruction Ecosystem | Dr. Maksym Baida, PhD",
-    "clinicalDescription": "Простір для лікарів, академічної спільноти та технологічних партнерів: reconstruction ecosystem, клінічні випадки, академічна діяльність і співпраця."
+    "homeDescription": "Modern reconstructive orthopaedics, deformity correction and limb lengthening. Kyiv.",
+    "clinicalTitle": "For colleagues — Clinical & Reconstruction Ecosystem | Dr. Maksym Baida, PhD",
+    "clinicalDescription": "A space for physicians, the academic community and technology partners: reconstruction ecosystem, clinical cases, academic work and collaboration."
   },
   "common": {
-    "ctaPrimary": "Записатись на консультацію",
-    "ctaSecondary": "Подати запит на оцінку випадку",
+    "ctaPrimary": "Book a consultation",
+    "ctaSecondary": "Submit a case for assessment",
     "brandTagline": "Modern Orthopaedic Reconstruction"
   },
   "topbar": {
-    "online": "Записатись онлайн"
+    "online": "Book online"
   },
   "nav": {
-    "home": "Головна",
-    "field": "Про напрямок",
-    "treatments": "Напрямки",
-    "doctor": "Про лікаря",
-    "tech": "Технології",
-    "contacts": "Контакти",
-    "forColleagues": "Для колег",
-    "menu": "Меню"
+    "home": "Home",
+    "field": "The field",
+    "treatments": "Focus areas",
+    "doctor": "About the doctor",
+    "tech": "Technology",
+    "contacts": "Contacts",
+    "forColleagues": "For colleagues",
+    "menu": "Menu"
   },
   "hero": {
     "eyebrow": "Modern Orthopaedic Reconstruction",
-    "subtitle": "Сучасна реконструктивна ортопедія, корекція деформацій та подовження кінцівок.",
-    "body": "Спеціалізований напрямок сучасної ортопедії для пацієнтів із вкороченням кінцівок, деформаціями та порушенням симетрії, а також для функціонального та естетичного подовження кінцівок.",
-    "ctaBook": "Записатись",
+    "subtitle": "Modern reconstructive orthopaedics, deformity correction and limb lengthening.",
+    "body": "A specialised field of modern orthopaedics for patients with limb shortening, deformities and asymmetry, as well as for functional and aesthetic limb lengthening.",
+    "ctaBook": "Book now",
     "stats": [
-      { "value": "—", "label": "років досвіду" },
-      { "value": "—", "label": "операцій" },
-      { "value": "—", "label": "наукових публікацій" }
+      { "value": "—", "label": "years of experience" },
+      { "value": "—", "label": "surgeries" },
+      { "value": "—", "label": "scientific publications" }
     ]
   },
   "aboutField": {
-    "sectionLabel": "Про напрямок",
-    "headingLight": "Реконструктивна ортопедія ",
-    "headingBold": "нового покоління",
+    "sectionLabel": "The field",
+    "headingLight": "Reconstructive orthopaedics ",
+    "headingBold": "of a new generation",
     "paragraphs": [
-      "Сучасна реконструктивна ортопедія поєднує функціональне відновлення, корекцію деформацій та сучасні технології подовження кінцівок.",
-      "Індивідуальне планування лікування дозволяє працювати з вкороченням кінцівок, порушенням симетрії, наслідками травм та естетичною корекцією пропорцій тіла.",
-      "Сучасні реконструктивні технології відкривають можливості для більш точного, контрольованого та прогнозованого відновлення функції й анатомії кінцівок."
+      "Modern reconstructive orthopaedics combines functional recovery, deformity correction and advanced limb-lengthening technologies.",
+      "Individualised treatment planning makes it possible to address limb shortening, asymmetry, the consequences of trauma and the aesthetic correction of body proportions.",
+      "Modern reconstructive technologies open the way to more precise, controlled and predictable restoration of limb function and anatomy."
     ]
   },
   "philosophy": {
-    "pre": "Сучасна реконструкція — це поєднання ",
-    "words": ["точності", "функції", "симетрії"],
+    "pre": "Modern reconstruction is the union of ",
+    "words": ["precision", "function", "symmetry"],
     "join": ", ",
-    "lastJoin": " та ",
+    "lastJoin": " and ",
     "end": ".",
     "author": "Dr. Maksym Baida, PhD"
   },
   "treatments": {
     "sectionNum": "02",
-    "sectionLabel": "Напрямки лікування",
-    "headingLight": "Чотири напрямки сучасної ",
-    "headingBold": "реконструкції",
+    "sectionLabel": "Areas of treatment",
+    "headingLight": "Four directions of modern ",
+    "headingBold": "reconstruction",
     "cards": [
-      "Подовження кінцівок",
-      "Корекція деформацій",
-      "Відновлення симетрії",
-      "Сучасні реконструктивні технології"
+      "Limb lengthening",
+      "Deformity correction",
+      "Restoration of symmetry",
+      "Modern reconstructive technologies"
     ]
   },
   "about": {
-    "sectionLabel": "Про лікаря",
-    "leadLight": "Три принципи, на яких тримається кожна ",
-    "leadBold": "реконструкція",
+    "sectionLabel": "About the doctor",
+    "leadLight": "Three principles behind every ",
+    "leadBold": "reconstruction",
     "principles": [
       {
-        "label": "Точність",
-        "body": "Індивідуальне планування кожного випадку реконструкції — від геометрії осі до контролю симетрії кінцівок. Жодних шаблонних рішень.",
-        "proof": "Індивідуальне планування"
+        "label": "Precision",
+        "body": "Individualised planning of every reconstruction case — from axis geometry to control of limb symmetry. No off-the-shelf solutions.",
+        "proof": "Individualised planning"
       },
       {
-        "label": "Досвід",
-        "body": "Вузька реконструктивна практика, академічна діяльність і міжнародна професійна взаємодія у сучасній реконструктивній ортопедії.",
-        "proof": "Вузька спеціалізація"
+        "label": "Experience",
+        "body": "A focused reconstructive practice, academic work and international professional exchange in modern reconstructive orthopaedics.",
+        "proof": "Narrow specialisation"
       },
       {
-        "label": "Технології",
-        "body": "Сучасні reconstruction-системи, планування корекції та малоінвазивні доступи як частина reconstruction workflow.",
-        "proof": "Reconstruction-системи"
+        "label": "Technology",
+        "body": "Modern reconstruction systems, correction planning and minimally invasive approaches as part of the reconstruction workflow.",
+        "proof": "Reconstruction systems"
       }
     ],
-    "portraitBadgeLabel": "— Практика",
-    "portraitBadgeLine1": "Реконструктивна ортопедія",
-    "portraitBadgeLine2": "· Подовження кінцівок",
-    "bioTitle": "ортопед-травматолог, реконструктивний хірург.",
+    "portraitBadgeLabel": "— Practice",
+    "portraitBadgeLine1": "Reconstructive orthopaedics",
+    "portraitBadgeLine2": "· Limb lengthening",
+    "bioTitle": "orthopaedic trauma surgeon, reconstructive surgeon.",
     "tags": [
-      "Реконструкція після травм",
-      "Корекція деформацій",
-      "Подовження кінцівок",
-      "Сучасні reconstruction-технології"
+      "Post-traumatic reconstruction",
+      "Deformity correction",
+      "Limb lengthening",
+      "Modern reconstruction technologies"
     ],
-    "p1pre": "Спеціалізується на ",
-    "p1bold": "сучасній реконструктивній ортопедії",
-    "p1post": ", корекції деформацій та подовженні кінцівок.",
-    "p2": "Основні напрямки роботи включають лікування наслідків травм, реконструкцію складних ортопедичних дефектів, відновлення симетрії та сучасні підходи до функціонального й естетичного відновлення кінцівок. Поєднує клінічну практику, академічну діяльність та сучасні реконструктивні технології.",
-    "credEducationLabel": "Освіта",
-    "credEducationMain": "НМУ ім. О.О. Богомольця ·",
+    "p1pre": "Specialises in ",
+    "p1bold": "modern reconstructive orthopaedics",
+    "p1post": ", deformity correction and limb lengthening.",
+    "p2": "Core areas of work include treating the consequences of trauma, reconstructing complex orthopaedic defects, restoring symmetry, and modern approaches to functional and aesthetic limb restoration. Combines clinical practice, academic work and modern reconstructive technologies.",
+    "credEducationLabel": "Education",
+    "credEducationMain": "Bogomolets National Medical University ·",
     "credEducationItalic": "PhD",
-    "credInternshipLabel": "Стажування",
+    "credInternshipLabel": "Fellowship",
     "credInternshipValue": "—",
-    "credSpecLabel": "Спеціалізація",
-    "credSpecMain": "Реконструкція кінцівок ·",
-    "credSpecItalic": "корекція осі"
+    "credSpecLabel": "Specialisation",
+    "credSpecMain": "Limb reconstruction ·",
+    "credSpecItalic": "axis correction"
   },
   "statsBar": [
-    { "value": "—", "label": "Років практики" },
-    { "value": "—", "label": "Реконструкцій" },
-    { "value": "—", "label": "Наукових публікацій" },
-    { "value": "—", "label": "Мови прийому" }
+    { "value": "—", "label": "Years in practice" },
+    { "value": "—", "label": "Reconstructions" },
+    { "value": "—", "label": "Scientific publications" },
+    { "value": "—", "label": "Languages of consultation" }
   ],
   "academic": {
-    "sectionLabel": "Академічне середовище",
-    "headingLight": "Академічне та клінічне ",
-    "headingBold": "середовище",
+    "sectionLabel": "Academic environment",
+    "headingLight": "Academic and clinical ",
+    "headingBold": "environment",
     "paragraphs": [
-      "Розвиток сучасної реконструктивної ортопедії поєднує клінічну практику, академічну діяльність та міжнародну професійну взаємодію.",
-      "Університетське клінічне середовище створює основу для розвитку сучасних reconstruction-підходів, професійної комунікації та впровадження сучасних технологій у реконструкції та подовженні кінцівок."
+      "The advancement of modern reconstructive orthopaedics combines clinical practice, academic work and international professional exchange.",
+      "A university clinical setting provides the foundation for developing modern reconstruction approaches, professional communication and the adoption of advanced technologies in limb reconstruction and lengthening."
     ],
-    "quote": "Сучасна реконструкція — це постійний розвиток, професійна взаємодія та технологічний прогрес.",
+    "quote": "Modern reconstruction is continuous development, professional exchange and technological progress.",
     "miniCards": [
-      "Міжнародна професійна діяльність",
-      "Академічне клінічне середовище",
-      "Сучасні reconstruction-технології"
+      "International professional activity",
+      "Academic clinical environment",
+      "Modern reconstruction technologies"
     ]
   },
   "technology": {
-    "sectionLabel": "Технології",
-    "headingLight": "Сучасні реконструктивні ",
-    "headingBold": "технології",
+    "sectionLabel": "Technology",
+    "headingLight": "Modern reconstructive ",
+    "headingBold": "technologies",
     "paragraphs": [
-      "Сучасна реконструктивна ортопедія поєднує індивідуальне планування, контроль осі та симетрії кінцівок, а також сучасні технології корекції й фіксації.",
-      "Розвиток reconstruction-технологій відкриває нові можливості для більш точного, контрольованого та функціонального відновлення при деформаціях, вкороченнях і подовженні кінцівок."
+      "Modern reconstructive orthopaedics combines individualised planning, control of limb axis and symmetry, and advanced technologies for correction and fixation.",
+      "The advancement of reconstruction technologies opens new possibilities for more precise, controlled and functional recovery in deformities, shortening and limb lengthening."
     ],
-    "quote": "Технології мають не замінювати хірурга, а розширювати можливості реконструкції.",
+    "quote": "Technology should not replace the surgeon, but extend the possibilities of reconstruction.",
     "miniCards": [
       {
-        "title": "Індивідуальне планування",
-        "body": "Аналіз геометрії кінцівки та підбір сценарію реконструкції під конкретний випадок."
+        "title": "Individualised planning",
+        "body": "Analysis of limb geometry and selection of a reconstruction scenario tailored to the specific case."
       },
       {
-        "title": "Контроль симетрії та осі",
-        "body": "Відновлення осі, симетрії та біомеханічного балансу нижніх кінцівок."
+        "title": "Symmetry and axis control",
+        "body": "Restoration of the axis, symmetry and biomechanical balance of the lower limbs."
       },
       {
-        "title": "Сучасні reconstruction-системи",
-        "body": "Технологічні рішення для корекції й фіксації як частина reconstruction workflow."
+        "title": "Modern reconstruction systems",
+        "body": "Technological solutions for correction and fixation as part of the reconstruction workflow."
       },
       {
-        "title": "Функціональне відновлення",
-        "body": "Контрольоване відновлення функції й анатомії при деформаціях та подовженні."
+        "title": "Functional recovery",
+        "body": "Controlled restoration of function and anatomy in deformities and lengthening."
       }
     ]
   },
   "bookOnline": {
-    "sectionLabel": "06 — Зверніться",
-    "headingPre": "Індивідуальна консультація та ",
-    "headingItalic": "оцінка випадку",
-    "body": "Надішліть свої знімки та коротко опишіть ситуацію — ви отримаєте попередній план лікування з коментарями щодо подальших кроків.",
-    "ctaUpload": "Надіслати знімки онлайн",
-    "channelsLabel": "Прямі канали",
+    "sectionLabel": "06 — Get in touch",
+    "headingPre": "Personal consultation and ",
+    "headingItalic": "case assessment",
+    "body": "Send your imaging and a brief description of the situation — you will receive a preliminary treatment plan with notes on the next steps.",
+    "ctaUpload": "Submit imaging online",
+    "channelsLabel": "Direct channels",
     "channels": [
       { "mono": "TG", "label": "Telegram", "handle": "—" },
       { "mono": "WA", "label": "WhatsApp", "handle": "—" },
@@ -172,147 +172,147 @@
     ]
   },
   "footer": {
-    "brandDescription": "Dr. Maksym Baida, PhD — сучасна реконструктивна ортопедія, корекція деформацій та подовження кінцівок.",
-    "navLabel": "— Навігація",
-    "contactsLabel": "— Контакти",
+    "brandDescription": "Dr. Maksym Baida, PhD — modern reconstructive orthopaedics, deformity correction and limb lengthening.",
+    "navLabel": "— Navigation",
+    "contactsLabel": "— Contacts",
     "contacts": [
       { "label": "Telegram", "handle": "—" },
       { "label": "WhatsApp", "handle": "—" },
       { "label": "Instagram", "handle": "—" },
       { "label": "Email", "handle": "—" }
     ],
-    "copyright": "© 2026 Modern Orthopaedic Reconstruction. Усі права захищені.",
-    "privacy": "Політика конфіденційності",
+    "copyright": "© 2026 Modern Orthopaedic Reconstruction. All rights reserved.",
+    "privacy": "Privacy policy",
     "cookies": "Cookies"
   },
   "clinical": {
     "hero": {
-      "eyebrow": "Для колег · For colleagues",
-      "headingPre": "Клінічна співпраця у ",
-      "headingBold": "реконструктивній ортопедії",
-      "subtitle": "Простір для лікарів, академічної спільноти та технологічних партнерів — навколо сучасної reconstruction-екосистеми.",
-      "body": "Реконструкція та подовження кінцівок, корекція деформацій і контроль осі — як спільна клінічна, академічна та технологічна робота, а не лише окрема практика.",
-      "ctaPartnership": "Запит на співпрацю",
-      "ctaReferral": "Направити пацієнта",
+      "eyebrow": "For colleagues",
+      "headingPre": "Clinical collaboration in ",
+      "headingBold": "reconstructive orthopaedics",
+      "subtitle": "A space for physicians, the academic community and technology partners — around a modern reconstruction ecosystem.",
+      "body": "Limb reconstruction and lengthening, deformity correction and axis control — as shared clinical, academic and technological work, not merely an individual practice.",
+      "ctaPartnership": "Request a collaboration",
+      "ctaReferral": "Refer a patient",
       "audiences": [
-        "Лікарям, що направляють",
-        "Академічна співпраця",
+        "Referring physicians",
+        "Academic collaboration",
         "MedTech / reconstruction ecosystem"
       ]
     },
     "ecosystem": {
       "sectionLabel": "Reconstruction ecosystem",
-      "headingLight": "Реконструкція як ",
-      "headingBold": "єдиний workflow",
+      "headingLight": "Reconstruction as ",
+      "headingBold": "a single workflow",
       "paragraphs": [
-        "Для професійної аудиторії reconstruction-напрямок — це не окрема послуга, а наскрізний процес: від планування геометрії до контролю функціонального результату.",
-        "Технологічні рішення та сучасні reconstruction-системи інтегровані в цей процес як інструмент precision-хірургії. Технології розширюють можливості реконструкції — не замінюючи клінічне рішення хірурга."
+        "For a professional audience, the reconstruction field is not a standalone service but an end-to-end process: from planning the geometry to controlling the functional outcome.",
+        "Technological solutions and modern reconstruction systems are integrated into this process as a tool of precision surgery. Technology extends the possibilities of reconstruction — without replacing the surgeon's clinical judgement."
       ],
       "imageCaption": "Planning geometry",
-      "imageAlt": "Геометрія колінного суглоба — reconstruction planning overlay",
+      "imageAlt": "Knee joint geometry — reconstruction planning overlay",
       "layers": [
         {
-          "title": "Передопераційне планування",
-          "body": "Аналіз геометрії кінцівки, осі та симетрії, моделювання корекції та сценарію реконструкції під конкретний випадок.",
+          "title": "Pre-operative planning",
+          "body": "Analysis of limb geometry, axis and symmetry; modelling of correction and the reconstruction scenario for the specific case.",
           "tags": ["deformity analysis", "axis & alignment", "case planning"]
         },
         {
-          "title": "Системи корекції та фіксації",
-          "body": "Сучасні reconstruction-системи для контрольованої корекції, фіксації та подовження — як частина єдиного workflow, а не каталог імплантів.",
+          "title": "Correction and fixation systems",
+          "body": "Modern reconstruction systems for controlled correction, fixation and lengthening — as part of a single workflow, not an implant catalogue.",
           "tags": ["external / internal fixation", "lengthening systems", "gradual correction"]
         },
         {
-          "title": "Інтраопераційний контроль",
-          "body": "Контроль осі, симетрії та біомеханічного балансу під час втручання з опорою на попереднє планування.",
+          "title": "Intra-operative control",
+          "body": "Control of axis, symmetry and biomechanical balance during the procedure, guided by the pre-operative plan.",
           "tags": ["intra-op control", "biomechanics", "precision"]
         },
         {
-          "title": "Функціональне відновлення",
-          "body": "Контрольоване відновлення функції та анатомії при деформаціях, вкороченнях і подовженні з прогнозованим протоколом.",
+          "title": "Functional recovery",
+          "body": "Controlled restoration of function and anatomy in deformities, shortening and lengthening, following a predictable protocol.",
           "tags": ["protocol-driven", "outcome tracking", "rehabilitation"]
         }
       ]
     },
     "cases": {
-      "sectionLabel": "Клінічні випадки та техніки",
-      "headingLight": "Розбір випадків для ",
-      "headingBold": "професійної спільноти",
-      "intro": "Структуровані клінічні випадки: показання, планування, техніка, результат. Повні матеріали та зображення — за запитом після професійного погодження.",
+      "sectionLabel": "Clinical cases and techniques",
+      "headingLight": "Case reviews for the ",
+      "headingBold": "professional community",
+      "intro": "Structured clinical cases: indications, planning, technique, outcome. Full materials and images are available on request following professional approval.",
       "imageCaption": "Fixation system",
-      "imageAlt": "Інтрамедулярна фіксація — reconstruction system",
-      "fieldIndication": "Показання",
-      "fieldPlanning": "Планування",
-      "fieldTechnique": "Техніка",
-      "fieldResult": "Результат",
-      "onRequest": "Матеріали за запитом",
-      "ctaRequest": "Запросити клінічні матеріали",
+      "imageAlt": "Intramedullary fixation — reconstruction system",
+      "fieldIndication": "Indication",
+      "fieldPlanning": "Planning",
+      "fieldTechnique": "Technique",
+      "fieldResult": "Outcome",
+      "onRequest": "Materials on request",
+      "ctaRequest": "Request clinical materials",
       "items": [
         {
-          "area": "Корекція деформації",
-          "title": "Корекція осі нижньої кінцівки",
-          "indication": "Деформація осі, порушення симетрії",
-          "planning": "Аналіз геометрії, моделювання корекції",
+          "area": "Deformity correction",
+          "title": "Lower-limb axis correction",
+          "indication": "Axis deformity, asymmetry",
+          "planning": "Geometry analysis, correction modelling",
           "technique": "—",
           "result": "—"
         },
         {
-          "area": "Подовження кінцівок",
-          "title": "Функціональне подовження",
-          "indication": "Вкорочення кінцівки",
-          "planning": "Розрахунок подовження, контроль осі",
+          "area": "Limb lengthening",
+          "title": "Functional lengthening",
+          "indication": "Limb shortening",
+          "planning": "Lengthening calculation, axis control",
           "technique": "—",
           "result": "—"
         },
         {
-          "area": "Реконструкція після травм",
-          "title": "Реконструкція складного дефекту",
-          "indication": "Наслідки травми, дефект сегмента",
-          "planning": "Поетапний reconstruction-сценарій",
+          "area": "Post-traumatic reconstruction",
+          "title": "Reconstruction of a complex defect",
+          "indication": "Consequences of trauma, segmental defect",
+          "planning": "Staged reconstruction scenario",
           "technique": "—",
           "result": "—"
         }
       ]
     },
     "activity": {
-      "sectionLabel": "Академічна та міжнародна діяльність",
-      "headingLight": "Клінічна практика та ",
-      "headingBold": "академічна робота",
-      "intro": "Розвиток reconstruction-напрямку поєднує клінічну практику, академічну діяльність та міжнародну професійну взаємодію в одному середовищі.",
-      "quote": "Сучасна реконструкція — це постійний розвиток, професійна взаємодія та технологічний прогрес.",
+      "sectionLabel": "Academic and international activity",
+      "headingLight": "Clinical practice and ",
+      "headingBold": "academic work",
+      "intro": "The advancement of the reconstruction field brings together clinical practice, academic work and international professional exchange in a single environment.",
+      "quote": "Modern reconstruction is continuous development, professional exchange and technological progress.",
       "groups": [
-        { "k": "Освіта", "items": ["НМУ ім. О.О. Богомольця", "PhD — реконструктивна ортопедія"] },
-        { "k": "Клінічне середовище", "items": ["Університетська клінічна практика", "Реконструкція та подовження кінцівок"] },
-        { "k": "Міжнародна активність", "items": ["EFORT та фахові конференції", "Професійне networking-середовище"] },
-        { "k": "Публікації", "items": ["—", "—"] }
+        { "k": "Education", "items": ["Bogomolets National Medical University", "PhD — reconstructive orthopaedics"] },
+        { "k": "Clinical environment", "items": ["University clinical practice", "Limb reconstruction and lengthening"] },
+        { "k": "International activity", "items": ["EFORT and specialist conferences", "Professional networking environment"] },
+        { "k": "Publications", "items": ["—", "—"] }
       ]
     },
     "partnership": {
-      "sectionLabel": "Співпраця",
-      "headingLight": "Три формати професійної ",
-      "headingBold": "взаємодії",
+      "sectionLabel": "Collaboration",
+      "headingLight": "Three formats of professional ",
+      "headingBold": "engagement",
       "tracks": [
         {
-          "title": "Лікарям, що направляють",
-          "body": "Направлення пацієнтів із деформаціями, вкороченням, асиметрією та наслідками травм. Попередня оцінка випадку та зворотний звʼязок щодо reconstruction-сценарію.",
-          "points": ["Оцінка випадку за знімками", "Зворотний звʼязок по тактиці", "Супровід направленого пацієнта"]
+          "title": "Referring physicians",
+          "body": "Referral of patients with deformities, shortening, asymmetry and the consequences of trauma. Preliminary case assessment and feedback on the reconstruction scenario.",
+          "points": ["Case assessment from imaging", "Feedback on the approach", "Support for the referred patient"]
         },
         {
-          "title": "Спільні операції та second opinion",
-          "body": "Професійна консультація у складних випадках, спільні втручання та незалежна думка щодо планування реконструкції й корекції осі.",
-          "points": ["Second opinion", "Спільні втручання", "Консультація з планування"]
+          "title": "Joint surgery and second opinion",
+          "body": "Professional consultation in complex cases, joint procedures and an independent opinion on reconstruction and axis-correction planning.",
+          "points": ["Second opinion", "Joint procedures", "Planning consultation"]
         },
         {
           "title": "MedTech / reconstruction ecosystem",
-          "body": "Взаємодія з технологічними партнерами навколо сучасних reconstruction-систем — клінічна апробація, розвиток workflow та професійна співпраця.",
-          "points": ["Клінічна апробація", "Розвиток workflow", "Партнерська взаємодія"]
+          "body": "Engagement with technology partners around modern reconstruction systems — clinical evaluation, workflow development and professional collaboration.",
+          "points": ["Clinical evaluation", "Workflow development", "Partner engagement"]
         }
       ],
-      "ctaLabel": "Запит на співпрацю",
-      "ctaHeadingPre": "Обговорити клінічний випадок або ",
-      "ctaHeadingItalic": "партнерство",
-      "ctaBody": "Напишіть коротко про випадок, формат співпраці або запит на клінічні матеріали — ви отримаєте відповідь щодо подальших кроків.",
-      "ctaSend": "Надіслати запит",
-      "channelsLabel": "Прямі канали",
+      "ctaLabel": "Request a collaboration",
+      "ctaHeadingPre": "Discuss a clinical case or ",
+      "ctaHeadingItalic": "partnership",
+      "ctaBody": "Write a brief note about the case, the format of collaboration or a request for clinical materials — you will receive a reply on the next steps.",
+      "ctaSend": "Send request",
+      "channelsLabel": "Direct channels",
       "channels": [
         { "mono": "TG", "label": "Telegram", "handle": "—" },
         { "mono": "WA", "label": "WhatsApp", "handle": "—" },
