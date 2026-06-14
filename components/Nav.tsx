@@ -1,4 +1,5 @@
 import { locales, localeNames, type Dict, type Locale } from "@/app/i18n";
+import MobileMenu from "@/components/MobileMenu";
 
 function LocaleDropdown({ lang, current }: { lang: Locale; current: "home" | "clinical" }) {
   const suffix = current === "clinical" ? "clinical/" : "";
@@ -55,11 +56,24 @@ export default function Nav({
     { label: dict.nav.contacts, href: `/${lang}/#consultation`, key: "contacts" },
   ];
 
+  const onClinical = current === "clinical";
+  const audience = onClinical
+    ? { label: dict.nav.forPatients, href: `/${lang}/` }
+    : { label: dict.nav.forColleagues, href: `/${lang}/clinical/` };
+
+  const suffix = onClinical ? "clinical/" : "";
+  const localeItems = locales.map((l) => ({
+    code: l,
+    name: localeNames[l],
+    href: `/${l}/${suffix}`,
+    active: l === lang,
+  }));
+
   return (
     <header className="bg-black/25 backdrop-blur-md border-b border-white/10">
       <div className="flex items-stretch">
         {/* Logo */}
-        <a href={`/${lang}/`} className="flex flex-col justify-center px-8 py-5 w-[220px] border-r border-white/15">
+        <a href={`/${lang}/`} className="flex flex-col justify-center px-6 lg:px-8 py-5 lg:w-[220px] border-r border-white/15">
           <span className="font-serif italic text-2xl leading-none tracking-tight text-white">
             Baida<span className="text-tan">.</span>
           </span>
@@ -68,8 +82,8 @@ export default function Nav({
           </span>
         </a>
 
-        {/* Main nav */}
-        <nav className="flex items-center gap-8 px-8 flex-1">
+        {/* Main nav — desktop */}
+        <nav className="hidden lg:flex items-center gap-8 px-8 flex-1">
           {navLinks.map((link) => {
             const active = current === "home" && link.key === "home";
             return (
@@ -89,33 +103,39 @@ export default function Nav({
           })}
         </nav>
 
-        {/* Locale dropdown */}
-        <div className="hidden md:flex items-stretch">
+        {/* Locale dropdown — desktop */}
+        <div className="hidden lg:flex items-stretch">
           <LocaleDropdown lang={lang} current={current} />
         </div>
 
-        {/* For colleagues */}
-        <a
-          href={`/${lang}/clinical/`}
-          className={`hidden lg:flex items-center gap-2 px-6 border-l border-white/15 label-caps text-[11.5px] font-semibold transition-colors ${
-            current === "clinical" ? "text-tan" : "text-white/85 hover:text-tan"
-          }`}
-        >
-          {dict.nav.forColleagues}
-          <span aria-hidden>→</span>
-        </a>
+        {/* Audience toggle — desktop */}
+        {onClinical ? (
+          <a
+            href={audience.href}
+            className="hidden lg:flex items-center gap-2 px-6 border-l border-white/15 label-caps text-[11.5px] font-semibold text-white/85 hover:text-tan transition-colors"
+          >
+            <span aria-hidden>←</span>
+            {audience.label}
+          </a>
+        ) : (
+          <a
+            href={audience.href}
+            className="hidden lg:flex items-center gap-2 px-6 border-l border-white/15 label-caps text-[11.5px] font-semibold text-white/85 hover:text-tan transition-colors"
+          >
+            {audience.label}
+            <span aria-hidden>→</span>
+          </a>
+        )}
 
-        {/* Hamburger */}
-        <button
-          className="flex items-center justify-center w-[220px] border-l border-white/15 hover:bg-white/10 transition-colors text-white"
-          aria-label={dict.nav.menu}
-        >
-          <svg width="20" height="14" viewBox="0 0 20 14" fill="none" stroke="currentColor" strokeWidth="1.4">
-            <line x1="0" y1="1" x2="20" y2="1" />
-            <line x1="0" y1="7" x2="20" y2="7" />
-            <line x1="0" y1="13" x2="20" y2="13" />
-          </svg>
-        </button>
+        {/* Mobile menu — below lg */}
+        <div className="flex lg:hidden ml-auto items-stretch">
+          <MobileMenu
+            menuLabel={dict.nav.menu}
+            links={navLinks.map(({ label, href }) => ({ label, href }))}
+            audience={audience}
+            locales={localeItems}
+          />
+        </div>
       </div>
     </header>
   );

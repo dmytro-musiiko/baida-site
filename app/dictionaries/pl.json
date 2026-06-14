@@ -21,7 +21,9 @@
     "tech": "Technologie",
     "contacts": "Kontakt",
     "forColleagues": "Dla lekarzy",
-    "menu": "Menu"
+    "forPatients": "Dla pacjentów",
+    "menu": "Menu",
+    "backToTop": "Do góry"
   },
   "hero": {
     "eyebrow": "Modern Orthopaedic Reconstruction",
@@ -29,9 +31,18 @@
     "body": "Wyspecjalizowana dziedzina nowoczesnej ortopedii dla pacjentów ze skróceniem kończyn, deformacjami i zaburzeniem symetrii, a także w zakresie funkcjonalnego i estetycznego wydłużania kończyn.",
     "ctaBook": "Umów się",
     "stats": [
-      { "value": "—", "label": "lat doświadczenia" },
-      { "value": "—", "label": "operacji" },
-      { "value": "—", "label": "publikacji naukowych" }
+      {
+        "value": "—",
+        "label": "lat doświadczenia"
+      },
+      {
+        "value": "—",
+        "label": "operacji"
+      },
+      {
+        "value": "—",
+        "label": "publikacji naukowych"
+      }
     ]
   },
   "aboutField": {
@@ -46,7 +57,11 @@
   },
   "philosophy": {
     "pre": "Nowoczesna rekonstrukcja to połączenie ",
-    "words": ["precyzji", "funkcji", "symetrii"],
+    "words": [
+      "precyzji",
+      "funkcji",
+      "symetrii"
+    ],
     "join": ", ",
     "lastJoin": " i ",
     "end": ".",
@@ -109,10 +124,22 @@
     "credSpecItalic": "korekcja osi"
   },
   "statsBar": [
-    { "value": "—", "label": "Lat praktyki" },
-    { "value": "—", "label": "Rekonstrukcji" },
-    { "value": "—", "label": "Publikacji naukowych" },
-    { "value": "—", "label": "Języki przyjęć" }
+    {
+      "value": "—",
+      "label": "Lat praktyki"
+    },
+    {
+      "value": "—",
+      "label": "Rekonstrukcji"
+    },
+    {
+      "value": "—",
+      "label": "Publikacji naukowych"
+    },
+    {
+      "value": "—",
+      "label": "Języki przyjęć"
+    }
   ],
   "academic": {
     "sectionLabel": "Środowisko akademickie",
@@ -165,10 +192,26 @@
     "ctaUpload": "Prześlij zdjęcia online",
     "channelsLabel": "Kanały bezpośrednie",
     "channels": [
-      { "mono": "TG", "label": "Telegram", "handle": "—" },
-      { "mono": "WA", "label": "WhatsApp", "handle": "—" },
-      { "mono": "IG", "label": "Instagram", "handle": "—" },
-      { "mono": "@", "label": "Email", "handle": "—" }
+      {
+        "mono": "TG",
+        "label": "Telegram",
+        "handle": "—"
+      },
+      {
+        "mono": "WA",
+        "label": "WhatsApp",
+        "handle": "—"
+      },
+      {
+        "mono": "IG",
+        "label": "Instagram",
+        "handle": "—"
+      },
+      {
+        "mono": "@",
+        "label": "Email",
+        "handle": "—"
+      }
     ]
   },
   "footer": {
@@ -176,10 +219,22 @@
     "navLabel": "— Nawigacja",
     "contactsLabel": "— Kontakt",
     "contacts": [
-      { "label": "Telegram", "handle": "—" },
-      { "label": "WhatsApp", "handle": "—" },
-      { "label": "Instagram", "handle": "—" },
-      { "label": "Email", "handle": "—" }
+      {
+        "label": "Telegram",
+        "handle": "—"
+      },
+      {
+        "label": "WhatsApp",
+        "handle": "—"
+      },
+      {
+        "label": "Instagram",
+        "handle": "—"
+      },
+      {
+        "label": "Email",
+        "handle": "—"
+      }
     ],
     "copyright": "© 2026 Modern Orthopaedic Reconstruction. Wszelkie prawa zastrzeżone.",
     "privacy": "Polityka prywatności",
@@ -214,22 +269,38 @@
         {
           "title": "Planowanie przedoperacyjne",
           "body": "Analiza geometrii kończyny, osi i symetrii, modelowanie korekcji oraz scenariusza rekonstrukcji do konkretnego przypadku.",
-          "tags": ["deformity analysis", "axis & alignment", "case planning"]
+          "tags": [
+            "deformity analysis",
+            "axis & alignment",
+            "case planning"
+          ]
         },
         {
           "title": "Systemy korekcji i stabilizacji",
           "body": "Nowoczesne systemy reconstruction do kontrolowanej korekcji, stabilizacji i wydłużania — jako część jednego workflow, a nie katalog implantów.",
-          "tags": ["external / internal fixation", "lengthening systems", "gradual correction"]
+          "tags": [
+            "external / internal fixation",
+            "lengthening systems",
+            "gradual correction"
+          ]
         },
         {
           "title": "Kontrola śródoperacyjna",
           "body": "Kontrola osi, symetrii i równowagi biomechanicznej podczas zabiegu w oparciu o wcześniejsze planowanie.",
-          "tags": ["intra-op control", "biomechanics", "precision"]
+          "tags": [
+            "intra-op control",
+            "biomechanics",
+            "precision"
+          ]
         },
         {
           "title": "Odbudowa funkcjonalna",
           "body": "Kontrolowana odbudowa funkcji i anatomii w przypadku deformacji, skróceń i wydłużania według przewidywalnego protokołu.",
-          "tags": ["protocol-driven", "outcome tracking", "rehabilitation"]
+          "tags": [
+            "protocol-driven",
+            "outcome tracking",
+            "rehabilitation"
+          ]
         }
       ]
     },
@@ -280,10 +351,34 @@
       "intro": "Rozwój dziedziny reconstruction łączy praktykę kliniczną, działalność akademicką i międzynarodową współpracę zawodową w jednym środowisku.",
       "quote": "Nowoczesna rekonstrukcja to nieustanny rozwój, współpraca zawodowa i postęp technologiczny.",
       "groups": [
-        { "k": "Wykształcenie", "items": ["Narodowy Uniwersytet Medyczny im. O.O. Bohomolca", "PhD — ortopedia rekonstrukcyjna"] },
-        { "k": "Środowisko kliniczne", "items": ["Uniwersytecka praktyka kliniczna", "Rekonstrukcja i wydłużanie kończyn"] },
-        { "k": "Aktywność międzynarodowa", "items": ["EFORT i konferencje branżowe", "Zawodowe środowisko networkingowe"] },
-        { "k": "Publikacje", "items": ["—", "—"] }
+        {
+          "k": "Wykształcenie",
+          "items": [
+            "Narodowy Uniwersytet Medyczny im. O.O. Bohomolca",
+            "PhD — ortopedia rekonstrukcyjna"
+          ]
+        },
+        {
+          "k": "Środowisko kliniczne",
+          "items": [
+            "Uniwersytecka praktyka kliniczna",
+            "Rekonstrukcja i wydłużanie kończyn"
+          ]
+        },
+        {
+          "k": "Aktywność międzynarodowa",
+          "items": [
+            "EFORT i konferencje branżowe",
+            "Zawodowe środowisko networkingowe"
+          ]
+        },
+        {
+          "k": "Publikacje",
+          "items": [
+            "—",
+            "—"
+          ]
+        }
       ]
     },
     "partnership": {
@@ -294,17 +389,29 @@
         {
           "title": "Dla lekarzy kierujących",
           "body": "Kierowanie pacjentów z deformacjami, skróceniem, asymetrią i następstwami urazów. Wstępna ocena przypadku i informacja zwrotna dotycząca scenariusza reconstruction.",
-          "points": ["Ocena przypadku na podstawie zdjęć", "Informacja zwrotna co do taktyki", "Opieka nad skierowanym pacjentem"]
+          "points": [
+            "Ocena przypadku na podstawie zdjęć",
+            "Informacja zwrotna co do taktyki",
+            "Opieka nad skierowanym pacjentem"
+          ]
         },
         {
           "title": "Wspólne operacje i second opinion",
           "body": "Konsultacja zawodowa w złożonych przypadkach, wspólne zabiegi oraz niezależna opinia dotycząca planowania rekonstrukcji i korekcji osi.",
-          "points": ["Second opinion", "Wspólne zabiegi", "Konsultacja dotycząca planowania"]
+          "points": [
+            "Second opinion",
+            "Wspólne zabiegi",
+            "Konsultacja dotycząca planowania"
+          ]
         },
         {
           "title": "MedTech / reconstruction ecosystem",
           "body": "Współpraca z partnerami technologicznymi wokół nowoczesnych systemów reconstruction — walidacja kliniczna, rozwój workflow i współpraca partnerska.",
-          "points": ["Walidacja kliniczna", "Rozwój workflow", "Współpraca partnerska"]
+          "points": [
+            "Walidacja kliniczna",
+            "Rozwój workflow",
+            "Współpraca partnerska"
+          ]
         }
       ],
       "ctaLabel": "Zapytanie o współpracę",
@@ -314,9 +421,21 @@
       "ctaSend": "Wyślij zapytanie",
       "channelsLabel": "Kanały bezpośrednie",
       "channels": [
-        { "mono": "TG", "label": "Telegram", "handle": "—" },
-        { "mono": "WA", "label": "WhatsApp", "handle": "—" },
-        { "mono": "@", "label": "Email", "handle": "—" }
+        {
+          "mono": "TG",
+          "label": "Telegram",
+          "handle": "—"
+        },
+        {
+          "mono": "WA",
+          "label": "WhatsApp",
+          "handle": "—"
+        },
+        {
+          "mono": "@",
+          "label": "Email",
+          "handle": "—"
+        }
       ]
     }
   }

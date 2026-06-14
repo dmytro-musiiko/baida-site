@@ -21,7 +21,9 @@
     "tech": "Technologien",
     "contacts": "Kontakt",
     "forColleagues": "Für Kollegen",
-    "menu": "Menü"
+    "forPatients": "Für Patienten",
+    "menu": "Menü",
+    "backToTop": "Nach oben"
   },
   "hero": {
     "eyebrow": "Modern Orthopaedic Reconstruction",
@@ -29,9 +31,18 @@
     "body": "Ein spezialisierter Fachbereich der modernen Orthopädie für Patienten mit Extremitätenverkürzung, Deformitäten und Asymmetrien sowie für die funktionelle und ästhetische Verlängerung von Extremitäten.",
     "ctaBook": "Termin vereinbaren",
     "stats": [
-      { "value": "—", "label": "Jahre Erfahrung" },
-      { "value": "—", "label": "Operationen" },
-      { "value": "—", "label": "wissenschaftliche Publikationen" }
+      {
+        "value": "—",
+        "label": "Jahre Erfahrung"
+      },
+      {
+        "value": "—",
+        "label": "Operationen"
+      },
+      {
+        "value": "—",
+        "label": "wissenschaftliche Publikationen"
+      }
     ]
   },
   "aboutField": {
@@ -46,7 +57,11 @@
   },
   "philosophy": {
     "pre": "Moderne Rekonstruktion ist das Zusammenspiel von ",
-    "words": ["Präzision", "Funktion", "Symmetrie"],
+    "words": [
+      "Präzision",
+      "Funktion",
+      "Symmetrie"
+    ],
     "join": ", ",
     "lastJoin": " und ",
     "end": ".",
@@ -109,10 +124,22 @@
     "credSpecItalic": "Achskorrektur"
   },
   "statsBar": [
-    { "value": "—", "label": "Jahre Praxis" },
-    { "value": "—", "label": "Rekonstruktionen" },
-    { "value": "—", "label": "Wissenschaftliche Publikationen" },
-    { "value": "—", "label": "Sprachen in der Sprechstunde" }
+    {
+      "value": "—",
+      "label": "Jahre Praxis"
+    },
+    {
+      "value": "—",
+      "label": "Rekonstruktionen"
+    },
+    {
+      "value": "—",
+      "label": "Wissenschaftliche Publikationen"
+    },
+    {
+      "value": "—",
+      "label": "Sprachen in der Sprechstunde"
+    }
   ],
   "academic": {
     "sectionLabel": "Akademisches Umfeld",
@@ -165,10 +192,26 @@
     "ctaUpload": "Aufnahmen online senden",
     "channelsLabel": "Direkte Kanäle",
     "channels": [
-      { "mono": "TG", "label": "Telegram", "handle": "—" },
-      { "mono": "WA", "label": "WhatsApp", "handle": "—" },
-      { "mono": "IG", "label": "Instagram", "handle": "—" },
-      { "mono": "@", "label": "Email", "handle": "—" }
+      {
+        "mono": "TG",
+        "label": "Telegram",
+        "handle": "—"
+      },
+      {
+        "mono": "WA",
+        "label": "WhatsApp",
+        "handle": "—"
+      },
+      {
+        "mono": "IG",
+        "label": "Instagram",
+        "handle": "—"
+      },
+      {
+        "mono": "@",
+        "label": "Email",
+        "handle": "—"
+      }
     ]
   },
   "footer": {
@@ -176,10 +219,22 @@
     "navLabel": "— Navigation",
     "contactsLabel": "— Kontakt",
     "contacts": [
-      { "label": "Telegram", "handle": "—" },
-      { "label": "WhatsApp", "handle": "—" },
-      { "label": "Instagram", "handle": "—" },
-      { "label": "Email", "handle": "—" }
+      {
+        "label": "Telegram",
+        "handle": "—"
+      },
+      {
+        "label": "WhatsApp",
+        "handle": "—"
+      },
+      {
+        "label": "Instagram",
+        "handle": "—"
+      },
+      {
+        "label": "Email",
+        "handle": "—"
+      }
     ],
     "copyright": "© 2026 Modern Orthopaedic Reconstruction. Alle Rechte vorbehalten.",
     "privacy": "Datenschutzerklärung",
@@ -214,22 +269,38 @@
         {
           "title": "Präoperative Planung",
           "body": "Analyse der Extremitätengeometrie, der Achse und der Symmetrie, Modellierung der Korrektur und des Rekonstruktionsszenarios für den jeweiligen Fall.",
-          "tags": ["deformity analysis", "axis & alignment", "case planning"]
+          "tags": [
+            "deformity analysis",
+            "axis & alignment",
+            "case planning"
+          ]
         },
         {
           "title": "Korrektur- und Fixierungssysteme",
           "body": "Moderne reconstruction-Systeme für kontrollierte Korrektur, Fixierung und Verlängerung — als Teil eines einheitlichen workflow und nicht als Implantatkatalog.",
-          "tags": ["external / internal fixation", "lengthening systems", "gradual correction"]
+          "tags": [
+            "external / internal fixation",
+            "lengthening systems",
+            "gradual correction"
+          ]
         },
         {
           "title": "Intraoperative Kontrolle",
           "body": "Kontrolle von Achse, Symmetrie und biomechanischem Gleichgewicht während des Eingriffs auf Basis der vorausgehenden Planung.",
-          "tags": ["intra-op control", "biomechanics", "precision"]
+          "tags": [
+            "intra-op control",
+            "biomechanics",
+            "precision"
+          ]
         },
         {
           "title": "Funktionelle Wiederherstellung",
           "body": "Kontrollierte Wiederherstellung von Funktion und Anatomie bei Deformitäten, Verkürzungen und Verlängerung nach einem vorhersagbaren Protokoll.",
-          "tags": ["protocol-driven", "outcome tracking", "rehabilitation"]
+          "tags": [
+            "protocol-driven",
+            "outcome tracking",
+            "rehabilitation"
+          ]
         }
       ]
     },
@@ -280,10 +351,34 @@
       "intro": "Die Weiterentwicklung des reconstruction-Bereichs verbindet klinische Praxis, akademische Tätigkeit und internationalen fachlichen Austausch in einem Umfeld.",
       "quote": "Moderne Rekonstruktion bedeutet stetige Weiterentwicklung, fachlichen Austausch und technologischen Fortschritt.",
       "groups": [
-        { "k": "Ausbildung", "items": ["Bogomolez-Universität (Nationale Medizinische Universität Kyjiw)", "PhD — rekonstruktive Orthopädie"] },
-        { "k": "Klinisches Umfeld", "items": ["Universitäre klinische Praxis", "Rekonstruktion und Verlängerung von Extremitäten"] },
-        { "k": "Internationale Aktivität", "items": ["EFORT und Fachkongresse", "Fachliches Networking-Umfeld"] },
-        { "k": "Publikationen", "items": ["—", "—"] }
+        {
+          "k": "Ausbildung",
+          "items": [
+            "Bogomolez-Universität (Nationale Medizinische Universität Kyjiw)",
+            "PhD — rekonstruktive Orthopädie"
+          ]
+        },
+        {
+          "k": "Klinisches Umfeld",
+          "items": [
+            "Universitäre klinische Praxis",
+            "Rekonstruktion und Verlängerung von Extremitäten"
+          ]
+        },
+        {
+          "k": "Internationale Aktivität",
+          "items": [
+            "EFORT und Fachkongresse",
+            "Fachliches Networking-Umfeld"
+          ]
+        },
+        {
+          "k": "Publikationen",
+          "items": [
+            "—",
+            "—"
+          ]
+        }
       ]
     },
     "partnership": {
@@ -294,17 +389,29 @@
         {
           "title": "Für überweisende Ärzte",
           "body": "Überweisung von Patienten mit Deformitäten, Verkürzungen, Asymmetrien und Traumafolgen. Vorläufige Fallbeurteilung und Rückmeldung zum reconstruction-Szenario.",
-          "points": ["Fallbeurteilung anhand von Aufnahmen", "Rückmeldung zur Vorgehensweise", "Begleitung des überwiesenen Patienten"]
+          "points": [
+            "Fallbeurteilung anhand von Aufnahmen",
+            "Rückmeldung zur Vorgehensweise",
+            "Begleitung des überwiesenen Patienten"
+          ]
         },
         {
           "title": "Gemeinsame Operationen und second opinion",
           "body": "Fachliche Beratung in komplexen Fällen, gemeinsame Eingriffe und eine unabhängige Einschätzung zur Planung der Rekonstruktion und Achskorrektur.",
-          "points": ["Second opinion", "Gemeinsame Eingriffe", "Beratung zur Planung"]
+          "points": [
+            "Second opinion",
+            "Gemeinsame Eingriffe",
+            "Beratung zur Planung"
+          ]
         },
         {
           "title": "MedTech / reconstruction ecosystem",
           "body": "Zusammenarbeit mit Technologiepartnern rund um moderne reconstruction-Systeme — klinische Erprobung, Entwicklung des workflow und fachliche Kooperation.",
-          "points": ["Klinische Erprobung", "Entwicklung des workflow", "Partnerschaftliche Zusammenarbeit"]
+          "points": [
+            "Klinische Erprobung",
+            "Entwicklung des workflow",
+            "Partnerschaftliche Zusammenarbeit"
+          ]
         }
       ],
       "ctaLabel": "Anfrage zur Zusammenarbeit",
@@ -314,9 +421,21 @@
       "ctaSend": "Anfrage senden",
       "channelsLabel": "Direkte Kanäle",
       "channels": [
-        { "mono": "TG", "label": "Telegram", "handle": "—" },
-        { "mono": "WA", "label": "WhatsApp", "handle": "—" },
-        { "mono": "@", "label": "Email", "handle": "—" }
+        {
+          "mono": "TG",
+          "label": "Telegram",
+          "handle": "—"
+        },
+        {
+          "mono": "WA",
+          "label": "WhatsApp",
+          "handle": "—"
+        },
+        {
+          "mono": "@",
+          "label": "Email",
+          "handle": "—"
+        }
       ]
     }
   }

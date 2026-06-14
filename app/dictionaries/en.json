@@ -21,7 +21,9 @@
     "tech": "Technology",
     "contacts": "Contacts",
     "forColleagues": "For colleagues",
-    "menu": "Menu"
+    "forPatients": "For patients",
+    "menu": "Menu",
+    "backToTop": "Back to top"
   },
   "hero": {
     "eyebrow": "Modern Orthopaedic Reconstruction",
@@ -29,9 +31,18 @@
     "body": "A specialised field of modern orthopaedics for patients with limb shortening, deformities and asymmetry, as well as for functional and aesthetic limb lengthening.",
     "ctaBook": "Book now",
     "stats": [
-      { "value": "—", "label": "years of experience" },
-      { "value": "—", "label": "surgeries" },
-      { "value": "—", "label": "scientific publications" }
+      {
+        "value": "—",
+        "label": "years of experience"
+      },
+      {
+        "value": "—",
+        "label": "surgeries"
+      },
+      {
+        "value": "—",
+        "label": "scientific publications"
+      }
     ]
   },
   "aboutField": {
@@ -46,7 +57,11 @@
   },
   "philosophy": {
     "pre": "Modern reconstruction is the union of ",
-    "words": ["precision", "function", "symmetry"],
+    "words": [
+      "precision",
+      "function",
+      "symmetry"
+    ],
     "join": ", ",
     "lastJoin": " and ",
     "end": ".",
@@ -109,10 +124,22 @@
     "credSpecItalic": "axis correction"
   },
   "statsBar": [
-    { "value": "—", "label": "Years in practice" },
-    { "value": "—", "label": "Reconstructions" },
-    { "value": "—", "label": "Scientific publications" },
-    { "value": "—", "label": "Languages of consultation" }
+    {
+      "value": "—",
+      "label": "Years in practice"
+    },
+    {
+      "value": "—",
+      "label": "Reconstructions"
+    },
+    {
+      "value": "—",
+      "label": "Scientific publications"
+    },
+    {
+      "value": "—",
+      "label": "Languages of consultation"
+    }
   ],
   "academic": {
     "sectionLabel": "Academic environment",
@@ -165,10 +192,26 @@
     "ctaUpload": "Submit imaging online",
     "channelsLabel": "Direct channels",
     "channels": [
-      { "mono": "TG", "label": "Telegram", "handle": "—" },
-      { "mono": "WA", "label": "WhatsApp", "handle": "—" },
-      { "mono": "IG", "label": "Instagram", "handle": "—" },
-      { "mono": "@", "label": "Email", "handle": "—" }
+      {
+        "mono": "TG",
+        "label": "Telegram",
+        "handle": "—"
+      },
+      {
+        "mono": "WA",
+        "label": "WhatsApp",
+        "handle": "—"
+      },
+      {
+        "mono": "IG",
+        "label": "Instagram",
+        "handle": "—"
+      },
+      {
+        "mono": "@",
+        "label": "Email",
+        "handle": "—"
+      }
     ]
   },
   "footer": {
@@ -176,10 +219,22 @@
     "navLabel": "— Navigation",
     "contactsLabel": "— Contacts",
     "contacts": [
-      { "label": "Telegram", "handle": "—" },
-      { "label": "WhatsApp", "handle": "—" },
-      { "label": "Instagram", "handle": "—" },
-      { "label": "Email", "handle": "—" }
+      {
+        "label": "Telegram",
+        "handle": "—"
+      },
+      {
+        "label": "WhatsApp",
+        "handle": "—"
+      },
+      {
+        "label": "Instagram",
+        "handle": "—"
+      },
+      {
+        "label": "Email",
+        "handle": "—"
+      }
     ],
     "copyright": "© 2026 Modern Orthopaedic Reconstruction. All rights reserved.",
     "privacy": "Privacy policy",
@@ -214,22 +269,38 @@
         {
           "title": "Pre-operative planning",
           "body": "Analysis of limb geometry, axis and symmetry; modelling of correction and the reconstruction scenario for the specific case.",
-          "tags": ["deformity analysis", "axis & alignment", "case planning"]
+          "tags": [
+            "deformity analysis",
+            "axis & alignment",
+            "case planning"
+          ]
         },
         {
           "title": "Correction and fixation systems",
           "body": "Modern reconstruction systems for controlled correction, fixation and lengthening — as part of a single workflow, not an implant catalogue.",
-          "tags": ["external / internal fixation", "lengthening systems", "gradual correction"]
+          "tags": [
+            "external / internal fixation",
+            "lengthening systems",
+            "gradual correction"
+          ]
         },
         {
           "title": "Intra-operative control",
           "body": "Control of axis, symmetry and biomechanical balance during the procedure, guided by the pre-operative plan.",
-          "tags": ["intra-op control", "biomechanics", "precision"]
+          "tags": [
+            "intra-op control",
+            "biomechanics",
+            "precision"
+          ]
         },
         {
           "title": "Functional recovery",
           "body": "Controlled restoration of function and anatomy in deformities, shortening and lengthening, following a predictable protocol.",
-          "tags": ["protocol-driven", "outcome tracking", "rehabilitation"]
+          "tags": [
+            "protocol-driven",
+            "outcome tracking",
+            "rehabilitation"
+          ]
         }
       ]
     },
@@ -280,10 +351,34 @@
       "intro": "The advancement of the reconstruction field brings together clinical practice, academic work and international professional exchange in a single environment.",
       "quote": "Modern reconstruction is continuous development, professional exchange and technological progress.",
       "groups": [
-        { "k": "Education", "items": ["Bogomolets National Medical University", "PhD — reconstructive orthopaedics"] },
-        { "k": "Clinical environment", "items": ["University clinical practice", "Limb reconstruction and lengthening"] },
-        { "k": "International activity", "items": ["EFORT and specialist conferences", "Professional networking environment"] },
-        { "k": "Publications", "items": ["—", "—"] }
+        {
+          "k": "Education",
+          "items": [
+            "Bogomolets National Medical University",
+            "PhD — reconstructive orthopaedics"
+          ]
+        },
+        {
+          "k": "Clinical environment",
+          "items": [
+            "University clinical practice",
+            "Limb reconstruction and lengthening"
+          ]
+        },
+        {
+          "k": "International activity",
+          "items": [
+            "EFORT and specialist conferences",
+            "Professional networking environment"
+          ]
+        },
+        {
+          "k": "Publications",
+          "items": [
+            "—",
+            "—"
+          ]
+        }
       ]
     },
     "partnership": {
@@ -294,17 +389,29 @@
         {
           "title": "Referring physicians",
           "body": "Referral of patients with deformities, shortening, asymmetry and the consequences of trauma. Preliminary case assessment and feedback on the reconstruction scenario.",
-          "points": ["Case assessment from imaging", "Feedback on the approach", "Support for the referred patient"]
+          "points": [
+            "Case assessment from imaging",
+            "Feedback on the approach",
+            "Support for the referred patient"
+          ]
         },
         {
           "title": "Joint surgery and second opinion",
           "body": "Professional consultation in complex cases, joint procedures and an independent opinion on reconstruction and axis-correction planning.",
-          "points": ["Second opinion", "Joint procedures", "Planning consultation"]
+          "points": [
+            "Second opinion",
+            "Joint procedures",
+            "Planning consultation"
+          ]
         },
         {
           "title": "MedTech / reconstruction ecosystem",
           "body": "Engagement with technology partners around modern reconstruction systems — clinical evaluation, workflow development and professional collaboration.",
-          "points": ["Clinical evaluation", "Workflow development", "Partner engagement"]
+          "points": [
+            "Clinical evaluation",
+            "Workflow development",
+            "Partner engagement"
+          ]
         }
       ],
       "ctaLabel": "Request a collaboration",
@@ -314,9 +421,21 @@
       "ctaSend": "Send request",
       "channelsLabel": "Direct channels",
       "channels": [
-        { "mono": "TG", "label": "Telegram", "handle": "—" },
-        { "mono": "WA", "label": "WhatsApp", "handle": "—" },
-        { "mono": "@", "label": "Email", "handle": "—" }
+        {
+          "mono": "TG",
+          "label": "Telegram",
+          "handle": "—"
+        },
+        {
+          "mono": "WA",
+          "label": "WhatsApp",
+          "handle": "—"
+        },
+        {
+          "mono": "@",
+          "label": "Email",
+          "handle": "—"
+        }
       ]
     }
   }
