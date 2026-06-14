@@ -1,8 +1,8 @@
 const stats = [
-  { value: "14+", label: "Років практики" },
-  { value: "200+", label: "Реконструкцій" },
-  { value: "Rizzoli", label: "Bologna fellow" },
-  { value: "4", label: "Мови прийому" },
+  { value: "—", label: "Років практики" },
+  { value: "—", label: "Реконструкцій" },
+  { value: "—", label: "Наукових публікацій" },
+  { value: "—", label: "Мови прийому" },
 ];
 
 export default function StatsBar() {

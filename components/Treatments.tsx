@@ -1,85 +1,81 @@
-import LegLengthening from "./icons/LegLengthening";
-import LegDeformity from "./icons/LegDeformity";
-import LegSymmetry from "./icons/LegSymmetry";
-import Technology from "./icons/Technology";
-
 const cards = [
   {
-    title: "Подовження",
-    body: "Поступове подовження стегна або гомілки за методикою Ілізарова та з PRECICE-стрижнями.",
-    tags: ["FEMUR", "TIBIA", "PRECICE"],
-    meta: "Δ +4.2 cm",
-    Icon: LegLengthening,
+    category: "Реконструктивна ортопедія",
+    title: "Подовження кінцівок",
+    image: "/treatment-tech.jpg",
   },
   {
+    category: "Реконструктивна ортопедія",
     title: "Корекція деформацій",
-    body: "Виправлення варусних, вальгусних та ротаційних деформацій за CORA-методом.",
-    tags: ["VARUS / VALGUS", "CORA", "OSTEOTOMY"],
-    meta: "α 14°",
-    Icon: LegDeformity,
+    image: "/A9A8DB47-608C-4FAB-BEF1-C7D85351E807.png",
   },
   {
+    category: "Реконструктивна ортопедія",
     title: "Відновлення симетрії",
-    body: "Усунення анізомелії після травм, інфекцій або вродженого скорочення — відновлення осі та ходи.",
-    tags: ["ANISOMELIA", "GAIT", "PELVIC AXIS"],
-    meta: "Δ 3.6 cm",
-    Icon: LegSymmetry,
+    image: "/treatment-xray.jpg",
   },
   {
-    title: "Reconstruction-технології",
-    body: "Магнітні інтрамедулярні стрижні, 3D-планування, біосумісні титанові імпланти.",
-    tags: ["PRECICE 2.2", "3D PLAN", "MAGNETIC"],
-    meta: "Ti-6Al-4V",
-    Icon: Technology,
+    category: "Реконструктивна ортопедія",
+    title: "Сучасні реконструктивні технології",
+    image: "/treatment-legs.jpg",
   },
 ];
 
 export default function Treatments() {
   return (
-    <section id="treatments" className="bg-cream py-24 sm:py-32">
+    <section id="treatments" className="bg-tan-dark py-14 sm:py-20">
       <div className="mx-auto max-w-[1440px] px-8">
-        {/* Centered mixed-weight heading (websyvet-style) */}
-        <div className="text-center mb-4 label-caps-sm text-ink-muted">02 — Напрямки лікування</div>
-        <h2 className="text-center font-sans leading-[1.02] tracking-[-0.02em] text-[clamp(2.5rem,6vw,5rem)] mb-6 max-w-4xl mx-auto">
-          <span className="font-light">Чотири напрямки сучасної </span>
-          <span className="font-extrabold">реконструкції</span>
-          <span className="font-serif italic font-medium text-tan">.</span>
-        </h2>
-        <p className="text-center text-ink-muted max-w-2xl mx-auto mb-20 leading-relaxed">
-          Кожен напрямок — окрема методологія, що поєднує доказову ортопедію, сучасні
-          імпланти та персональний план відновлення.
-        </p>
+        {/* Header */}
+        <div className="mb-10">
+          <div className="label-caps-sm text-white/55 mb-6">02 — Напрямки лікування</div>
+          <h2 className="font-sans text-white leading-[1.05] tracking-[-0.02em] text-[clamp(1.5rem,3vw,2.75rem)] whitespace-nowrap">
+            <span className="font-light">Чотири напрямки сучасної </span>
+            <span className="font-extrabold">реконструкції</span>
+            <span className="font-serif italic font-medium text-tan">.</span>
+          </h2>
+        </div>
 
-        {/* 2×2 dark cards with offset pads (websyvet signature) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
+        {/* 2×2 image grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
           {cards.map((card) => (
-            <div key={card.title} className="relative">
-              {/* Offset pad */}
-              <div aria-hidden className="absolute inset-0 translate-x-3 translate-y-3 lg:translate-x-4 lg:translate-y-4 bg-tan rounded-[20px]" />
-              {/* Main card */}
-              <article className="relative bg-tan-dark text-white rounded-[20px] p-10 lg:p-12 flex flex-col min-h-[360px]">
-                <div className="flex items-start justify-between mb-8">
-                  <div className="w-14 h-14 border border-white/30 rounded-full flex items-center justify-center">
-                    <card.Icon className="h-7 w-auto text-white" />
-                  </div>
-                  <span className="label-caps-sm text-white/55 font-mono">{card.meta}</span>
+            <a
+              key={card.title}
+              href={`#treatment-${card.title}`}
+              className="group relative block aspect-[16/10] overflow-hidden rounded-[8px] bg-navy-90"
+            >
+              {/* Image or placeholder */}
+              {card.image ? (
+                <div className="absolute inset-0 flex items-center justify-center p-5 lg:p-8">
+                  <img
+                    src={card.image}
+                    alt={card.title}
+                    className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-[1.03]"
+                  />
                 </div>
-                <h3 className="font-sans font-bold text-2xl lg:text-3xl leading-tight tracking-[-0.015em] mb-4">
+              ) : (
+                <div
+                  aria-hidden
+                  className="absolute inset-0 bg-gradient-to-br from-navy-90 to-tan-dark"
+                  style={{
+                    backgroundImage:
+                      "repeating-linear-gradient(135deg, rgba(255,255,255,0.02) 0px, rgba(255,255,255,0.02) 1px, transparent 1px, transparent 12px)",
+                  }}
+                />
+              )}
+
+              {/* Dark overlay for legibility */}
+              <div
+                aria-hidden
+                className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/10 to-black/55 group-hover:from-black/40 group-hover:to-black/65 transition-colors"
+              />
+
+              {/* Title bottom-center */}
+              <div className="absolute inset-x-6 bottom-5 flex justify-center text-center">
+                <h3 className="font-sans font-light text-white text-xl lg:text-2xl tracking-tight">
                   {card.title}
                 </h3>
-                <p className="text-white/75 leading-relaxed text-[15px] mb-6 flex-1">{card.body}</p>
-                <div className="flex flex-wrap gap-2">
-                  {card.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="label-caps-sm text-white/70 border border-white/25 px-3 py-1.5 rounded-full"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </article>
-            </div>
+              </div>
+            </a>
           ))}
         </div>
       </div>

@@ -54,9 +54,9 @@ export default function Nav() {
             Baida<span className="text-tan">.</span>
           </span>
           <span className="label-caps-sm text-white/65 font-semibold mt-1.5 leading-tight">
-            Modern Orthopaedic
+            Реконструктивна
             <br />
-            Reconstruction
+            ортопедія
           </span>
         </a>
 

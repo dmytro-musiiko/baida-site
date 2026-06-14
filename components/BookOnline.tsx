@@ -1,8 +1,8 @@
 const channels = [
-  { mono: "TG", label: "Telegram", handle: "@drbaida_clinic" },
-  { mono: "WA", label: "WhatsApp", handle: "+380 67 432 18 09" },
-  { mono: "IG", label: "Instagram", handle: "@dr.baida.ortho" },
-  { mono: "@", label: "Email", handle: "case@drbaida.ua" },
+  { mono: "TG", label: "Telegram", handle: "—" },
+  { mono: "WA", label: "WhatsApp", handle: "—" },
+  { mono: "IG", label: "Instagram", handle: "—" },
+  { mono: "@", label: "Email", handle: "—" },
 ];
 
 export default function BookOnline() {
@@ -21,7 +21,7 @@ export default function BookOnline() {
             <div className="lg:col-span-7">
               <div className="flex items-center gap-4 mb-10 label-caps-sm text-white/70">
                 <span className="w-1.5 h-1.5 rounded-full bg-white" />
-                <span>04 — Зверніться</span>
+                <span>06 — Зверніться</span>
                 <span className="w-16 h-px bg-white/30" />
               </div>
 
@@ -31,16 +31,16 @@ export default function BookOnline() {
               </h2>
 
               <p className="mt-8 text-white/85 leading-relaxed max-w-xl text-[15px]">
-                Надішліть свої знімки та коротко опишіть ситуацію — протягом 7 днів ви отримаєте
-                попередній план лікування з прогнозом термінів і коментарями щодо подальших кроків.
+                Надішліть свої знімки та коротко опишіть ситуацію — ви отримаєте попередній план
+                лікування з коментарями щодо подальших кроків.
               </p>
 
               <div className="mt-10 flex flex-col sm:flex-row gap-3">
                 <a
-                  href="mailto:case@drbaida.ua"
+                  href="#"
                   className="group inline-flex items-center justify-between gap-6 btn-metallic text-white px-7 py-5 label-caps min-w-[280px]"
                 >
-                  Записатись на прийом
+                  Записатись на консультацію
                   <span className="transition-transform group-hover:translate-x-1">→</span>
                 </a>
                 <a
@@ -57,7 +57,7 @@ export default function BookOnline() {
             <div className="lg:col-span-5">
               <div className="flex items-center gap-4 mb-8 label-caps-sm text-white/70">
                 <span className="w-12 h-px bg-white/30" />
-                <span>Direct channels</span>
+                <span>Прямі канали</span>
               </div>
 
               <div className="divide-y divide-white/15 border-y border-white/15">

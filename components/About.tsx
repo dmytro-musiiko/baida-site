@@ -1,5 +1,6 @@
 const principles = [
   {
+    num: "01",
     icon: (
       <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round">
         <circle cx="14" cy="14" r="10" />
@@ -11,9 +12,11 @@ const principles = [
       </svg>
     ),
     label: "Точність",
-    body: "Індивідуальне планування кожного випадку реконструкції — від геометрії осі до прогнозу терміну носіння апарату.",
+    body: "Індивідуальне планування кожного випадку реконструкції — від геометрії осі до контролю симетрії кінцівок. Жодних шаблонних рішень.",
+    proof: "Індивідуальне планування",
   },
   {
+    num: "02",
     icon: (
       <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round">
         <path d="M14 4 L24 8 L24 16 Q24 22 14 26 Q4 22 4 16 L4 8 Z" />
@@ -21,9 +24,11 @@ const principles = [
       </svg>
     ),
     label: "Досвід",
-    body: "Спеціалізована reconstruction-практика, академічна діяльність і міжнародна професійна взаємодія.",
+    body: "Вузька реконструктивна практика, академічна діяльність і міжнародна професійна взаємодія у сучасній реконструктивній ортопедії.",
+    proof: "Вузька спеціалізація",
   },
   {
+    num: "03",
     icon: (
       <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round">
         <rect x="6" y="6" width="16" height="16" />
@@ -35,13 +40,14 @@ const principles = [
       </svg>
     ),
     label: "Технології",
-    body: "Сучасні reconstruction-системи — внутрішньокісткові магнітні стрижні, 3D-планування, малоінвазивні доступи.",
+    body: "Сучасні reconstruction-системи, планування корекції та малоінвазивні доступи як частина reconstruction workflow.",
+    proof: "Reconstruction-системи",
   },
 ];
 
 export default function About() {
   return (
-    <section id="about-doctor" className="bg-cream pb-24 sm:pb-32">
+    <section id="about-doctor" className="bg-cream pt-20 pb-24 sm:pb-32">
       <div className="mx-auto max-w-[1440px] px-8">
         {/* Section header */}
         <div className="flex items-center gap-4 mb-16 label-caps-sm text-ink-muted">
@@ -50,15 +56,36 @@ export default function About() {
           <span>Про лікаря</span>
         </div>
 
+        {/* Lead statement */}
+        <h2 className="font-sans leading-[1.1] tracking-[-0.02em] text-[clamp(1.5rem,3vw,2.5rem)] max-w-3xl mb-14">
+          <span className="font-light">Три принципи, на яких тримається кожна </span>
+          <span className="font-extrabold">реконструкція</span>
+          <span className="font-serif italic font-medium text-tan">.</span>
+        </h2>
+
         {/* 3 principle blocks */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-24 pb-24 border-b border-hairline">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-hairline mb-24 border-y border-hairline">
           {principles.map((p) => (
-            <div key={p.label} className="flex flex-col">
-              <div className="w-14 h-14 border border-hairline flex items-center justify-center text-ink mb-6">
-                {p.icon}
+            <div
+              key={p.label}
+              className="group relative flex flex-col bg-cream p-8 lg:p-10 transition-colors hover:bg-paper"
+            >
+              {/* Top accent line */}
+              <span
+                aria-hidden
+                className="absolute top-0 left-0 h-px w-full bg-tan scale-x-0 origin-left transition-transform duration-500 group-hover:scale-x-100"
+              />
+              <div className="flex items-start justify-between mb-8">
+                <div className="w-14 h-14 border border-hairline flex items-center justify-center text-ink transition-colors group-hover:border-tan group-hover:text-tan-dark">
+                  {p.icon}
+                </div>
+                <span className="font-serif italic text-3xl text-hairline-soft leading-none">{p.num}</span>
               </div>
               <h3 className="font-sans font-semibold text-xl mb-3 tracking-tight">{p.label}</h3>
-              <p className="text-ink-muted text-[15px] leading-relaxed">{p.body}</p>
+              <p className="text-ink-muted text-[15px] leading-relaxed mb-6">{p.body}</p>
+              <div className="mt-auto pt-5 border-t border-hairline-soft label-caps-sm text-tan-dark">
+                {p.proof}
+              </div>
             </div>
           ))}
         </div>
@@ -83,11 +110,11 @@ export default function About() {
                   <span>03 — Dr. Maksym Baida</span>
                 </div>
                 <div className="absolute bottom-6 left-6 bg-cream text-ink px-5 py-3 rounded-xl border border-hairline-soft">
-                  <div className="label-caps-sm text-tan-dark mb-1">— Practice</div>
+                  <div className="label-caps-sm text-tan-dark mb-1">— Практика</div>
                   <div className="font-sans font-semibold text-sm leading-snug">
-                    Reconstructive Orthopaedics
+                    Реконструктивна ортопедія
                     <br />
-                    · Limb Lengthening
+                    · Подовження кінцівок
                   </div>
                 </div>
               </div>
@@ -101,11 +128,11 @@ export default function About() {
               <span className="font-serif italic font-medium text-tan">PhD</span>
               <span className="font-light"> — </span>
               <br className="hidden sm:block" />
-              <span className="font-extrabold">реконструктивний ортопед.</span>
+              <span className="font-extrabold">ортопед-травматолог, реконструктивний хірург.</span>
             </h2>
 
             <div className="flex flex-wrap gap-2 mb-10">
-              {["PhD, Ortho", "14+ років практики", "ASAMI Member", "EFORT 2024", "SICOT Fellow", "200+ реконструкцій"].map((tag) => (
+              {["Реконструкція після травм", "Корекція деформацій", "Подовження кінцівок", "Сучасні reconstruction-технології"].map((tag) => (
                 <span
                   key={tag}
                   className="label-caps-sm bg-paper text-ink-muted px-4 py-2 border border-hairline-soft"
@@ -117,16 +144,15 @@ export default function About() {
 
             <div className="space-y-5 text-ink leading-relaxed max-w-2xl">
               <p>
-                Спеціалізуюся виключно на{" "}
-                <span className="font-serif italic text-tan-dark">реконструкції нижніх кінцівок</span> —
-                це не широка ортопедія, а вузький напрямок, у якому я веду пацієнтів від першої оцінки
-                до повного повернення до активного життя.
+                Спеціалізується на{" "}
+                <span className="font-semibold text-tan-dark">сучасній реконструктивній ортопедії</span>,
+                корекції деформацій та подовженні кінцівок.
               </p>
               <p className="text-ink-muted">
-                Робота — це поєднання класичної школи Ілізарова та найсучасніших технологій: магнітних
-                інтрамедулярних стрижнів, 3D-планування остеотомій, малоінвазивних доступів. За кожним
-                випадком стоїть детальний аналіз геометрії кінцівки, біомеханіки ходи та індивідуального
-                графіка реабілітації — без шаблонних рішень.
+                Основні напрямки роботи включають лікування наслідків травм, реконструкцію складних
+                ортопедичних дефектів, відновлення симетрії та сучасні підходи до функціонального й
+                естетичного відновлення кінцівок. Поєднує клінічну практику, академічну діяльність та
+                сучасні реконструктивні технології.
               </p>
             </div>
 
@@ -136,20 +162,17 @@ export default function About() {
                 <div className="label-caps-sm text-ink-muted mb-2">Освіта</div>
                 <div className="text-sm font-medium">
                   НМУ ім. О.О. Богомольця ·{" "}
-                  <span className="font-serif italic text-ink-muted font-normal">PhD 2016</span>
+                  <span className="font-serif italic text-ink-muted font-normal">PhD</span>
                 </div>
               </div>
               <div>
                 <div className="label-caps-sm text-ink-muted mb-2">Стажування</div>
-                <div className="text-sm font-medium">
-                  Rizzoli Institute ·{" "}
-                  <span className="font-serif italic text-ink-muted font-normal">Bologna, IT</span>
-                </div>
+                <div className="text-sm font-medium text-ink-muted">—</div>
               </div>
               <div>
                 <div className="label-caps-sm text-ink-muted mb-2">Спеціалізація</div>
                 <div className="text-sm font-medium">
-                  Limb reconstruction ·{" "}
+                  Реконструкція кінцівок ·{" "}
                   <span className="font-serif italic text-ink-muted font-normal">корекція осі</span>
                 </div>
               </div>

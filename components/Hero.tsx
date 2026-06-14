@@ -62,9 +62,9 @@ export default function Hero() {
               </a>
               <a
                 href="#case-evaluation"
-                className="group inline-flex items-center gap-2 label-caps text-white/80 hover:text-white transition-colors"
+                className="group inline-flex items-center justify-between gap-6 border border-white/30 hover:border-white text-white px-8 py-4 label-caps transition-colors min-w-[280px]"
               >
-                Або подати запит на оцінку випадку
+                Подати запит на оцінку випадку
                 <span className="transition-transform group-hover:translate-x-1">→</span>
               </a>
             </div>
@@ -75,9 +75,9 @@ export default function Hero() {
         <div className="absolute bottom-0 left-0 right-0 z-20 bg-black/30 backdrop-blur-md border-t border-white/15">
           <div className="grid grid-cols-3 md:grid-cols-4 divide-x divide-white/15">
             {[
-              { value: "15", label: "років досвіду" },
-              { value: "1500+", label: "операцій" },
-              { value: "30+", label: "наукових публікацій" },
+              { value: "—", label: "років досвіду" },
+              { value: "—", label: "операцій" },
+              { value: "—", label: "наукових публікацій" },
             ].map((stat) => (
               <div
                 key={stat.label}
