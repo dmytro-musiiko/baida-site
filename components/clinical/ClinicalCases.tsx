@@ -45,19 +45,31 @@ export default function ClinicalCases() {
           <span>Клінічні випадки та техніки</span>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-end mb-14">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center mb-14">
           <div className="lg:col-span-8">
             <h2 className="font-sans leading-[1.05] tracking-[-0.02em] text-[clamp(2rem,4vw,3.25rem)]">
               <span className="font-light">Розбір випадків для </span>
               <span className="font-extrabold">професійної спільноти</span>
               <span className="font-serif italic font-medium text-tan">.</span>
             </h2>
-          </div>
-          <div className="lg:col-span-4">
-            <p className="text-white/70 leading-relaxed text-[15px]">
+            <p className="mt-7 text-white/70 leading-relaxed text-[15px] max-w-xl">
               Структуровані клінічні випадки: показання, планування, техніка, результат.
               Повні матеріали та зображення — за запитом після професійного погодження.
             </p>
+          </div>
+
+          {/* Reconstruction system visual */}
+          <div className="lg:col-span-4">
+            <div className="relative aspect-square overflow-hidden rounded-[20px] border border-white/15 bg-navy-90">
+              <img
+                src="/orthonail.png"
+                alt="Інтрамедулярна фіксація — reconstruction system"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+              <div className="absolute bottom-4 left-4 label-caps-sm text-white/80 bg-black/40 backdrop-blur-sm px-3 py-1.5 rounded">
+                Fixation system
+              </div>
+            </div>
           </div>
         </div>
 

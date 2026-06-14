@@ -36,15 +36,13 @@ export default function Ecosystem() {
           <span>Reconstruction ecosystem</span>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start mb-16">
-          <div className="lg:col-span-5">
-            <h2 className="font-sans leading-[1.05] tracking-[-0.02em] text-[clamp(2rem,4vw,3.25rem)]">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center mb-16">
+          <div className="lg:col-span-7">
+            <h2 className="font-sans leading-[1.05] tracking-[-0.02em] text-[clamp(2rem,4vw,3.25rem)] mb-8">
               <span className="font-light">Реконструкція як </span>
               <span className="font-extrabold">єдиний workflow</span>
               <span className="font-serif italic font-medium text-tan">.</span>
             </h2>
-          </div>
-          <div className="lg:col-span-7">
             <div className="space-y-5 text-ink leading-relaxed text-lg max-w-2xl">
               <p>
                 Для професійної аудиторії reconstruction-напрямок — це не окрема послуга, а
@@ -56,6 +54,23 @@ export default function Ecosystem() {
                 як інструмент precision-хірургії. Технології розширюють можливості реконструкції —
                 не замінюючи клінічне рішення хірурга.
               </p>
+            </div>
+          </div>
+
+          {/* Knee geometry visual */}
+          <div className="lg:col-span-5">
+            <div className="relative">
+              <div aria-hidden className="absolute inset-0 translate-x-4 translate-y-4 bg-tan rounded-[20px]" />
+              <div className="relative aspect-[4/3] overflow-hidden rounded-[20px] border border-hairline-soft">
+                <img
+                  src="/clinical-knee.jpg"
+                  alt="Геометрія колінного суглоба — reconstruction planning overlay"
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+                <div className="absolute bottom-4 left-4 label-caps-sm text-ink/70 bg-cream/85 backdrop-blur-sm px-3 py-1.5 rounded">
+                  Planning geometry
+                </div>
+              </div>
             </div>
           </div>
         </div>

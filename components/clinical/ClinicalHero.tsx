@@ -1,14 +1,28 @@
+import Image from "next/image";
+
 export default function ClinicalHero() {
   return (
     <section className="relative">
       <div className="relative min-h-[88vh] overflow-hidden surface-navy bg-tan-dark flex items-start">
-        {/* Geometric reconstruction overlay */}
+        {/* Background — lower-limb reconstruction X-ray, cooled to the steel palette */}
+        <Image
+          src="/clinical-hero.jpg"
+          alt=""
+          aria-hidden
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-right"
+          style={{ filter: "hue-rotate(160deg) saturate(0.8) brightness(0.9)" }}
+        />
+
+        {/* Navy readability gradient — heavier on the left, lets the X-ray show on the right */}
         <div
           aria-hidden
-          className="absolute inset-0 opacity-[0.5]"
+          className="absolute inset-0"
           style={{
             backgroundImage:
-              "linear-gradient(to right, rgba(10,25,41,0.95) 0%, rgba(10,25,41,0.85) 45%, rgba(10,25,41,0.6) 100%)",
+              "linear-gradient(to right, rgba(10,25,41,0.96) 0%, rgba(10,25,41,0.88) 42%, rgba(10,25,41,0.55) 78%, rgba(10,25,41,0.35) 100%)",
           }}
         />
         <div
