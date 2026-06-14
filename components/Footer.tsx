@@ -1,10 +1,11 @@
 const navLinks = [
   { label: "Головна", href: "/" },
-  { label: "Про напрямок", href: "#about-field" },
-  { label: "Напрямки", href: "#treatments" },
-  { label: "Про лікаря", href: "#about-doctor" },
-  { label: "Технології", href: "#technology" },
-  { label: "Контакти", href: "#consultation" },
+  { label: "Про напрямок", href: "/#about-field" },
+  { label: "Напрямки", href: "/#treatments" },
+  { label: "Про лікаря", href: "/#about-doctor" },
+  { label: "Технології", href: "/#technology" },
+  { label: "Контакти", href: "/#consultation" },
+  { label: "Для колег", href: "/clinical" },
 ];
 
 const contacts = [

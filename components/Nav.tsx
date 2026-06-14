@@ -1,10 +1,10 @@
 const navLinks = [
-  { label: "Головна", href: "/", active: true },
-  { label: "Про напрямок", href: "#about-field" },
-  { label: "Напрямки", href: "#treatments" },
-  { label: "Про лікаря", href: "#about-doctor" },
-  { label: "Технології", href: "#technology" },
-  { label: "Контакти", href: "#consultation" },
+  { label: "Головна", href: "/" },
+  { label: "Про напрямок", href: "/#about-field" },
+  { label: "Напрямки", href: "/#treatments" },
+  { label: "Про лікаря", href: "/#about-doctor" },
+  { label: "Технології", href: "/#technology" },
+  { label: "Контакти", href: "/#consultation" },
 ];
 
 const locales = ["UA", "EN", "DE", "PL"];
@@ -44,7 +44,7 @@ function LocaleDropdown() {
   );
 }
 
-export default function Nav() {
+export default function Nav({ current = "/" }: { current?: string }) {
   return (
     <header className="bg-black/25 backdrop-blur-md border-b border-white/10">
       <div className="flex items-stretch">
@@ -62,20 +62,23 @@ export default function Nav() {
 
         {/* Main nav */}
         <nav className="flex items-center gap-8 px-8 flex-1">
-          {navLinks.map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              className={`label-caps text-[11.5px] font-semibold relative py-2 transition-colors ${
-                link.active ? "text-white" : "text-white/70 hover:text-white"
-              }`}
-            >
-              {link.label}
-              {link.active && (
-                <span className="absolute left-0 right-0 -bottom-px h-px bg-tan" />
-              )}
-            </a>
-          ))}
+          {navLinks.map((link) => {
+            const active = link.href === current;
+            return (
+              <a
+                key={link.label}
+                href={link.href}
+                className={`label-caps text-[11.5px] font-semibold relative py-2 transition-colors ${
+                  active ? "text-white" : "text-white/70 hover:text-white"
+                }`}
+              >
+                {link.label}
+                {active && (
+                  <span className="absolute left-0 right-0 -bottom-px h-px bg-tan" />
+                )}
+              </a>
+            );
+          })}
         </nav>
 
         {/* Locale dropdown */}
@@ -86,7 +89,9 @@ export default function Nav() {
         {/* For colleagues */}
         <a
           href="/clinical"
-          className="hidden lg:flex items-center gap-2 px-6 border-l border-white/15 label-caps text-[11.5px] font-semibold text-white/85 hover:text-tan transition-colors"
+          className={`hidden lg:flex items-center gap-2 px-6 border-l border-white/15 label-caps text-[11.5px] font-semibold transition-colors ${
+            current === "/clinical" ? "text-tan" : "text-white/85 hover:text-tan"
+          }`}
         >
           Для колег
           <span aria-hidden>→</span>
