@@ -73,7 +73,7 @@ export default function Nav({
     <header className="bg-black/25 backdrop-blur-md border-b border-white/10">
       <div className="flex items-stretch">
         {/* Logo */}
-        <a href={`/${lang}/`} className="flex flex-col justify-center px-6 lg:px-8 py-5 lg:w-[220px] border-r border-white/15">
+        <a href={`/${lang}/`} className="flex flex-col justify-center px-6 xl:px-8 py-5 xl:w-[220px] border-r border-white/15">
           <span className="font-serif italic text-2xl leading-none tracking-tight text-white">
             Baida<span className="text-tan">.</span>
           </span>
@@ -83,7 +83,7 @@ export default function Nav({
         </a>
 
         {/* Main nav — desktop */}
-        <nav className="hidden lg:flex items-center gap-8 px-8 flex-1">
+        <nav className="hidden xl:flex items-center gap-8 px-8 flex-1">
           {navLinks.map((link) => {
             const active = current === "home" && link.key === "home";
             return (
@@ -104,7 +104,7 @@ export default function Nav({
         </nav>
 
         {/* Locale dropdown — desktop */}
-        <div className="hidden lg:flex items-stretch">
+        <div className="hidden xl:flex items-stretch">
           <LocaleDropdown lang={lang} current={current} />
         </div>
 
@@ -112,7 +112,7 @@ export default function Nav({
         {onClinical ? (
           <a
             href={audience.href}
-            className="hidden lg:flex items-center gap-2 px-6 border-l border-white/15 label-caps text-[11.5px] font-semibold text-white/85 hover:text-tan transition-colors"
+            className="hidden xl:flex items-center gap-2 px-6 border-l border-white/15 label-caps text-[11.5px] font-semibold text-white/85 hover:text-tan transition-colors"
           >
             <span aria-hidden>←</span>
             {audience.label}
@@ -120,7 +120,7 @@ export default function Nav({
         ) : (
           <a
             href={audience.href}
-            className="hidden lg:flex items-center gap-2 px-6 border-l border-white/15 label-caps text-[11.5px] font-semibold text-white/85 hover:text-tan transition-colors"
+            className="hidden xl:flex items-center gap-2 px-6 border-l border-white/15 label-caps text-[11.5px] font-semibold text-white/85 hover:text-tan transition-colors"
           >
             {audience.label}
             <span aria-hidden>→</span>
@@ -128,7 +128,7 @@ export default function Nav({
         )}
 
         {/* Mobile menu — below lg */}
-        <div className="flex lg:hidden ml-auto items-stretch">
+        <div className="flex xl:hidden ml-auto items-stretch">
           <MobileMenu
             menuLabel={dict.nav.menu}
             links={navLinks.map(({ label, href }) => ({ label, href }))}
