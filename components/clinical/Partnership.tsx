@@ -35,7 +35,7 @@ export default function Partnership({ dict }: { dict: Dict }) {
               <span className="font-serif italic text-3xl text-hairline-soft leading-none mb-7">{`0${i + 1}`}</span>
               <h3 className="font-sans font-semibold text-xl mb-3 tracking-tight max-w-[20ch]">{track.title}</h3>
               <p className="text-ink-muted text-[15px] leading-relaxed mb-7">{track.body}</p>
-              <ul className="mt-auto space-y-2.5 border-t border-hairline-soft pt-5">
+              <ul className="mt-auto space-y-2.5 border-t border-hairline-soft pt-5 md:min-h-[200px] xl:min-h-0">
                 {track.points.map((p) => (
                   <li key={p} className="flex items-start gap-3 text-[14px] text-ink">
                     <span aria-hidden className="mt-[7px] w-1.5 h-1.5 rounded-full bg-tan shrink-0" />
