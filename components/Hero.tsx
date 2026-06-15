@@ -65,17 +65,17 @@ export default function Hero({ dict, lang }: { dict: Dict; lang: Locale }) {
           </div>
         </div>
 
-        {/* Mobile / portrait doctor photo (below lg) */}
-        <div className="lg:hidden relative mt-4">
+        {/* Mobile / portrait doctor photo (below lg) — full portrait, uncropped */}
+        <div className="lg:hidden relative mt-2">
           <div
             aria-hidden
-            className="absolute inset-x-0 top-0 h-24 z-10"
+            className="absolute inset-x-0 top-0 h-12 z-10"
             style={{ backgroundImage: "linear-gradient(to bottom, var(--color-tan-dark), rgba(10,25,41,0))" }}
           />
           <img
             src="/hero-doctor.jpg"
             alt="Dr. Maksym Baida"
-            className="w-full h-auto max-h-[60vh] object-cover object-top"
+            className="block w-full h-auto sm:max-w-[560px] sm:mx-auto"
           />
         </div>
 
