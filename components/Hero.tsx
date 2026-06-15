@@ -4,39 +4,40 @@ import type { Dict, Locale } from "@/app/i18n";
 export default function Hero({ dict, lang }: { dict: Dict; lang: Locale }) {
   const t = dict.hero;
   return (
-    <section className="relative">
-      <div className="relative min-h-screen overflow-hidden bg-tan-dark flex items-start">
-        {/* Background photo — same composition at every size, just scaled */}
-        <Image
-          src="/hero-bg.jpg"
-          alt=""
-          aria-hidden
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover object-[78%_center] lg:object-center"
-        />
+    <section className="relative bg-tan-dark overflow-hidden">
+      {/* Background photo — used from sm up (phones get the stacked photo below) */}
+      <Image
+        src="/hero-bg.jpg"
+        alt=""
+        aria-hidden
+        fill
+        priority
+        sizes="100vw"
+        className="hidden sm:block object-cover object-[78%_center] lg:object-center"
+      />
 
-        {/* Readability gradient — heavier/wider on small screens, classic left fade on desktop */}
-        <div
-          aria-hidden
-          className="absolute inset-0 lg:hidden"
-          style={{
-            backgroundImage:
-              "linear-gradient(to bottom, rgba(10,25,41,0.95) 0%, rgba(10,25,41,0.78) 42%, rgba(10,25,41,0.4) 70%, rgba(10,25,41,0.15) 100%)",
-          }}
-        />
-        <div
-          aria-hidden
-          className="absolute inset-0 hidden lg:block"
-          style={{
-            backgroundImage:
-              "linear-gradient(to right, rgba(10,25,41,0.9) 0%, rgba(10,25,41,0.78) 25%, rgba(10,25,41,0.45) 50%, rgba(10,25,41,0) 80%)",
-          }}
-        />
+      {/* Scrim for the in-between range (sm–lg): top-down for legibility */}
+      <div
+        aria-hidden
+        className="hidden sm:block lg:hidden absolute inset-0"
+        style={{
+          backgroundImage:
+            "linear-gradient(to bottom, rgba(10,25,41,0.92) 0%, rgba(10,25,41,0.72) 45%, rgba(10,25,41,0.35) 72%, rgba(10,25,41,0.12) 100%)",
+        }}
+      />
+      {/* Scrim for desktop (lg+): classic left fade */}
+      <div
+        aria-hidden
+        className="hidden lg:block absolute inset-0"
+        style={{
+          backgroundImage:
+            "linear-gradient(to right, rgba(10,25,41,0.9) 0%, rgba(10,25,41,0.78) 25%, rgba(10,25,41,0.45) 50%, rgba(10,25,41,0) 80%)",
+        }}
+      />
 
-        {/* Content */}
-        <div className="relative z-10 w-full max-w-[1400px] mx-auto px-5 sm:px-8 lg:px-16 pt-[120px] md:pt-[170px] lg:pt-[216px] pb-32 lg:pb-36 text-white">
+      <div className="relative z-10 flex flex-col sm:min-h-screen">
+        {/* Text content */}
+        <div className="flex-1 w-full max-w-[1400px] mx-auto px-5 sm:px-8 lg:px-16 pt-[120px] md:pt-[170px] lg:pt-[216px] pb-10 sm:pb-32 lg:pb-36 text-white">
           <div className="relative max-w-md sm:max-w-xl lg:max-w-2xl">
             {/* Vertical hairline accent on left */}
             <span aria-hidden className="hidden lg:block absolute -left-12 top-2 bottom-2 w-px bg-white/20" />
@@ -81,8 +82,18 @@ export default function Hero({ dict, lang }: { dict: Dict; lang: Locale }) {
           </div>
         </div>
 
-        {/* Bottom trust-bar — experience stats */}
-        <div className="absolute bottom-0 left-0 right-0 z-20 bg-black/30 backdrop-blur-md border-t border-white/15">
+        {/* Phone-only doctor photo — flows below the text (sm and up use the bg photo) */}
+        <div className="sm:hidden relative mt-2">
+          <div
+            aria-hidden
+            className="absolute inset-x-0 top-0 h-12 z-10"
+            style={{ backgroundImage: "linear-gradient(to bottom, var(--color-tan-dark), rgba(10,25,41,0))" }}
+          />
+          <img src="/hero-doctor.jpg" alt="Dr. Maksym Baida" className="block w-full h-auto" />
+        </div>
+
+        {/* Trust-bar — experience stats */}
+        <div className="relative z-20 bg-black/30 backdrop-blur-md border-t border-white/15">
           <div className="grid grid-cols-3 md:grid-cols-4 divide-x divide-white/15">
             {t.stats.map((stat) => (
               <div
