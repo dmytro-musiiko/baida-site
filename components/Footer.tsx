@@ -1,14 +1,15 @@
 import { localeNames, type Dict, type Locale } from "@/app/i18n";
+import { BASE } from "@/app/base";
 
 export default function Footer({ dict, lang }: { dict: Dict; lang: Locale }) {
   const navLinks = [
-    { label: dict.nav.home, href: `/${lang}/` },
-    { label: dict.nav.field, href: `/${lang}/#about-field` },
-    { label: dict.nav.treatments, href: `/${lang}/#treatments` },
-    { label: dict.nav.doctor, href: `/${lang}/#about-doctor` },
-    { label: dict.nav.tech, href: `/${lang}/#technology` },
-    { label: dict.nav.contacts, href: `/${lang}/#consultation` },
-    { label: dict.nav.forColleagues, href: `/${lang}/clinical/` },
+    { label: dict.nav.home, href: `${BASE}/${lang}/` },
+    { label: dict.nav.field, href: `${BASE}/${lang}/#about-field` },
+    { label: dict.nav.treatments, href: `${BASE}/${lang}/#treatments` },
+    { label: dict.nav.doctor, href: `${BASE}/${lang}/#about-doctor` },
+    { label: dict.nav.tech, href: `${BASE}/${lang}/#technology` },
+    { label: dict.nav.contacts, href: `${BASE}/${lang}/#consultation` },
+    { label: dict.nav.forColleagues, href: `${BASE}/${lang}/clinical/` },
   ];
 
   return (
@@ -62,7 +63,7 @@ export default function Footer({ dict, lang }: { dict: Dict; lang: Locale }) {
               <span key={l} className="flex items-center gap-4">
                 {i > 0 && <span className="opacity-30">·</span>}
                 <a
-                  href={`/${l}/`}
+                  href={`${BASE}/${l}/`}
                   className={l === lang ? "text-ink" : "opacity-50 hover:opacity-100 transition-opacity"}
                 >
                   {localeNames[l]}

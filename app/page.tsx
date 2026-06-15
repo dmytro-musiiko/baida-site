@@ -1,10 +1,11 @@
 "use client";
 
 import { useEffect } from "react";
+import { BASE } from "./base";
 
 // Default locale. Static export can't redirect server-side, so the root
 // route bounces to the default locale via meta-refresh (+ JS for instant nav).
-const TARGET = "/uk/";
+const TARGET = `${BASE}/uk/`;
 
 export default function RootRedirect() {
   useEffect(() => {

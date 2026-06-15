@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { BASE } from "@/app/base";
 import type { Dict } from "@/app/i18n";
 
 export default function ClinicalHero({ dict }: { dict: Dict }) {
@@ -8,7 +9,7 @@ export default function ClinicalHero({ dict }: { dict: Dict }) {
       <div className="relative min-h-[88vh] overflow-hidden surface-navy bg-tan-dark flex items-start">
         {/* Background — lower-limb reconstruction X-ray, cooled to the steel palette */}
         <Image
-          src="/clinical-hero.jpg"
+          src={`${BASE}/clinical-hero.jpg`}
           alt=""
           aria-hidden
           fill

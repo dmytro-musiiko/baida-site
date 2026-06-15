@@ -1,4 +1,5 @@
 import type { Dict } from "@/app/i18n";
+import { BASE } from "@/app/base";
 
 const codes = ["CASE 01", "CASE 02", "CASE 03"];
 
@@ -30,7 +31,7 @@ export default function ClinicalCases({ dict }: { dict: Dict }) {
           <div className="lg:col-span-4">
             <div className="relative aspect-square overflow-hidden rounded-[20px] border border-white/15 bg-navy-90">
               <img
-                src="/orthonail.png"
+                src={`${BASE}/orthonail.png`}
                 alt={t.imageAlt}
                 className="absolute inset-0 w-full h-full object-cover"
               />

@@ -1,4 +1,5 @@
 import type { Dict, Locale } from "@/app/i18n";
+import { BASE } from "@/app/base";
 
 const images = [
   "/treatment-tech.jpg",
@@ -31,14 +32,14 @@ export default function Treatments({ dict, lang }: { dict: Dict; lang: Locale })
           {cards.map((card) => (
             <a
               key={card.title}
-              href={`/${lang}/#consultation`}
+              href={`${BASE}/${lang}/#consultation`}
               className="group relative block aspect-[16/10] overflow-hidden rounded-[8px] bg-navy-90"
             >
               {/* Image or placeholder */}
               {card.image ? (
                 <div className="absolute inset-0 flex items-center justify-center p-5 lg:p-8">
                   <img
-                    src={card.image}
+                    src={`${BASE}${card.image}`}
                     alt={card.title}
                     className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-[1.03]"
                   />

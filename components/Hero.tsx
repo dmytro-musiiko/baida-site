@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { BASE } from "@/app/base";
 import type { Dict, Locale } from "@/app/i18n";
 
 export default function Hero({ dict, lang }: { dict: Dict; lang: Locale }) {
@@ -7,7 +8,7 @@ export default function Hero({ dict, lang }: { dict: Dict; lang: Locale }) {
     <section className="relative bg-tan-dark overflow-hidden">
       {/* Background photo — used from sm up (phones get the stacked photo below) */}
       <Image
-        src="/hero-bg.jpg"
+        src={`${BASE}/hero-bg.jpg`}
         alt=""
         aria-hidden
         fill
@@ -65,14 +66,14 @@ export default function Hero({ dict, lang }: { dict: Dict; lang: Locale }) {
             {/* Primary CTA + secondary text link */}
             <div className="mt-8 lg:mt-12 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-8">
               <a
-                href={`/${lang}/#consultation`}
+                href={`${BASE}/${lang}/#consultation`}
                 className="group inline-flex items-center justify-between gap-6 btn-metallic text-white px-6 sm:px-8 py-4 label-caps w-full sm:w-auto sm:min-w-[280px]"
               >
                 {dict.common.ctaPrimary}
                 <span className="transition-transform group-hover:translate-x-1">→</span>
               </a>
               <a
-                href={`/${lang}/#consultation`}
+                href={`${BASE}/${lang}/#consultation`}
                 className="group inline-flex items-center justify-between gap-6 border border-white/30 hover:border-white text-white px-6 sm:px-8 py-4 label-caps transition-colors w-full sm:w-auto sm:min-w-[280px]"
               >
                 {dict.common.ctaSecondary}
@@ -89,7 +90,7 @@ export default function Hero({ dict, lang }: { dict: Dict; lang: Locale }) {
             className="absolute inset-x-0 top-0 h-12 z-10"
             style={{ backgroundImage: "linear-gradient(to bottom, var(--color-tan-dark), rgba(10,25,41,0))" }}
           />
-          <img src="/hero-doctor.jpg" alt="Dr. Maksym Baida" className="block w-full h-auto" />
+          <img src={`${BASE}/hero-doctor.jpg`} alt="Dr. Maksym Baida" className="block w-full h-auto" />
         </div>
 
         {/* Trust-bar — experience stats */}
@@ -108,7 +109,7 @@ export default function Hero({ dict, lang }: { dict: Dict; lang: Locale }) {
             ))}
             <div className="hidden md:flex items-center justify-center p-3 btn-metallic">
               <a
-                href={`/${lang}/#consultation`}
+                href={`${BASE}/${lang}/#consultation`}
                 className="group flex items-center justify-between gap-6 w-full border border-white/40 hover:border-white text-white px-5 py-2.5 label-caps transition-colors"
               >
                 <span>{t.ctaBook}</span>

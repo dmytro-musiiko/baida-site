@@ -1,4 +1,5 @@
 import { locales, localeNames, type Dict, type Locale } from "@/app/i18n";
+import { BASE } from "@/app/base";
 import MobileMenu from "@/components/MobileMenu";
 
 function LocaleDropdown({ lang, current }: { lang: Locale; current: "home" | "clinical" }) {
@@ -23,7 +24,7 @@ function LocaleDropdown({ lang, current }: { lang: Locale; current: "home" | "cl
         {locales.map((l) => (
           <a
             key={l}
-            href={`/${l}/${suffix}`}
+            href={`${BASE}/${l}/${suffix}`}
             className={`block w-full text-left px-5 py-3 label-caps transition-colors ${
               l === lang
                 ? "text-ink bg-paper"
@@ -48,24 +49,24 @@ export default function Nav({
   current: "home" | "clinical";
 }) {
   const navLinks = [
-    { label: dict.nav.home, href: `/${lang}/`, key: "home" },
-    { label: dict.nav.field, href: `/${lang}/#about-field`, key: "field" },
-    { label: dict.nav.treatments, href: `/${lang}/#treatments`, key: "treatments" },
-    { label: dict.nav.doctor, href: `/${lang}/#about-doctor`, key: "doctor" },
-    { label: dict.nav.tech, href: `/${lang}/#technology`, key: "tech" },
-    { label: dict.nav.contacts, href: `/${lang}/#consultation`, key: "contacts" },
+    { label: dict.nav.home, href: `${BASE}/${lang}/`, key: "home" },
+    { label: dict.nav.field, href: `${BASE}/${lang}/#about-field`, key: "field" },
+    { label: dict.nav.treatments, href: `${BASE}/${lang}/#treatments`, key: "treatments" },
+    { label: dict.nav.doctor, href: `${BASE}/${lang}/#about-doctor`, key: "doctor" },
+    { label: dict.nav.tech, href: `${BASE}/${lang}/#technology`, key: "tech" },
+    { label: dict.nav.contacts, href: `${BASE}/${lang}/#consultation`, key: "contacts" },
   ];
 
   const onClinical = current === "clinical";
   const audience = onClinical
-    ? { label: dict.nav.forPatients, href: `/${lang}/` }
-    : { label: dict.nav.forColleagues, href: `/${lang}/clinical/` };
+    ? { label: dict.nav.forPatients, href: `${BASE}/${lang}/` }
+    : { label: dict.nav.forColleagues, href: `${BASE}/${lang}/clinical/` };
 
   const suffix = onClinical ? "clinical/" : "";
   const localeItems = locales.map((l) => ({
     code: l,
     name: localeNames[l],
-    href: `/${l}/${suffix}`,
+    href: `${BASE}/${l}/${suffix}`,
     active: l === lang,
   }));
 
@@ -73,7 +74,7 @@ export default function Nav({
     <header className="bg-black/25 backdrop-blur-md border-b border-white/10">
       <div className="flex items-stretch">
         {/* Logo */}
-        <a href={`/${lang}/`} className="flex flex-col justify-center px-6 xl:px-8 py-5 xl:w-[220px] border-r border-white/15">
+        <a href={`${BASE}/${lang}/`} className="flex flex-col justify-center px-6 xl:px-8 py-5 xl:w-[220px] border-r border-white/15">
           <span className="font-serif italic text-2xl leading-none tracking-tight text-white">
             Baida<span className="text-tan">.</span>
           </span>

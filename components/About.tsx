@@ -1,4 +1,5 @@
 import type { Dict } from "@/app/i18n";
+import { BASE } from "@/app/base";
 
 const icons = [
   (
@@ -89,7 +90,7 @@ export default function About({ dict }: { dict: Dict }) {
                 aria-label="Dr. Maksym Baida portrait"
               >
                 <img
-                  src="/dr-baida.png"
+                  src={`${BASE}/dr-baida.png`}
                   alt="Dr. Maksym Baida"
                   className="absolute inset-0 w-full h-full object-cover object-top"
                 />

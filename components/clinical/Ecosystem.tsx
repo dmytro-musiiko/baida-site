@@ -1,4 +1,5 @@
 import type { Dict } from "@/app/i18n";
+import { BASE } from "@/app/base";
 
 export default function Ecosystem({ dict }: { dict: Dict }) {
   const t = dict.clinical.ecosystem;
@@ -34,7 +35,7 @@ export default function Ecosystem({ dict }: { dict: Dict }) {
               <div aria-hidden className="absolute inset-0 translate-x-4 translate-y-4 bg-tan rounded-[20px]" />
               <div className="relative aspect-[4/3] overflow-hidden rounded-[20px] border border-hairline-soft">
                 <img
-                  src="/clinical-knee.jpg"
+                  src={`${BASE}/clinical-knee.jpg`}
                   alt={t.imageAlt}
                   className="absolute inset-0 w-full h-full object-cover"
                 />
