@@ -69,15 +69,7 @@ export default function ClinicalCases({ dict }: { dict: Dict }) {
                   ))}
                 </dl>
                 <div className="mt-7 pt-1">
-                  <span className="inline-flex items-center gap-2 label-caps-sm text-white/55">
-                    <span aria-hidden className="w-3.5 h-3.5 inline-flex items-center justify-center">
-                      <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="1.3">
-                        <rect x="2.5" y="6" width="9" height="6.5" rx="1" />
-                        <path d="M4.5 6V4.5a2.5 2.5 0 015 0V6" />
-                      </svg>
-                    </span>
-                    {t.onRequest}
-                  </span>
+                  <span className="label-caps-sm text-white/55">{t.onRequest}</span>
                 </div>
               </article>
             );

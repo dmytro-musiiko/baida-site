@@ -78,7 +78,7 @@ export default function MobileMenu({
                 <a
                   href={l.href}
                   onClick={() => setOpen(false)}
-                  className="block py-3 font-sans font-light text-2xl tracking-tight text-white/90 hover:text-tan transition-colors"
+                  className="block py-2.5 font-sans font-light text-2xl tracking-tight text-white/90 hover:text-tan transition-colors"
                 >
                   {l.label}
                 </a>
@@ -86,22 +86,14 @@ export default function MobileMenu({
             ))}
           </ul>
 
+          {/* Audience toggle — prominent */}
           <a
             href={audience.href}
             onClick={() => setOpen(false)}
-            className="mt-8 inline-flex items-center gap-3 label-caps text-tan border border-white/20 hover:border-tan px-5 py-4 transition-colors"
+            className="mt-8 flex items-center justify-between w-full label-caps text-white bg-white/[0.06] border border-tan hover:bg-white/10 px-5 py-4 transition-colors"
           >
             {audience.label}
-            <span aria-hidden>→</span>
-          </a>
-        </div>
-
-        <div className="px-6 py-5 border-t border-white/15 space-y-2">
-          <a href="mailto:hello@drbaida.ua" className="block label-caps-sm text-white/70 hover:text-white transition-colors">
-            HELLO@DRBAIDA.UA
-          </a>
-          <a href="tel:+380674321809" className="block label-caps-sm text-white/70 hover:text-white transition-colors">
-            +380 67 432 18 09
+            <span aria-hidden className="text-tan">→</span>
           </a>
         </div>
 

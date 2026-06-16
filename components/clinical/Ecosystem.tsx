@@ -63,7 +63,7 @@ export default function Ecosystem({ dict }: { dict: Dict }) {
                 <span className="font-serif italic text-3xl text-hairline-soft leading-none">{`0${i + 1}`}</span>
               </div>
               <p className="text-ink-muted text-[15px] leading-relaxed mb-7 max-w-[52ch]">{l.body}</p>
-              <div className="mt-auto flex flex-wrap gap-2">
+              <div className="mt-auto flex flex-col sm:flex-row sm:flex-wrap gap-2">
                 {l.tags.map((tag) => (
                   <span
                     key={tag}

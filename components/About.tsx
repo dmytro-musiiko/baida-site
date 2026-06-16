@@ -3,7 +3,7 @@ import { BASE } from "@/app/base";
 
 const icons = [
   (
-    <svg key="0" viewBox="0 0 28 28" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round">
+    <svg key="0" width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round">
       <circle cx="14" cy="14" r="10" />
       <circle cx="14" cy="14" r="5" />
       <line x1="14" y1="2" x2="14" y2="6" />
@@ -13,13 +13,13 @@ const icons = [
     </svg>
   ),
   (
-    <svg key="1" viewBox="0 0 28 28" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round">
+    <svg key="1" width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round">
       <path d="M14 4 L24 8 L24 16 Q24 22 14 26 Q4 22 4 16 L4 8 Z" />
       <path d="M10 14 L13 17 L18 11" />
     </svg>
   ),
   (
-    <svg key="2" viewBox="0 0 28 28" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round">
+    <svg key="2" width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round">
       <rect x="6" y="6" width="16" height="16" />
       <line x1="14" y1="2" x2="14" y2="6" />
       <line x1="14" y1="22" x2="14" y2="26" />
@@ -119,7 +119,7 @@ export default function About({ dict }: { dict: Dict }) {
               <span className="font-extrabold">{t.bioTitle}</span>
             </h2>
 
-            <div className="flex flex-wrap gap-2 mb-10">
+            <div className="flex flex-col sm:flex-row sm:flex-wrap gap-2 mb-10">
               {t.tags.map((tag) => (
                 <span
                   key={tag}

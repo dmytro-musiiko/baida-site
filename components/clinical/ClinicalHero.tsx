@@ -6,7 +6,7 @@ export default function ClinicalHero({ dict }: { dict: Dict }) {
   const t = dict.clinical.hero;
   return (
     <section className="relative">
-      <div className="relative min-h-[88vh] overflow-hidden surface-navy bg-tan-dark flex items-start">
+      <div className="relative min-h-[88vh] overflow-hidden surface-navy bg-tan-dark flex flex-col">
         {/* Background — lower-limb reconstruction X-ray, cooled to the steel palette */}
         <Image
           src={`${BASE}/clinical-hero.jpg`}
@@ -38,7 +38,7 @@ export default function ClinicalHero({ dict }: { dict: Dict }) {
         />
 
         {/* Content */}
-        <div className="relative z-10 w-full max-w-[1400px] mx-auto px-5 sm:px-8 lg:px-16 pt-[120px] md:pt-[200px] lg:pt-[216px] pb-24 sm:pb-28 text-white">
+        <div className="relative z-10 flex-1 w-full max-w-[1400px] mx-auto px-5 sm:px-8 lg:px-16 pt-[120px] md:pt-[200px] lg:pt-[216px] pb-12 sm:pb-20 text-white">
           <div className="relative max-w-3xl">
             <span aria-hidden className="hidden lg:block absolute -left-12 top-2 bottom-2 w-px bg-white/20" />
 
@@ -80,7 +80,7 @@ export default function ClinicalHero({ dict }: { dict: Dict }) {
         </div>
 
         {/* Bottom audience bar */}
-        <div className="absolute bottom-0 left-0 right-0 z-20 bg-black/30 backdrop-blur-md border-t border-white/15">
+        <div className="relative z-20 bg-black/30 backdrop-blur-md border-t border-white/15">
           <div className="grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-white/15">
             {t.audiences.map((a, i) => (
               <div key={a} className="flex items-center gap-4 px-6 py-5">
