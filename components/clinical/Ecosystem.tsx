@@ -67,7 +67,7 @@ export default function Ecosystem({ dict }: { dict: Dict }) {
                 {l.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="label-caps-sm bg-paper text-ink-muted px-3 py-1.5 border border-hairline-soft"
+                    className="label-caps-sm bg-paper text-ink-muted px-3 py-1.5 border border-hairline-soft text-center"
                   >
                     {tag}
                   </span>

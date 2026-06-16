@@ -123,7 +123,7 @@ export default function About({ dict }: { dict: Dict }) {
               {t.tags.map((tag) => (
                 <span
                   key={tag}
-                  className="label-caps-sm bg-paper text-ink-muted px-4 py-2 border border-hairline-soft"
+                  className="label-caps-sm bg-paper text-ink-muted px-4 py-2 border border-hairline-soft text-center sm:text-left"
                 >
                   {tag}
                 </span>
