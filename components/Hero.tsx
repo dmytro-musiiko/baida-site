@@ -92,7 +92,13 @@ export default function Hero({ dict, lang }: { dict: Dict; lang: Locale }) {
             className="absolute inset-x-0 top-0 h-12 z-10"
             style={{ backgroundImage: "linear-gradient(to bottom, var(--color-tan-dark), rgba(10,25,41,0))" }}
           />
-          <img src={`${BASE}/hero-doctor.jpg`} alt="Dr. Maksym Baida" className="block w-full h-auto" />
+          <div className="relative aspect-[4/5] overflow-hidden">
+            <img
+              src={`${BASE}/or-gloves.jpg`}
+              alt="Dr. Maksym Baida"
+              className="absolute inset-0 w-full h-full object-cover object-[72%_center]"
+            />
+          </div>
         </div>
 
         {/* Trust-bar — experience stats */}
