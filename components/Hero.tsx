@@ -6,16 +6,18 @@ export default function Hero({ dict, lang }: { dict: Dict; lang: Locale }) {
   const t = dict.hero;
   return (
     <section className="relative bg-tan-dark overflow-hidden">
-      {/* Background photo — used from sm up (phones get the stacked photo below) */}
-      <Image
-        src={`${BASE}/hero-bg.jpg`}
-        alt=""
-        aria-hidden
-        fill
-        priority
-        sizes="100vw"
-        className="hidden sm:block object-cover object-[78%_center] lg:object-center"
-      />
+      {/* Background photo — used from sm up (phones get the stacked photo below).
+          Starts below the translucent header so the doctor's head is never hidden behind it. */}
+      <div aria-hidden className="hidden sm:block absolute inset-x-0 bottom-0 top-[82px] md:top-[121px] xl:top-[132px]">
+        <Image
+          src={`${BASE}/or-gloves.jpg`}
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-[78%_top] [@media(min-aspect-ratio:8/5)]:object-contain [@media(min-aspect-ratio:8/5)]:object-right-bottom [@media(min-aspect-ratio:8/5)]:[mask-image:linear-gradient(to_right,transparent_10%,black_45%)]"
+        />
+      </div>
 
       {/* Scrim for the in-between range (sm–lg): top-down for legibility */}
       <div

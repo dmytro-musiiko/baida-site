@@ -165,6 +165,7 @@
       "Die Weiterentwicklung der reconstruction-Technologien eröffnet neue Möglichkeiten für eine präzisere, kontrolliertere und funktionellere Wiederherstellung bei Deformitäten, Verkürzungen und der Verlängerung von Extremitäten."
     ],
     "quote": "Technologie soll den Chirurgen nicht ersetzen, sondern die Möglichkeiten der Rekonstruktion erweitern.",
+    "imageAlt": "Chirurg im Operationssaal — Vorbereitung auf einen rekonstruktiven Eingriff",
     "miniCards": [
       {
         "title": "Individuelle Planung",
@@ -263,7 +264,6 @@
         "Für ein Fachpublikum ist der reconstruction-Bereich keine einzelne Leistung, sondern ein durchgängiger Prozess: von der Planung der Geometrie bis zur Kontrolle des funktionellen Ergebnisses.",
         "Technologische Lösungen und moderne reconstruction-Systeme sind als Werkzeug der precision-Chirurgie in diesen Prozess integriert. Technologien erweitern die Möglichkeiten der Rekonstruktion — ohne die klinische Entscheidung des Chirurgen zu ersetzen."
       ],
-      "imageCaption": "Planning geometry",
       "imageAlt": "Geometrie des Kniegelenks — reconstruction planning overlay",
       "layers": [
         {
@@ -309,7 +309,6 @@
       "headingLight": "Fallbesprechungen für die ",
       "headingBold": "Fachgemeinschaft",
       "intro": "Strukturierte klinische Fälle: Indikation, Planung, Technik, Ergebnis. Vollständige Unterlagen und Bildmaterial — auf Anfrage nach fachlicher Freigabe.",
-      "imageCaption": "Fixation system",
       "imageAlt": "Intramedulläre Fixierung — reconstruction system",
       "fieldIndication": "Indikation",
       "fieldPlanning": "Planung",
@@ -350,6 +349,7 @@
       "headingBold": "akademische Arbeit",
       "intro": "Die Weiterentwicklung des reconstruction-Bereichs verbindet klinische Praxis, akademische Tätigkeit und internationalen fachlichen Austausch in einem Umfeld.",
       "quote": "Moderne Rekonstruktion bedeutet stetige Weiterentwicklung, fachlichen Austausch und technologischen Fortschritt.",
+      "imageAlt": "OP-Team während eines Eingriffs am Kniegelenk",
       "groups": [
         {
           "k": "Ausbildung",

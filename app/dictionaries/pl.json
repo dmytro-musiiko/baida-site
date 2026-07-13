@@ -165,6 +165,7 @@
       "Rozwój technologii reconstruction otwiera nowe możliwości bardziej precyzyjnej, kontrolowanej i funkcjonalnej odbudowy w przypadku deformacji, skróceń i wydłużania kończyn."
     ],
     "quote": "Technologie nie powinny zastępować chirurga, lecz poszerzać możliwości rekonstrukcji.",
+    "imageAlt": "Chirurg na sali operacyjnej — przygotowanie do zabiegu rekonstrukcyjnego",
     "miniCards": [
       {
         "title": "Indywidualne planowanie",
@@ -263,7 +264,6 @@
         "Dla odbiorców profesjonalnych dziedzina reconstruction to nie pojedyncza usługa, lecz całościowy proces: od planowania geometrii po kontrolę wyniku funkcjonalnego.",
         "Rozwiązania technologiczne i nowoczesne systemy reconstruction są zintegrowane z tym procesem jako narzędzie precision-chirurgii. Technologie poszerzają możliwości rekonstrukcji — nie zastępując decyzji klinicznej chirurga."
       ],
-      "imageCaption": "Planning geometry",
       "imageAlt": "Geometria stawu kolanowego — reconstruction planning overlay",
       "layers": [
         {
@@ -309,7 +309,6 @@
       "headingLight": "Analiza przypadków dla ",
       "headingBold": "środowiska zawodowego",
       "intro": "Ustrukturyzowane przypadki kliniczne: wskazania, planowanie, technika, wynik. Pełne materiały i zdjęcia — na żądanie po zawodowym uzgodnieniu.",
-      "imageCaption": "Fixation system",
       "imageAlt": "Stabilizacja śródszpikowa — reconstruction system",
       "fieldIndication": "Wskazania",
       "fieldPlanning": "Planowanie",
@@ -350,6 +349,7 @@
       "headingBold": "praca akademicka",
       "intro": "Rozwój dziedziny reconstruction łączy praktykę kliniczną, działalność akademicką i międzynarodową współpracę zawodową w jednym środowisku.",
       "quote": "Nowoczesna rekonstrukcja to nieustanny rozwój, współpraca zawodowa i postęp technologiczny.",
+      "imageAlt": "Zespół chirurgiczny podczas zabiegu na stawie kolanowym",
       "groups": [
         {
           "k": "Wykształcenie",

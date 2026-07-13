@@ -39,9 +39,6 @@ export default function Ecosystem({ dict }: { dict: Dict }) {
                   alt={t.imageAlt}
                   className="absolute inset-0 w-full h-full object-cover"
                 />
-                <div className="absolute bottom-4 left-4 label-caps-sm text-ink/70 bg-cream/85 backdrop-blur-sm px-3 py-1.5 rounded">
-                  {t.imageCaption}
-                </div>
               </div>
             </div>
           </div>
@@ -67,7 +64,7 @@ export default function Ecosystem({ dict }: { dict: Dict }) {
                 {l.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="label-caps-sm bg-paper text-ink-muted px-3 py-1.5 border border-hairline-soft text-center"
+                    className="label-caps-sm bg-paper text-ink-muted px-4 py-2 rounded-[10px] border border-hairline-soft text-center"
                   >
                     {tag}
                   </span>

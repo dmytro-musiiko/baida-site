@@ -165,6 +165,7 @@
       "The advancement of reconstruction technologies opens new possibilities for more precise, controlled and functional recovery in deformities, shortening and limb lengthening."
     ],
     "quote": "Technology should not replace the surgeon, but extend the possibilities of reconstruction.",
+    "imageAlt": "Surgeon in the operating room — preparing for a reconstructive procedure",
     "miniCards": [
       {
         "title": "Individualised planning",
@@ -263,7 +264,6 @@
         "For a professional audience, the reconstruction field is not a standalone service but an end-to-end process: from planning the geometry to controlling the functional outcome.",
         "Technological solutions and modern reconstruction systems are integrated into this process as a tool of precision surgery. Technology extends the possibilities of reconstruction — without replacing the surgeon's clinical judgement."
       ],
-      "imageCaption": "Planning geometry",
       "imageAlt": "Knee joint geometry — reconstruction planning overlay",
       "layers": [
         {
@@ -309,7 +309,6 @@
       "headingLight": "Case reviews for the ",
       "headingBold": "professional community",
       "intro": "Structured clinical cases: indications, planning, technique, outcome. Full materials and images are available on request following professional approval.",
-      "imageCaption": "Fixation system",
       "imageAlt": "Intramedullary fixation — reconstruction system",
       "fieldIndication": "Indication",
       "fieldPlanning": "Planning",
@@ -350,6 +349,7 @@
       "headingBold": "academic work",
       "intro": "The advancement of the reconstruction field brings together clinical practice, academic work and international professional exchange in a single environment.",
       "quote": "Modern reconstruction is continuous development, professional exchange and technological progress.",
+      "imageAlt": "Surgical team during a knee joint procedure",
       "groups": [
         {
           "k": "Education",

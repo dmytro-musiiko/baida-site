@@ -90,7 +90,7 @@ export default function About({ dict }: { dict: Dict }) {
                 aria-label="Dr. Maksym Baida portrait"
               >
                 <img
-                  src={`${BASE}/dr-baida.png`}
+                  src={`${BASE}/hero-doctor.jpg`}
                   alt="Dr. Maksym Baida"
                   className="absolute inset-0 w-full h-full object-cover object-top"
                 />
@@ -119,11 +119,11 @@ export default function About({ dict }: { dict: Dict }) {
               <span className="font-extrabold">{t.bioTitle}</span>
             </h2>
 
-            <div className="flex flex-col sm:flex-row sm:flex-wrap gap-2 mb-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 auto-rows-fr gap-2.5 mb-10 max-w-xl">
               {t.tags.map((tag) => (
                 <span
                   key={tag}
-                  className="label-caps-sm bg-paper text-ink-muted px-4 py-2 border border-hairline-soft text-center sm:text-left"
+                  className="label-caps-sm bg-paper text-ink-muted px-5 py-3 rounded-[10px] border border-hairline-soft text-center flex items-center justify-center"
                 >
                   {tag}
                 </span>

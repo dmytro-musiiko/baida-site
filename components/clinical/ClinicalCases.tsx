@@ -35,9 +35,6 @@ export default function ClinicalCases({ dict }: { dict: Dict }) {
                 alt={t.imageAlt}
                 className="absolute inset-0 w-full h-full object-cover"
               />
-              <div className="absolute bottom-4 left-4 label-caps-sm text-white/80 bg-black/40 backdrop-blur-sm px-3 py-1.5 rounded">
-                {t.imageCaption}
-              </div>
             </div>
           </div>
         </div>
