@@ -1,4 +1,5 @@
 import type { Dict } from "@/app/i18n";
+import { CONTACTS, CHANNEL_HREFS } from "@/app/contacts";
 
 export default function BookOnline({ dict }: { dict: Dict }) {
   const t = dict.bookOnline;
@@ -32,14 +33,14 @@ export default function BookOnline({ dict }: { dict: Dict }) {
 
               <div className="mt-10 flex flex-col sm:flex-row gap-3">
                 <a
-                  href="#"
+                  href={CONTACTS.telegramHref}
                   className="group inline-flex items-center justify-between gap-6 btn-metallic text-white px-7 py-5 label-caps w-full sm:w-auto sm:min-w-[280px]"
                 >
                   {dict.common.ctaPrimary}
                   <span className="transition-transform group-hover:translate-x-1">→</span>
                 </a>
                 <a
-                  href="#"
+                  href={CONTACTS.emailHref}
                   className="group inline-flex items-center justify-between gap-6 border border-white/50 hover:border-white text-white px-7 py-5 label-caps transition-colors w-full sm:w-auto sm:min-w-[280px]"
                 >
                   {t.ctaUpload}
@@ -59,7 +60,7 @@ export default function BookOnline({ dict }: { dict: Dict }) {
                 {t.channels.map((c) => (
                   <a
                     key={c.label}
-                    href="#"
+                    href={CHANNEL_HREFS[c.mono] ?? "#"}
                     className="group flex items-center gap-5 py-5 hover:bg-white/[0.05] transition-colors px-1"
                   >
                     <span className="w-12 h-12 border border-white/25 flex items-center justify-center label-caps-sm text-white/85 group-hover:border-white group-hover:text-white transition-colors">

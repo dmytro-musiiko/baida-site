@@ -3,7 +3,7 @@ import { BASE } from "@/app/base";
 
 const images = [
   "/treatment-tech.jpg",
-  "/A9A8DB47-608C-4FAB-BEF1-C7D85351E807.png",
+  "/treatment-deform.jpg",
   "/treatment-xray.jpg",
   "/treatment-legs.jpg",
 ];

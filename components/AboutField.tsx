@@ -25,9 +25,16 @@ export default function AboutField({ dict, lang }: { dict: Dict; lang: Locale })
 
           {/* Body */}
           <div className="lg:col-span-7">
-            <div className="space-y-5 text-ink leading-relaxed text-lg max-w-2xl">
+            <div className="space-y-6 text-ink leading-relaxed">
               {t.paragraphs.map((p, i) => (
-                <p key={i} className={i === 0 ? "" : "text-ink-muted text-[17px]"}>
+                <p
+                  key={i}
+                  className={
+                    i === 0
+                      ? "text-[clamp(1.125rem,1.7vw,1.5rem)] leading-snug"
+                      : "text-ink-muted text-[clamp(1rem,1.35vw,1.25rem)]"
+                  }
+                >
                   {p}
                 </p>
               ))}

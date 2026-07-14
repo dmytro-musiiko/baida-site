@@ -79,7 +79,7 @@ export default function About({ dict }: { dict: Dict }) {
         </div>
 
         {/* Bio split section */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
           {/* Portrait — tilted card with offset pad (websyvet-style) */}
           <div className="lg:col-span-5 relative">
             <div className="relative">
@@ -150,7 +150,7 @@ export default function About({ dict }: { dict: Dict }) {
               </div>
               <div>
                 <div className="label-caps-sm text-ink-muted mb-2">{t.credInternshipLabel}</div>
-                <div className="text-sm font-medium text-ink-muted">{t.credInternshipValue}</div>
+                <div className="text-sm font-medium">{t.credInternshipValue}</div>
               </div>
               <div>
                 <div className="label-caps-sm text-ink-muted mb-2">{t.credSpecLabel}</div>

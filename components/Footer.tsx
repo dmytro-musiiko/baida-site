@@ -1,5 +1,13 @@
 import { localeNames, type Dict, type Locale } from "@/app/i18n";
 import { BASE } from "@/app/base";
+import { CONTACTS } from "@/app/contacts";
+
+const contactHrefs: Record<string, string> = {
+  Telegram: CONTACTS.telegramHref,
+  WhatsApp: CONTACTS.whatsappHref,
+  Email: CONTACTS.emailHref,
+  "E-Mail": CONTACTS.emailHref,
+};
 
 export default function Footer({ dict, lang }: { dict: Dict; lang: Locale }) {
   const navLinks = [
@@ -14,9 +22,9 @@ export default function Footer({ dict, lang }: { dict: Dict; lang: Locale }) {
 
   return (
     <footer className="bg-cream border-t border-hairline">
-      <div className="mx-auto max-w-[1440px] px-5 sm:px-8 py-20 grid grid-cols-1 md:grid-cols-12 gap-12">
+      <div className="mx-auto max-w-[1440px] px-5 sm:px-8 py-20 flex flex-col md:flex-row md:justify-end gap-12 md:gap-14 lg:gap-20">
         {/* Brand */}
-        <div className="md:col-span-5">
+        <div className="md:max-w-xs md:mr-auto">
           <div className="font-serif italic text-3xl tracking-tight leading-none mb-2">
             Baida<span className="text-tan">.</span>
           </div>
@@ -27,9 +35,9 @@ export default function Footer({ dict, lang }: { dict: Dict; lang: Locale }) {
         </div>
 
         {/* Navigation */}
-        <div className="md:col-span-4">
+        <div>
           <div className="label-caps-sm text-ink-muted mb-5">{dict.footer.navLabel}</div>
-          <ul className="space-y-3">
+          <ul className="grid grid-cols-2 gap-x-8 gap-y-3">
             {navLinks.map((link) => (
               <li key={link.label}>
                 <a href={link.href} className="text-sm text-ink hover:text-tan-dark transition-colors">
@@ -41,13 +49,18 @@ export default function Footer({ dict, lang }: { dict: Dict; lang: Locale }) {
         </div>
 
         {/* Contacts */}
-        <div className="md:col-span-3">
+        <div>
           <div className="label-caps-sm text-ink-muted mb-5">{dict.footer.contactsLabel}</div>
-          <ul className="space-y-3">
+          <ul className="space-y-5">
             {dict.footer.contacts.map((c) => (
-              <li key={c.label} className="flex items-center justify-between gap-4 text-sm">
-                <span className="text-ink">{c.label}</span>
-                <span className="text-ink-muted">{c.handle}</span>
+              <li key={c.label}>
+                <div className="label-caps-sm text-ink-muted mb-1">{c.label}</div>
+                <a
+                  href={contactHrefs[c.label] ?? "#"}
+                  className="text-sm font-medium text-ink hover:text-tan-dark transition-colors"
+                >
+                  {c.handle}
+                </a>
               </li>
             ))}
           </ul>

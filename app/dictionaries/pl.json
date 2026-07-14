@@ -32,15 +32,15 @@
     "ctaBook": "Umów się",
     "stats": [
       {
-        "value": "—",
+        "value": "15+",
         "label": "lat doświadczenia"
       },
       {
-        "value": "—",
+        "value": "4500+",
         "label": "operacji"
       },
       {
-        "value": "—",
+        "value": "15+",
         "label": "publikacji naukowych"
       }
     ]
@@ -96,7 +96,7 @@
       },
       {
         "label": "Technologie",
-        "body": "Nowoczesne systemy reconstruction, planowanie korekcji i dostępy małoinwazyjne jako część reconstruction workflow.",
+        "body": "Nowoczesne systemy reconstruction, planowanie korekcji i dostępy małoinwazyjne jako część reconstruction workflow — od modelowania po kontrolę wyniku.",
         "proof": "Systemy reconstruction"
       }
     ],
@@ -118,27 +118,23 @@
     "credEducationMain": "Narodowy Uniwersytet Medyczny im. O.O. Bohomolca ·",
     "credEducationItalic": "PhD",
     "credInternshipLabel": "Staże",
-    "credInternshipValue": "—",
+    "credInternshipValue": "Wiodące kliniki w Paryżu, we Włoszech i w Niemczech",
     "credSpecLabel": "Specjalizacja",
     "credSpecMain": "Rekonstrukcja kończyn ·",
     "credSpecItalic": "korekcja osi"
   },
   "statsBar": [
     {
-      "value": "—",
+      "value": "15+",
       "label": "Lat praktyki"
     },
     {
-      "value": "—",
+      "value": "4500+",
       "label": "Rekonstrukcji"
     },
     {
-      "value": "—",
+      "value": "15+",
       "label": "Publikacji naukowych"
-    },
-    {
-      "value": "—",
-      "label": "Języki przyjęć"
     }
   ],
   "academic": {
@@ -196,22 +192,17 @@
       {
         "mono": "TG",
         "label": "Telegram",
-        "handle": "—"
+        "handle": "+380 66 766 70 94"
       },
       {
         "mono": "WA",
         "label": "WhatsApp",
-        "handle": "—"
-      },
-      {
-        "mono": "IG",
-        "label": "Instagram",
-        "handle": "—"
+        "handle": "+380 66 766 70 94"
       },
       {
         "mono": "@",
         "label": "Email",
-        "handle": "—"
+        "handle": "meredian18@gmail.com"
       }
     ]
   },
@@ -222,19 +213,15 @@
     "contacts": [
       {
         "label": "Telegram",
-        "handle": "—"
+        "handle": "+380 66 766 70 94"
       },
       {
         "label": "WhatsApp",
-        "handle": "—"
-      },
-      {
-        "label": "Instagram",
-        "handle": "—"
+        "handle": "+380 66 766 70 94"
       },
       {
         "label": "Email",
-        "handle": "—"
+        "handle": "meredian18@gmail.com"
       }
     ],
     "copyright": "© 2026 Modern Orthopaedic Reconstruction. Wszelkie prawa zastrzeżone.",
@@ -375,8 +362,7 @@
         {
           "k": "Publikacje",
           "items": [
-            "—",
-            "—"
+            "15+ publikacji naukowych"
           ]
         }
       ]
@@ -424,17 +410,17 @@
         {
           "mono": "TG",
           "label": "Telegram",
-          "handle": "—"
+          "handle": "+380 66 766 70 94"
         },
         {
           "mono": "WA",
           "label": "WhatsApp",
-          "handle": "—"
+          "handle": "+380 66 766 70 94"
         },
         {
           "mono": "@",
           "label": "Email",
-          "handle": "—"
+          "handle": "meredian18@gmail.com"
         }
       ]
     }
