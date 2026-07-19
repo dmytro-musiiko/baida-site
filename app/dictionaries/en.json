@@ -290,24 +290,24 @@
           "title": "Lower-limb axis correction",
           "indication": "Axis deformity, asymmetry",
           "planning": "Geometry analysis, correction modelling",
-          "technique": "—",
-          "result": "—"
+          "technique": "Corrective osteotomy, stable fixation",
+          "result": "Restored limb axis and symmetry"
         },
         {
           "area": "Limb lengthening",
           "title": "Functional lengthening",
           "indication": "Limb shortening",
           "planning": "Lengthening calculation, axis control",
-          "technique": "—",
-          "result": "—"
+          "technique": "Intramedullary lengthening with staged control",
+          "result": "Planned length with preserved function"
         },
         {
           "area": "Post-traumatic reconstruction",
           "title": "Reconstruction of a complex defect",
           "indication": "Consequences of trauma, segmental defect",
           "planning": "Staged reconstruction scenario",
-          "technique": "—",
-          "result": "—"
+          "technique": "Staged defect reconstruction, stable fixation",
+          "result": "Restored integrity and weight-bearing function"
         }
       ]
     },

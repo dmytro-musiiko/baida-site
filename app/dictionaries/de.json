@@ -290,24 +290,24 @@
           "title": "Achskorrektur der unteren Extremität",
           "indication": "Achsdeformität, Asymmetrie",
           "planning": "Geometrieanalyse, Modellierung der Korrektur",
-          "technique": "—",
-          "result": "—"
+          "technique": "Korrekturosteotomie, stabile Fixation",
+          "result": "Wiederhergestellte Achse und Symmetrie"
         },
         {
           "area": "Extremitätenverlängerung",
           "title": "Funktionelle Verlängerung",
           "indication": "Extremitätenverkürzung",
           "planning": "Berechnung der Verlängerung, Achskontrolle",
-          "technique": "—",
-          "result": "—"
+          "technique": "Intramedulläre Verlängerung mit stufenweiser Kontrolle",
+          "result": "Geplante Länge bei erhaltener Funktion"
         },
         {
           "area": "Rekonstruktion nach Trauma",
           "title": "Rekonstruktion eines komplexen Defekts",
           "indication": "Traumafolge, Segmentdefekt",
           "planning": "Stufenweises reconstruction-Szenario",
-          "technique": "—",
-          "result": "—"
+          "technique": "Stufenweise Defektrekonstruktion, stabile Fixation",
+          "result": "Wiederhergestellte Integrität und Belastbarkeit"
         }
       ]
     },

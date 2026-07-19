@@ -290,24 +290,24 @@
           "title": "Korekcja osi kończyny dolnej",
           "indication": "Deformacja osi, zaburzenie symetrii",
           "planning": "Analiza geometrii, modelowanie korekcji",
-          "technique": "—",
-          "result": "—"
+          "technique": "Osteotomia korekcyjna, stabilna fiksacja",
+          "result": "Przywrócenie osi i symetrii kończyny"
         },
         {
           "area": "Wydłużanie kończyn",
           "title": "Wydłużanie funkcjonalne",
           "indication": "Skrócenie kończyny",
           "planning": "Obliczenie wydłużenia, kontrola osi",
-          "technique": "—",
-          "result": "—"
+          "technique": "Wydłużanie śródszpikowe z etapową kontrolą",
+          "result": "Zaplanowana długość z zachowaniem funkcji"
         },
         {
           "area": "Rekonstrukcja po urazach",
           "title": "Rekonstrukcja złożonego ubytku",
           "indication": "Następstwa urazu, ubytek segmentu",
           "planning": "Etapowy scenariusz reconstruction",
-          "technique": "—",
-          "result": "—"
+          "technique": "Etapowa rekonstrukcja ubytku, stabilna fiksacja",
+          "result": "Przywrócenie ciągłości i funkcji podporowej"
         }
       ]
     },
