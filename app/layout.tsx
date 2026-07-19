@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Manrope, Inter, Cormorant_Garamond } from "next/font/google";
+import { BASE } from "./base";
 import "./globals.css";
+
+// Production origin (GitHub Pages). Update if the site moves to a custom domain.
+const SITE_URL = `https://dmytro-musiiko.github.io${BASE}`;
 
 const manrope = Manrope({
   variable: "--font-manrope",
@@ -22,9 +26,32 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "Dr. Maksym Baida, PhD — Modern Orthopaedic Reconstruction",
   description:
     "Сучасна реконструктивна ортопедія, корекція деформацій та подовження кінцівок. Київ.",
+  openGraph: {
+    type: "website",
+    siteName: "Modern Orthopaedic Reconstruction",
+    title: "Dr. Maksym Baida, PhD — Modern Orthopaedic Reconstruction",
+    description:
+      "Сучасна реконструктивна ортопедія, корекція деформацій та подовження кінцівок. Київ.",
+    images: [
+      {
+        url: `${SITE_URL}/og.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Dr. Maksym Baida, PhD — Modern Orthopaedic Reconstruction",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Dr. Maksym Baida, PhD — Modern Orthopaedic Reconstruction",
+    description:
+      "Сучасна реконструктивна ортопедія, корекція деформацій та подовження кінцівок. Київ.",
+    images: [`${SITE_URL}/og.jpg`],
+  },
 };
 
 export default function RootLayout({
