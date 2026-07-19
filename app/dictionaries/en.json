@@ -207,26 +207,7 @@
     ]
   },
   "footer": {
-    "brandDescription": "Dr. Maksym Baida, PhD — modern reconstructive orthopaedics, deformity correction and limb lengthening.",
-    "navLabel": "— Navigation",
-    "contactsLabel": "— Contacts",
-    "contacts": [
-      {
-        "label": "Telegram",
-        "handle": "+380 66 766 70 94"
-      },
-      {
-        "label": "WhatsApp",
-        "handle": "+380 66 766 70 94"
-      },
-      {
-        "label": "Email",
-        "handle": "meredian18@gmail.com"
-      }
-    ],
-    "copyright": "© 2026 Modern Orthopaedic Reconstruction. All rights reserved.",
-    "privacy": "Privacy policy",
-    "cookies": "Cookies"
+    "copyright": "© 2026 Modern Orthopaedic Reconstruction. All rights reserved."
   },
   "clinical": {
     "hero": {

@@ -207,26 +207,7 @@
     ]
   },
   "footer": {
-    "brandDescription": "Dr. Maksym Baida, PhD — nowoczesna ortopedia rekonstrukcyjna, korekcja deformacji i wydłużanie kończyn.",
-    "navLabel": "— Nawigacja",
-    "contactsLabel": "— Kontakt",
-    "contacts": [
-      {
-        "label": "Telegram",
-        "handle": "+380 66 766 70 94"
-      },
-      {
-        "label": "WhatsApp",
-        "handle": "+380 66 766 70 94"
-      },
-      {
-        "label": "Email",
-        "handle": "meredian18@gmail.com"
-      }
-    ],
-    "copyright": "© 2026 Modern Orthopaedic Reconstruction. Wszelkie prawa zastrzeżone.",
-    "privacy": "Polityka prywatności",
-    "cookies": "Cookies"
+    "copyright": "© 2026 Modern Orthopaedic Reconstruction. Wszelkie prawa zastrzeżone."
   },
   "clinical": {
     "hero": {

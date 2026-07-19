@@ -207,26 +207,7 @@
     ]
   },
   "footer": {
-    "brandDescription": "Dr. Maksym Baida, PhD — сучасна реконструктивна ортопедія, корекція деформацій та подовження кінцівок.",
-    "navLabel": "— Навігація",
-    "contactsLabel": "— Контакти",
-    "contacts": [
-      {
-        "label": "Telegram",
-        "handle": "+380 66 766 70 94"
-      },
-      {
-        "label": "WhatsApp",
-        "handle": "+380 66 766 70 94"
-      },
-      {
-        "label": "Email",
-        "handle": "meredian18@gmail.com"
-      }
-    ],
-    "copyright": "© 2026 Modern Orthopaedic Reconstruction. Усі права захищені.",
-    "privacy": "Політика конфіденційності",
-    "cookies": "Cookies"
+    "copyright": "© 2026 Modern Orthopaedic Reconstruction. Усі права захищені."
   },
   "clinical": {
     "hero": {

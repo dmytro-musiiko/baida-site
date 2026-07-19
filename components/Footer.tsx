@@ -2,13 +2,6 @@ import { localeNames, type Dict, type Locale } from "@/app/i18n";
 import { BASE } from "@/app/base";
 import { CONTACTS } from "@/app/contacts";
 
-const contactHrefs: Record<string, string> = {
-  Telegram: CONTACTS.telegramHref,
-  WhatsApp: CONTACTS.whatsappHref,
-  Email: CONTACTS.emailHref,
-  "E-Mail": CONTACTS.emailHref,
-};
-
 export default function Footer({ dict, lang }: { dict: Dict; lang: Locale }) {
   const navLinks = [
     { label: dict.nav.home, href: `${BASE}/${lang}/` },
@@ -22,22 +15,17 @@ export default function Footer({ dict, lang }: { dict: Dict; lang: Locale }) {
 
   return (
     <footer className="bg-cream border-t border-hairline">
-      <div className="mx-auto max-w-[1440px] px-5 sm:px-8 py-20 flex flex-col md:flex-row md:justify-end gap-12 md:gap-14 lg:gap-20">
-        {/* Brand */}
-        <div className="md:max-w-xs md:mr-auto">
+      {/* Single-row layout: brand — nav — contacts */}
+      <div className="mx-auto max-w-[1440px] px-5 sm:px-8 py-12 flex flex-col lg:flex-row lg:items-center gap-10 lg:gap-8">
+        <div className="lg:w-64 shrink-0">
           <div className="font-serif italic text-3xl tracking-tight leading-none mb-2">
             Baida<span className="text-tan">.</span>
           </div>
-          <div className="label-caps-sm text-ink-muted mb-5">{dict.common.brandTagline}</div>
-          <p className="text-sm text-ink-muted leading-relaxed max-w-xs">
-            {dict.footer.brandDescription}
-          </p>
+          <div className="label-caps-sm text-ink-muted">{dict.common.brandTagline}</div>
         </div>
 
-        {/* Navigation */}
-        <div>
-          <div className="label-caps-sm text-ink-muted mb-5">{dict.footer.navLabel}</div>
-          <ul className="grid grid-cols-2 gap-x-8 gap-y-3">
+        <nav className="flex-1">
+          <ul className="flex flex-wrap lg:justify-center gap-x-7 gap-y-3">
             {navLinks.map((link) => (
               <li key={link.label}>
                 <a href={link.href} className="text-sm text-ink hover:text-tan-dark transition-colors">
@@ -46,24 +34,21 @@ export default function Footer({ dict, lang }: { dict: Dict; lang: Locale }) {
               </li>
             ))}
           </ul>
-        </div>
+        </nav>
 
-        {/* Contacts */}
-        <div>
-          <div className="label-caps-sm text-ink-muted mb-5">{dict.footer.contactsLabel}</div>
-          <ul className="space-y-5">
-            {dict.footer.contacts.map((c) => (
-              <li key={c.label}>
-                <div className="label-caps-sm text-ink-muted mb-1">{c.label}</div>
-                <a
-                  href={contactHrefs[c.label] ?? "#"}
-                  className="text-sm font-medium text-ink hover:text-tan-dark transition-colors"
-                >
-                  {c.handle}
-                </a>
-              </li>
-            ))}
-          </ul>
+        <div className="lg:w-64 shrink-0 flex flex-col items-start lg:items-end gap-1.5">
+          <a
+            href={CONTACTS.telegramHref}
+            className="text-sm font-medium text-ink hover:text-tan-dark transition-colors"
+          >
+            {CONTACTS.phoneDisplay}
+          </a>
+          <a
+            href={CONTACTS.emailHref}
+            className="text-sm font-medium text-ink hover:text-tan-dark transition-colors"
+          >
+            {CONTACTS.email}
+          </a>
         </div>
       </div>
 
@@ -83,14 +68,6 @@ export default function Footer({ dict, lang }: { dict: Dict; lang: Locale }) {
                 </a>
               </span>
             ))}
-          </div>
-          <div className="flex items-center gap-5">
-            <a href="#" className="hover:text-ink transition-colors">
-              {dict.footer.privacy}
-            </a>
-            <a href="#" className="hover:text-ink transition-colors">
-              {dict.footer.cookies}
-            </a>
           </div>
         </div>
       </div>
