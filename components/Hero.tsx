@@ -25,7 +25,7 @@ export default function Hero({ dict, lang }: { dict: Dict; lang: Locale }) {
           fill
           priority
           sizes="100vw"
-          className="object-cover object-[78%_top] [@media(min-aspect-ratio:8/5)]:object-contain [@media(min-aspect-ratio:8/5)]:object-right-bottom [@media(min-aspect-ratio:8/5)]:[mask-image:linear-gradient(to_right,transparent_10%,black_45%)]"
+          className="object-cover object-[78%_top] [@media(min-aspect-ratio:8/5)]:object-contain [@media(min-aspect-ratio:8/5)]:object-right-bottom [@media(min-aspect-ratio:8/5)]:[mask-image:linear-gradient(to_right,transparent_10%,black_45%),linear-gradient(to_bottom,transparent_10%,black_35%)] [@media(min-aspect-ratio:8/5)]:[mask-composite:intersect]"
         />
       </div>
 
