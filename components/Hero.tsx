@@ -17,7 +17,7 @@ export default function Hero({ dict, lang }: { dict: Dict; lang: Locale }) {
           alt=""
           fill
           sizes="100vw"
-          className="hidden [@media(min-aspect-ratio:8/5)]:block object-cover object-[78%_top] scale-110 blur-3xl"
+          className="hidden [@media(min-aspect-ratio:8/5)]:block object-cover object-[78%_top] scale-150 blur-[120px] brightness-[0.55] saturate-75"
         />
         <Image
           src={`${BASE}/or-gloves.jpg`}
