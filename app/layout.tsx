@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { Manrope, Inter, Cormorant_Garamond } from "next/font/google";
+import { BASE } from "./base";
 import "./globals.css";
 
-// Production origin — the site's custom domain.
-const SITE_URL = "https://travmatolog.in.ua";
+// Production origin (GitHub Pages). Update if the site moves to a custom domain.
+const SITE_URL = `https://dmytro-musiiko.github.io${BASE}`;
 
 const manrope = Manrope({
   variable: "--font-manrope",
