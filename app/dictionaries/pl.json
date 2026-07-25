@@ -72,11 +72,79 @@
     "sectionLabel": "Kierunki leczenia",
     "headingLight": "Cztery kierunki nowoczesnej ",
     "headingBold": "rekonstrukcji",
-    "cards": [
-      "Wydłużanie kończyn",
-      "Korekcja deformacji",
-      "Przywracanie symetrii",
-      "Nowoczesne technologie rekonstrukcyjne"
+    "eyebrow": "Kierunek leczenia",
+    "indicationsLabel": "Wskazania",
+    "approachLabel": "Etapy leczenia",
+    "backLabel": "Wszystkie kierunki leczenia",
+    "items": [
+      {
+        "slug": "lengthening",
+        "title": "Wydłużanie kończyn",
+        "summary": "Funkcjonalne i estetyczne wydłużanie kończyny z etapową kontrolą długości i osi.",
+        "intro": "Wydłużanie kończyny to kierunek rekonstrukcyjny dla pacjentów ze skróceniem kończyny, różnicą długości nóg lub potrzebą estetycznej korekcji wzrostu. Leczenie opiera się na precyzyjnym obliczeniu dystrakcji i stałej kontroli osi przez cały okres wydłużania.",
+        "indications": [
+          "Wrodzona lub nabyta różnica długości kończyn",
+          "Następstwa urazów i złamań ze skróceniem odcinka",
+          "Estetyczna potrzeba proporcjonalnego wydłużenia wzrostu"
+        ],
+        "approach": [
+          "Planowanie przedoperacyjne: analiza geometrii kończyny, obliczenie wymaganego wydłużenia",
+          "Wprowadzenie systemu kontrolowanej dystrakcji (śródszpikowego lub zewnętrznego, zależnie od przypadku)",
+          "Etapowe wydłużanie z regularną kontrolą rentgenowską osi",
+          "Okres konsolidacji i rehabilitacji w celu przywrócenia pełnej funkcji kończyny"
+        ]
+      },
+      {
+        "slug": "deformity",
+        "title": "Korekcja deformacji",
+        "summary": "Korekcja osi kończyny przy deformacjach szpotawych, koślawych i innych, z indywidualnie planowaną osteotomią.",
+        "intro": "Deformacje osi kończyny dolnej — szpotawe, koślawe, rotacyjne — wpływają na rozkład obciążenia stawów i mogą postępować z czasem. Korekcja zaczyna się od szczegółowej analizy geometrii kończyny i indywidualnego planu osteotomii.",
+        "indications": [
+          "Szpotawa lub koślawa deformacja osi kończyny",
+          "Zaburzenia rotacyjne kości udowej lub piszczelowej",
+          "Postępujące obciążenie stawu wskutek zaburzenia osi"
+        ],
+        "approach": [
+          "Analiza radiometryczna osi mechanicznej i anatomicznej",
+          "Modelowanie korekcji i wybór poziomu osteotomii",
+          "Stabilna fiksacja w skorygowanej pozycji",
+          "Kontrola konsolidacji i przywrócenie pełnego obciążenia"
+        ]
+      },
+      {
+        "slug": "symmetry",
+        "title": "Przywracanie symetrii",
+        "summary": "Kompleksowe wyrównanie długości i osi obu kończyn dla symetrii funkcjonalnej i estetycznej.",
+        "intro": "Zaburzenie symetrii kończyn często łączy różnicę długości z odchyleniem osi, dlatego wymaga kompleksowego podejścia — nie tylko wyrównania długości, ale i spójnej korekcji geometrii obu kończyn względem siebie.",
+        "indications": [
+          "Połączona różnica długości i osi kończyn",
+          "Asymetria po przebytych urazach lub operacjach",
+          "Zaburzenie chodu związane z brakiem równowagi kończyn"
+        ],
+        "approach": [
+          "Porównawcza analiza geometrii obu kończyn",
+          "Opracowanie jednego planu korekcji uwzględniającego długość i oś",
+          "Etapowa realizacja planu z kontrolą pośrednią",
+          "Ocena wyniku funkcjonalnego — chodu, równowagi, obciążenia"
+        ]
+      },
+      {
+        "slug": "technology",
+        "title": "Nowoczesne technologie rekonstrukcyjne",
+        "summary": "Systemy śródszpikowe ze sterowaniem magnetycznym wydłużania i nowoczesne metody chirurgii precyzyjnej.",
+        "intro": "Nowoczesne systemy rekonstrukcyjne, w tym gwoździe śródszpikowe sterowane magnetycznie, umożliwiają wydłużanie i korekcję bez zewnętrznego stabilizatora. Technologia poszerza możliwości chirurga, pozostawiając decyzję kliniczną lekarzowi.",
+        "indications": [
+          "Wydłużanie kończyny bez zewnętrznego aparatu fiksacyjnego",
+          "Przypadki, w których ważna jest minimalizacja ingerencji w codzienne życie pacjenta",
+          "Połączona korekcja długości i osi w jednym systemie"
+        ],
+        "approach": [
+          "Ocena zgodności przypadku z systemem śródszpikowym",
+          "Implantacja systemu przez minimalny dostęp",
+          "Sterowanie dystrakcją za pomocą zewnętrznego pilota",
+          "Zdalna kontrola rentgenowska postępu wydłużania"
+        ]
+      }
     ]
   },
   "about": {

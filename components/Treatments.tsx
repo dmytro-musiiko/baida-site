@@ -1,16 +1,14 @@
 import type { Dict, Locale } from "@/app/i18n";
 import { BASE } from "@/app/base";
+import LegLengthening from "@/components/icons/LegLengthening";
+import LegDeformity from "@/components/icons/LegDeformity";
+import LegSymmetry from "@/components/icons/LegSymmetry";
+import TechnologyIcon from "@/components/icons/Technology";
 
-const images = [
-  "/treatment-tech.jpg",
-  "/treatment-deform.jpg",
-  "/treatment-xray.jpg",
-  "/treatment-legs.jpg",
-];
+const icons = [LegLengthening, LegDeformity, LegSymmetry, TechnologyIcon];
 
 export default function Treatments({ dict, lang }: { dict: Dict; lang: Locale }) {
   const t = dict.treatments;
-  const cards = t.cards.map((title, i) => ({ title, image: images[i] }));
 
   return (
     <section id="treatments" className="bg-tan-dark py-14 sm:py-20 scroll-mt-24">
@@ -27,48 +25,36 @@ export default function Treatments({ dict, lang }: { dict: Dict; lang: Locale })
           </h2>
         </div>
 
-        {/* 2×2 image grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-          {cards.map((card) => (
-            <a
-              key={card.title}
-              href={`${BASE}/${lang}/#consultation`}
-              className="group relative block aspect-[16/10] overflow-hidden rounded-[8px] bg-navy-90"
-            >
-              {/* Image or placeholder */}
-              {card.image ? (
-                <div className="absolute inset-0 flex items-center justify-center p-5 lg:p-8">
-                  <img
-                    src={`${BASE}${card.image}`}
-                    alt={card.title}
-                    className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-[1.03]"
-                  />
+        {/* 2×2 icon-card grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8">
+          {t.items.map((item, i) => {
+            const Icon = icons[i];
+            return (
+              <a
+                key={item.slug}
+                href={`${BASE}/${lang}/treatments/${item.slug}/`}
+                className="group flex items-center gap-6 p-6 lg:p-8 rounded-[8px] bg-navy-90 hover:bg-navy-90/70 border border-white/10 hover:border-white/25 transition-colors"
+              >
+                <div className="shrink-0 w-16 h-20 lg:w-20 lg:h-24 flex items-center justify-center text-tan">
+                  <Icon className="w-full h-full transition-transform group-hover:scale-105" />
                 </div>
-              ) : (
-                <div
+                <div className="flex-1 min-w-0">
+                  <h3 className="font-sans font-light text-white text-xl lg:text-2xl tracking-tight">
+                    {item.title}
+                  </h3>
+                  <p className="mt-2 text-sm text-white/60 leading-relaxed">
+                    {item.summary}
+                  </p>
+                </div>
+                <span
                   aria-hidden
-                  className="absolute inset-0 bg-gradient-to-br from-navy-90 to-tan-dark"
-                  style={{
-                    backgroundImage:
-                      "repeating-linear-gradient(135deg, rgba(255,255,255,0.02) 0px, rgba(255,255,255,0.02) 1px, transparent 1px, transparent 12px)",
-                  }}
-                />
-              )}
-
-              {/* Dark overlay for legibility */}
-              <div
-                aria-hidden
-                className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/10 to-black/55 group-hover:from-black/40 group-hover:to-black/65 transition-colors"
-              />
-
-              {/* Title bottom-center */}
-              <div className="absolute inset-x-6 bottom-5 flex justify-center text-center">
-                <h3 className="font-sans font-light text-white text-xl lg:text-2xl tracking-tight">
-                  {card.title}
-                </h3>
-              </div>
-            </a>
-          ))}
+                  className="shrink-0 text-white/50 group-hover:text-tan transition-colors"
+                >
+                  →
+                </span>
+              </a>
+            );
+          })}
         </div>
       </div>
     </section>

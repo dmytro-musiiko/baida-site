@@ -72,11 +72,79 @@
     "sectionLabel": "Behandlungsschwerpunkte",
     "headingLight": "Vier Schwerpunkte der modernen ",
     "headingBold": "Rekonstruktion",
-    "cards": [
-      "Extremitätenverlängerung",
-      "Korrektur von Deformitäten",
-      "Wiederherstellung der Symmetrie",
-      "Moderne rekonstruktive Technologien"
+    "eyebrow": "Behandlungsschwerpunkt",
+    "indicationsLabel": "Indikationen",
+    "approachLabel": "Behandlungsschritte",
+    "backLabel": "Alle Schwerpunkte",
+    "items": [
+      {
+        "slug": "lengthening",
+        "title": "Extremitätenverlängerung",
+        "summary": "Funktionelle und ästhetische Extremitätenverlängerung mit stufenweiser Kontrolle von Länge und Achse.",
+        "intro": "Die Extremitätenverlängerung ist ein rekonstruktiver Behandlungsschwerpunkt für Patienten mit Extremitätenverkürzung, Beinlängendifferenz oder dem Wunsch nach ästhetischer Größenkorrektur. Die Behandlung basiert auf einer präzisen Distraktionsberechnung und kontinuierlicher Achskontrolle während der gesamten Verlängerungsphase.",
+        "indications": [
+          "Angeborene oder erworbene Beinlängendifferenz",
+          "Traumafolgen und Frakturen mit Segmentverkürzung",
+          "Ästhetischer Wunsch nach proportionaler Größenverlängerung"
+        ],
+        "approach": [
+          "Präoperative Planung: Analyse der Extremitätengeometrie, Berechnung der erforderlichen Verlängerung",
+          "Einbringen eines Systems zur kontrollierten Distraktion (intramedullär oder extern, je nach Fall)",
+          "Stufenweise Verlängerung mit regelmäßiger radiologischer Achskontrolle",
+          "Konsolidierungs- und Rehabilitationsphase zur Wiederherstellung der vollen Funktion"
+        ]
+      },
+      {
+        "slug": "deformity",
+        "title": "Korrektur von Deformitäten",
+        "summary": "Achskorrektur bei Varus-, Valgus- und anderen Deformitäten mit individuell geplanter Osteotomie.",
+        "intro": "Achsdeformitäten der unteren Extremität — Varus, Valgus, Rotationsfehler — beeinflussen die Lastverteilung auf die Gelenke und können mit der Zeit fortschreiten. Die Korrektur beginnt mit einer detaillierten Analyse der Extremitätengeometrie und einem individuellen Osteotomieplan.",
+        "indications": [
+          "Varus- oder Valgusdeformität der Extremitätenachse",
+          "Rotationsstörungen des Femurs oder der Tibia",
+          "Fortschreitende Gelenkbelastung durch Achsfehlstellung"
+        ],
+        "approach": [
+          "Radiologische Analyse der mechanischen und anatomischen Achse",
+          "Modellierung der Korrektur und Wahl der Osteotomiehöhe",
+          "Stabile Fixation in korrigierter Position",
+          "Kontrolle der Konsolidierung und Wiederherstellung der vollen Belastbarkeit"
+        ]
+      },
+      {
+        "slug": "symmetry",
+        "title": "Wiederherstellung der Symmetrie",
+        "summary": "Umfassende Angleichung von Länge und Achse beider Extremitäten für funktionelle und ästhetische Symmetrie.",
+        "intro": "Asymmetrien der Extremitäten verbinden häufig eine Längendifferenz mit einer Achsabweichung und erfordern daher einen umfassenden Ansatz — nicht nur den Längenausgleich, sondern eine abgestimmte Korrektur der Geometrie beider Extremitäten zueinander.",
+        "indications": [
+          "Kombinierte Längen- und Achsdifferenz zwischen den Extremitäten",
+          "Asymmetrie nach vorangegangenem Trauma oder Operation",
+          "Gangstörung infolge eines Extremitätenungleichgewichts"
+        ],
+        "approach": [
+          "Vergleichende Geometrieanalyse beider Extremitäten",
+          "Erstellung eines einheitlichen Korrekturplans unter Berücksichtigung von Länge und Achse",
+          "Stufenweise Umsetzung mit Zwischenkontrollen",
+          "Beurteilung des funktionellen Ergebnisses — Gangbild, Balance, Belastung"
+        ]
+      },
+      {
+        "slug": "technology",
+        "title": "Moderne rekonstruktive Technologien",
+        "summary": "Intramedulläre Systeme mit magnetisch gesteuerter Verlängerung und moderne Precision-Chirurgie.",
+        "intro": "Moderne Rekonstruktionssysteme, darunter magnetisch gesteuerte intramedulläre Marknägel, ermöglichen Verlängerung und Korrektur ohne externen Fixateur. Die Technologie erweitert die Möglichkeiten des Chirurgen, während die klinische Entscheidung beim Arzt verbleibt.",
+        "indications": [
+          "Extremitätenverlängerung ohne externen Fixateur",
+          "Fälle, in denen eine minimale Beeinträchtigung des Alltags wichtig ist",
+          "Kombinierte Längen- und Achskorrektur in einem einzigen System"
+        ],
+        "approach": [
+          "Bewertung der Eignung des Falls für ein intramedulläres System",
+          "Implantation des Systems über einen minimalen Zugang",
+          "Steuerung der Distraktion über eine externe Fernbedienung",
+          "Radiologische Fernüberwachung des Verlängerungsfortschritts"
+        ]
+      }
     ]
   },
   "about": {

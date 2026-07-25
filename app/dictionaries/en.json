@@ -72,11 +72,79 @@
     "sectionLabel": "Areas of treatment",
     "headingLight": "Four directions of modern ",
     "headingBold": "reconstruction",
-    "cards": [
-      "Limb lengthening",
-      "Deformity correction",
-      "Restoration of symmetry",
-      "Modern reconstructive technologies"
+    "eyebrow": "Focus area",
+    "indicationsLabel": "Indications",
+    "approachLabel": "Treatment stages",
+    "backLabel": "All focus areas",
+    "items": [
+      {
+        "slug": "lengthening",
+        "title": "Limb lengthening",
+        "summary": "Functional and aesthetic limb lengthening with staged control of length and axis.",
+        "intro": "Limb lengthening is a reconstructive direction for patients with limb shortening, leg length discrepancy, or a request for aesthetic height correction. Treatment is built on precise distraction calculations and continuous axis control throughout the lengthening period.",
+        "indications": [
+          "Congenital or acquired limb length discrepancy",
+          "Consequences of trauma and fractures resulting in segment shortening",
+          "Aesthetic request for proportional height lengthening"
+        ],
+        "approach": [
+          "Preoperative planning: limb geometry analysis, calculation of the required lengthening",
+          "Placement of a controlled distraction system (intramedullary or external, depending on the case)",
+          "Staged lengthening with regular X-ray monitoring of the axis",
+          "Consolidation and rehabilitation period to restore full limb function"
+        ]
+      },
+      {
+        "slug": "deformity",
+        "title": "Deformity correction",
+        "summary": "Axis correction for varus, valgus and other deformities with individually planned osteotomy.",
+        "intro": "Axis deformities of the lower limb — varus, valgus, rotational — affect load distribution across the joints and can progress over time. Correction begins with a detailed analysis of limb geometry and an individual osteotomy plan.",
+        "indications": [
+          "Varus or valgus limb axis deformity",
+          "Rotational disorders of the femur or tibia",
+          "Progressive joint loading due to axis misalignment"
+        ],
+        "approach": [
+          "Radiographic analysis of the mechanical and anatomical axis",
+          "Correction modelling and selection of the osteotomy level",
+          "Stable fixation in the corrected position",
+          "Monitoring consolidation and restoring full weight-bearing"
+        ]
+      },
+      {
+        "slug": "symmetry",
+        "title": "Restoration of symmetry",
+        "summary": "Comprehensive alignment of length and axis of both limbs for functional and aesthetic symmetry.",
+        "intro": "Limb asymmetry often combines a length discrepancy with axis deviation, requiring a comprehensive approach — not just length equalisation, but coordinated correction of both limbs' geometry relative to each other.",
+        "indications": [
+          "Combined length and axis discrepancy between limbs",
+          "Asymmetry following prior trauma or surgery",
+          "Gait disturbance related to limb imbalance"
+        ],
+        "approach": [
+          "Comparative geometry analysis of both limbs",
+          "Building a single correction plan accounting for length and axis",
+          "Staged implementation with interim monitoring",
+          "Assessment of functional outcome — gait, balance, load distribution"
+        ]
+      },
+      {
+        "slug": "technology",
+        "title": "Modern reconstructive technologies",
+        "summary": "Intramedullary systems with magnetic lengthening control and modern precision-surgery methods.",
+        "intro": "Modern reconstruction systems, including magnetically controlled intramedullary nails, allow lengthening and correction without external fixators. The technology extends the surgeon's capabilities while the clinical decision remains with the doctor.",
+        "indications": [
+          "Limb lengthening without an external fixation frame",
+          "Cases where minimising external interference with daily life matters",
+          "Combined length and axis correction within a single system"
+        ],
+        "approach": [
+          "Assessing case compatibility with an intramedullary system",
+          "Implanting the system through minimal access",
+          "Controlling distraction with an external remote",
+          "Remote X-ray monitoring of lengthening progress"
+        ]
+      }
     ]
   },
   "about": {
