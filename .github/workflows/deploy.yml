@@ -32,9 +32,8 @@ jobs:
 
       - name: Build static site
         run: npm run build
-        env:
-          # Serve under /<repo> on GitHub Pages project sites
-          NEXT_PUBLIC_BASE_PATH: /${{ github.event.repository.name }}
+        # No NEXT_PUBLIC_BASE_PATH: the site is served at the root of the
+        # custom domain (see public/CNAME), not under /<repo>.
 
       - name: Disable Jekyll (keep _next assets)
         run: touch out/.nojekyll
