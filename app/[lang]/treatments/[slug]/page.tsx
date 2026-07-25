@@ -5,19 +5,15 @@ import { BASE } from "@/app/base";
 import TopBar from "@/components/TopBar";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
-import LegLengthening from "@/components/icons/LegLengthening";
-import LegDeformity from "@/components/icons/LegDeformity";
-import LegSymmetry from "@/components/icons/LegSymmetry";
-import TechnologyIcon from "@/components/icons/Technology";
 
-const ICONS: Record<string, typeof LegLengthening> = {
-  lengthening: LegLengthening,
-  deformity: LegDeformity,
-  symmetry: LegSymmetry,
-  technology: TechnologyIcon,
+const IMAGES: Record<string, string> = {
+  lengthening: "/treatment-tech.jpg",
+  deformity: "/treatment-deform.jpg",
+  symmetry: "/treatment-xray.jpg",
+  technology: "/treatment-legs.jpg",
 };
 
-const SLUGS = Object.keys(ICONS);
+const SLUGS = Object.keys(IMAGES);
 
 export function generateStaticParams() {
   return locales.flatMap((lang) => SLUGS.map((slug) => ({ lang, slug })));
@@ -55,7 +51,7 @@ export default async function TreatmentDetail({
   const { dict, item } = findItem(loc, slug);
   if (!item) notFound();
   const t = dict.treatments;
-  const Icon = ICONS[slug];
+  const image = IMAGES[slug];
 
   return (
     <>
@@ -72,9 +68,14 @@ export default async function TreatmentDetail({
             {t.backLabel}
           </a>
 
-          <div className="mt-8 flex items-start gap-6 lg:gap-8">
-            <div className="shrink-0 w-16 h-20 lg:w-20 lg:h-24 flex items-center justify-center text-tan">
-              <Icon className="w-full h-full" />
+          <div className="mt-8 flex flex-col sm:flex-row sm:items-center gap-6 lg:gap-8">
+            <div className="shrink-0 w-24 h-24 sm:w-28 sm:h-28 rounded-[8px] overflow-hidden bg-black/20 order-first">
+              <img
+                src={`${BASE}${image}`}
+                alt=""
+                aria-hidden
+                className="w-full h-full object-cover"
+              />
             </div>
             <div>
               <div className="label-caps-sm text-white/55 mb-4">{t.eyebrow}</div>
@@ -93,34 +94,40 @@ export default async function TreatmentDetail({
         <div className="mx-auto max-w-[1000px] px-5 sm:px-8 py-14 sm:py-20">
           <p className="text-ink text-lg leading-relaxed max-w-[68ch]">{item.intro}</p>
 
-          <div className="mt-14 grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
-            <div>
-              <div className="label-caps-sm text-ink-muted mb-5">{t.indicationsLabel}</div>
-              <ul className="space-y-4">
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+            <div className="bg-cream border border-hairline rounded-[8px] p-7 lg:p-8">
+              <div className="label-caps-sm text-ink-muted mb-6">{t.indicationsLabel}</div>
+              <ul className="space-y-5">
                 {item.indications.map((line) => (
-                  <li key={line} className="flex gap-3 text-ink leading-relaxed">
-                    <span aria-hidden className="text-tan-dark shrink-0">—</span>
+                  <li key={line} className="flex gap-3.5 text-ink leading-relaxed">
+                    <span
+                      aria-hidden
+                      className="shrink-0 w-1.5 h-1.5 mt-2.5 rounded-full bg-tan-dark"
+                    />
                     {line}
                   </li>
                 ))}
               </ul>
             </div>
-            <div>
-              <div className="label-caps-sm text-ink-muted mb-5">{t.approachLabel}</div>
-              <ol className="space-y-4">
+            <div className="bg-cream border border-hairline rounded-[8px] p-7 lg:p-8">
+              <div className="label-caps-sm text-ink-muted mb-6">{t.approachLabel}</div>
+              <ol className="space-y-5">
                 {item.approach.map((line, i) => (
-                  <li key={line} className="flex gap-3 text-ink leading-relaxed">
-                    <span aria-hidden className="text-tan-dark shrink-0 tabular-nums">
-                      {i + 1}.
+                  <li key={line} className="flex gap-3.5 text-ink leading-relaxed">
+                    <span
+                      aria-hidden
+                      className="shrink-0 flex items-center justify-center w-6 h-6 rounded-full bg-tan-dark text-white text-xs font-semibold tabular-nums"
+                    >
+                      {i + 1}
                     </span>
-                    {line}
+                    <span className="pt-0.5">{line}</span>
                   </li>
                 ))}
               </ol>
             </div>
           </div>
 
-          <div className="mt-16 pt-10 border-t border-hairline">
+          <div className="mt-14 pt-10 border-t border-hairline">
             <a
               href={`${BASE}/${loc}/#consultation`}
               className="group inline-flex items-center justify-between gap-6 btn-metallic text-white px-8 py-4 label-caps w-full sm:w-auto sm:min-w-[280px]"

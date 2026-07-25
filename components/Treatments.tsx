@@ -1,11 +1,12 @@
 import type { Dict, Locale } from "@/app/i18n";
 import { BASE } from "@/app/base";
-import LegLengthening from "@/components/icons/LegLengthening";
-import LegDeformity from "@/components/icons/LegDeformity";
-import LegSymmetry from "@/components/icons/LegSymmetry";
-import TechnologyIcon from "@/components/icons/Technology";
 
-const icons = [LegLengthening, LegDeformity, LegSymmetry, TechnologyIcon];
+const images = [
+  "/treatment-tech.jpg",
+  "/treatment-deform.jpg",
+  "/treatment-xray.jpg",
+  "/treatment-legs.jpg",
+];
 
 export default function Treatments({ dict, lang }: { dict: Dict; lang: Locale }) {
   const t = dict.treatments;
@@ -25,36 +26,36 @@ export default function Treatments({ dict, lang }: { dict: Dict; lang: Locale })
           </h2>
         </div>
 
-        {/* 2×2 icon-card grid */}
+        {/* 2×2 photo-card grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8">
-          {t.items.map((item, i) => {
-            const Icon = icons[i];
-            return (
-              <a
-                key={item.slug}
-                href={`${BASE}/${lang}/treatments/${item.slug}/`}
-                className="group flex items-center gap-6 p-6 lg:p-8 rounded-[8px] bg-navy-90 hover:bg-navy-90/70 border border-white/10 hover:border-white/25 transition-colors"
-              >
-                <div className="shrink-0 w-16 h-20 lg:w-20 lg:h-24 flex items-center justify-center text-tan">
-                  <Icon className="w-full h-full transition-transform group-hover:scale-105" />
-                </div>
-                <div className="flex-1 min-w-0">
-                  <h3 className="font-sans font-light text-white text-xl lg:text-2xl tracking-tight">
-                    {item.title}
-                  </h3>
-                  <p className="mt-2 text-sm text-white/60 leading-relaxed">
-                    {item.summary}
-                  </p>
-                </div>
-                <span
+          {t.items.map((item, i) => (
+            <a
+              key={item.slug}
+              href={`${BASE}/${lang}/treatments/${item.slug}/`}
+              className="group flex items-center gap-6 p-6 lg:p-8 rounded-[8px] bg-navy-90 hover:bg-navy-90/70 border border-white/10 hover:border-tan/50 shadow-[0_0_0_rgba(0,0,0,0)] hover:shadow-xl hover:-translate-y-0.5 transition-all"
+            >
+              <div className="shrink-0 w-16 h-16 lg:w-20 lg:h-20 rounded-[6px] overflow-hidden bg-black/20">
+                <img
+                  src={`${BASE}${images[i]}`}
+                  alt=""
                   aria-hidden
-                  className="shrink-0 text-white/50 group-hover:text-tan transition-colors"
-                >
-                  →
-                </span>
-              </a>
-            );
-          })}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
+              <div className="flex-1 min-w-0">
+                <h3 className="font-sans font-light text-white text-xl lg:text-2xl tracking-tight">
+                  {item.title}
+                </h3>
+                <p className="mt-2 text-sm text-white/60 leading-relaxed">
+                  {item.summary}
+                </p>
+                <div className="mt-4 inline-flex items-center gap-2 label-caps text-[11px] font-semibold text-tan">
+                  {t.learnMore}
+                  <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
+                </div>
+              </div>
+            </a>
+          ))}
         </div>
       </div>
     </section>
