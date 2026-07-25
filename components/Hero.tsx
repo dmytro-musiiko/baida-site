@@ -9,6 +9,16 @@ export default function Hero({ dict, lang }: { dict: Dict; lang: Locale }) {
       {/* Background photo — used from sm up (phones get the stacked photo below).
           Starts below the translucent header so the doctor's head is never hidden behind it. */}
       <div aria-hidden className="hidden sm:block absolute inset-x-0 bottom-0 top-[82px] md:top-[121px] xl:top-[132px]">
+        {/* Blurred cover fill — only visible on ultra-wide screens, where the sharp
+            photo below switches to object-contain and no longer spans full width.
+            Fills that letterboxed gap with the same photo instead of flat bg color. */}
+        <Image
+          src={`${BASE}/or-gloves.jpg`}
+          alt=""
+          fill
+          sizes="100vw"
+          className="hidden [@media(min-aspect-ratio:8/5)]:block object-cover object-[78%_top] scale-110 blur-3xl"
+        />
         <Image
           src={`${BASE}/or-gloves.jpg`}
           alt=""
