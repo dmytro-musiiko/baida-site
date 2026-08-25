@@ -75,20 +75,13 @@ export default function Hero({ dict, lang }: { dict: Dict; lang: Locale }) {
               {t.body}
             </p>
 
-            {/* Primary CTA + secondary text link */}
-            <div className="mt-8 lg:mt-12 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-8">
+            {/* Primary CTA */}
+            <div className="mt-8 lg:mt-12">
               <a
                 href={`${BASE}/${lang}/#consultation`}
                 className="group inline-flex items-center justify-between gap-6 btn-metallic text-white px-6 sm:px-8 py-4 label-caps w-full sm:w-auto sm:min-w-[280px]"
               >
                 {dict.common.ctaPrimary}
-                <span className="transition-transform group-hover:translate-x-1">→</span>
-              </a>
-              <a
-                href={`${BASE}/${lang}/#consultation`}
-                className="group inline-flex items-center justify-between gap-6 border border-white/30 hover:border-white text-white px-6 sm:px-8 py-4 label-caps transition-colors w-full sm:w-auto sm:min-w-[280px]"
-              >
-                {dict.common.ctaSecondary}
                 <span className="transition-transform group-hover:translate-x-1">→</span>
               </a>
             </div>

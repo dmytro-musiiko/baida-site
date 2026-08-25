@@ -31,19 +31,12 @@ export default function BookOnline({ dict }: { dict: Dict }) {
                 {t.body}
               </p>
 
-              <div className="mt-10 flex flex-col sm:flex-row gap-3">
+              <div className="mt-10">
                 <a
                   href={CONTACTS.telegramHref}
-                  className="group inline-flex items-center justify-between gap-6 btn-metallic text-white px-7 py-5 label-caps w-full sm:w-auto sm:min-w-[280px]"
+                  className="group inline-flex items-center justify-between gap-6 btn-metallic text-white px-7 py-5 label-caps w-full sm:w-auto sm:min-w-[360px]"
                 >
                   {dict.common.ctaPrimary}
-                  <span className="transition-transform group-hover:translate-x-1">→</span>
-                </a>
-                <a
-                  href={CONTACTS.emailHref}
-                  className="group inline-flex items-center justify-between gap-6 border border-white/50 hover:border-white text-white px-7 py-5 label-caps transition-colors w-full sm:w-auto sm:min-w-[280px]"
-                >
-                  {t.ctaUpload}
                   <span className="transition-transform group-hover:translate-x-1">→</span>
                 </a>
               </div>

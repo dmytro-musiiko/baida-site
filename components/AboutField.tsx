@@ -40,19 +40,12 @@ export default function AboutField({ dict, lang }: { dict: Dict; lang: Locale })
               ))}
             </div>
 
-            <div className="mt-10 flex flex-col sm:flex-row gap-3">
+            <div className="mt-10">
               <a
                 href={`${BASE}/${lang}/#consultation`}
                 className="group inline-flex items-center justify-between gap-6 btn-metallic text-white px-7 py-4 label-caps w-full sm:w-auto sm:min-w-[260px]"
               >
                 {dict.common.ctaPrimary}
-                <span className="transition-transform group-hover:translate-x-1">→</span>
-              </a>
-              <a
-                href={`${BASE}/${lang}/#consultation`}
-                className="group inline-flex items-center justify-between gap-6 border border-hairline hover:border-ink text-ink px-7 py-4 label-caps transition-colors w-full sm:w-auto sm:min-w-[260px]"
-              >
-                {dict.common.ctaSecondary}
                 <span className="transition-transform group-hover:translate-x-1">→</span>
               </a>
             </div>
