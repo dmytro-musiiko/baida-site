@@ -126,12 +126,12 @@ function RichDetail({
                 className="w-full h-full object-cover"
               />
             </div>
-            <div>
+            <div className="flex-1 min-w-0">
               <div className="label-caps-sm text-white/55 mb-4">{t.eyebrow}</div>
               <h1 className="font-sans font-light text-white leading-[1.05] tracking-[-0.02em] text-[clamp(1.75rem,4vw,3rem)]">
                 {article.title}
               </h1>
-              <p className="mt-5 text-white/80 text-lg sm:text-xl font-light leading-relaxed max-w-[52ch]">
+              <p className="mt-5 text-white/80 text-lg sm:text-xl font-light leading-relaxed">
                 {article.lead}
               </p>
             </div>
