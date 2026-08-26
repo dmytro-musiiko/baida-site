@@ -141,7 +141,7 @@ function RichDetail({
 
       <main className="bg-paper">
         <div className="mx-auto max-w-[1200px] px-5 sm:px-8 py-14 sm:py-20">
-          <p className="max-w-[760px] text-ink text-lg leading-relaxed">{article.intro}</p>
+          <p className="max-w-[920px] text-ink text-lg leading-relaxed">{article.intro}</p>
 
           {article.gallery.length > 0 && (
             <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -153,7 +153,7 @@ function RichDetail({
             </div>
           )}
 
-          <div className="mt-4 max-w-[760px]">
+          <div className="mt-4 max-w-[920px]">
             {article.blocks.map((block, i) =>
               block.divider ? (
                 <div
