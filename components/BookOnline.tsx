@@ -27,14 +27,14 @@ export default function BookOnline({ dict }: { dict: Dict }) {
                 <span className="font-serif italic font-medium">{t.headingItalic}</span>.
               </h2>
 
-              <p className="mt-8 text-white/85 leading-relaxed max-w-xl text-[15px]">
-                {t.body}
-              </p>
+              <div className="mt-8 flex flex-col lg:flex-row lg:items-center gap-6">
+                <p className="text-white/85 leading-relaxed text-[15px] lg:flex-1 lg:min-w-0">
+                  {t.body}
+                </p>
 
-              <div className="mt-10">
                 <a
                   href={CONTACTS.telegramHref}
-                  className="group inline-flex items-center justify-between gap-6 btn-metallic text-white px-7 py-5 label-caps w-full sm:w-auto sm:min-w-[360px]"
+                  className="group inline-flex items-center justify-between gap-6 btn-metallic text-white px-7 py-5 label-caps w-full lg:w-auto lg:shrink-0 lg:min-w-[300px]"
                 >
                   {dict.common.ctaPrimary}
                   <span className="transition-transform group-hover:translate-x-1">→</span>
