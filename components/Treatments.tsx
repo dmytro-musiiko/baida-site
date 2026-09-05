@@ -1,13 +1,6 @@
 import type { Dict, Locale } from "@/app/i18n";
 import { BASE } from "@/app/base";
-import directionsUk from "@/app/directions.uk.json";
-
-const images = [
-  "/treatment-tech.jpg",
-  "/treatment-deform.jpg",
-  "/treatment-xray.jpg",
-  "/treatment-legs.jpg",
-];
+import { getDirections } from "@/app/directions";
 
 function SectionHeader({ t }: { t: Dict["treatments"] }) {
   return (
@@ -26,75 +19,34 @@ function SectionHeader({ t }: { t: Dict["treatments"] }) {
 
 export default function Treatments({ dict, lang }: { dict: Dict; lang: Locale }) {
   const t = dict.treatments;
-
-  if (lang === "uk") {
-    return (
-      <section id="treatments" className="bg-tan-dark py-14 sm:py-20 scroll-mt-24">
-        <div className="mx-auto max-w-[1440px] px-5 sm:px-8">
-          <SectionHeader t={t} />
-
-          {/* 3×4 direction-card grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
-            {directionsUk.cards.map((card, i) => (
-              <a
-                key={`${card.slug}-${i}`}
-                href={`${BASE}/${lang}/treatments/${card.slug}/`}
-                className="group flex items-center gap-5 p-5 lg:p-6 rounded-[8px] bg-navy-90 hover:bg-navy-90/70 border border-white/10 hover:border-tan/50 hover:shadow-xl hover:-translate-y-0.5 transition-all"
-              >
-                <div className="shrink-0 w-14 h-14 lg:w-16 lg:h-16 rounded-[6px] overflow-hidden bg-black/20">
-                  <img
-                    src={`${BASE}/directions/${card.hero}`}
-                    alt=""
-                    aria-hidden
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                </div>
-                <div className="flex-1 min-w-0">
-                  <h3 className="font-sans font-light text-white text-base lg:text-lg tracking-tight leading-snug">
-                    {card.title}
-                  </h3>
-                  <div className="mt-2 inline-flex items-center gap-2 label-caps text-[10.5px] font-semibold text-tan">
-                    {t.learnMore}
-                    <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
-                  </div>
-                </div>
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
-    );
-  }
+  const directions = getDirections(lang);
 
   return (
     <section id="treatments" className="bg-tan-dark py-14 sm:py-20 scroll-mt-24">
       <div className="mx-auto max-w-[1440px] px-5 sm:px-8">
         <SectionHeader t={t} />
 
-        {/* 2×2 photo-card grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8">
-          {t.items.map((item, i) => (
+        {/* 3×4 direction-card grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
+          {directions.cards.map((card, i) => (
             <a
-              key={item.slug}
-              href={`${BASE}/${lang}/treatments/${item.slug}/`}
-              className="group flex items-center gap-6 p-6 lg:p-8 rounded-[8px] bg-navy-90 hover:bg-navy-90/70 border border-white/10 hover:border-tan/50 shadow-[0_0_0_rgba(0,0,0,0)] hover:shadow-xl hover:-translate-y-0.5 transition-all"
+              key={`${card.slug}-${i}`}
+              href={`${BASE}/${lang}/treatments/${card.slug}/`}
+              className="group flex items-center gap-5 p-5 lg:p-6 rounded-[8px] bg-navy-90 hover:bg-navy-90/70 border border-white/10 hover:border-tan/50 hover:shadow-xl hover:-translate-y-0.5 transition-all"
             >
-              <div className="shrink-0 w-16 h-16 lg:w-20 lg:h-20 rounded-[6px] overflow-hidden bg-black/20">
+              <div className="shrink-0 w-14 h-14 lg:w-16 lg:h-16 rounded-[6px] overflow-hidden bg-black/20">
                 <img
-                  src={`${BASE}${images[i]}`}
+                  src={`${BASE}/directions/${card.hero}`}
                   alt=""
                   aria-hidden
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
               <div className="flex-1 min-w-0">
-                <h3 className="font-sans font-light text-white text-xl lg:text-2xl tracking-tight">
-                  {item.title}
+                <h3 className="font-sans font-light text-white text-base lg:text-lg tracking-tight leading-snug">
+                  {card.title}
                 </h3>
-                <p className="mt-2 text-sm text-white/60 leading-relaxed">
-                  {item.summary}
-                </p>
-                <div className="mt-4 inline-flex items-center gap-2 label-caps text-[11px] font-semibold text-tan">
+                <div className="mt-2 inline-flex items-center gap-2 label-caps text-[10.5px] font-semibold text-tan">
                   {t.learnMore}
                   <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
                 </div>
