@@ -80,7 +80,13 @@ function BlockBody({ block }: { block: Block }) {
       {block.caseImages && block.caseImages.length > 0 && (
         <ImageLightbox
           images={block.caseImages.map((img) => `${BASE}/directions/${img}`)}
-          className="mb-4 grid grid-cols-2 sm:grid-cols-3 gap-3"
+          className={
+            block.caseAspect === "landscape"
+              ? "mb-4 grid grid-cols-1 sm:grid-cols-2 gap-3"
+              : "mb-4 grid grid-cols-2 sm:grid-cols-3 gap-3"
+          }
+          aspect={block.caseAspect === "landscape" ? "aspect-[2/1]" : "aspect-[3/4]"}
+          fit={block.caseAspect === "landscape" ? "contain" : "cover"}
         />
       )}
       {block.body.map((item, j) => {
@@ -176,6 +182,9 @@ function RichDetail({
             <ImageLightbox
               images={article.gallery.map((img) => `${BASE}/directions/${img}`)}
               className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4"
+              aspect="aspect-[3/2]"
+              fit="contain"
+              letterboxBg="bg-white"
             />
           )}
 

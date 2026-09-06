@@ -56,15 +56,9 @@
     },
     {
       "slug": "limb-lengthening",
-      "title": "Wydłużanie kończyn",
+      "title": "Zwiększenie wzrostu i estetyczne wydłużanie kończyn",
       "summary": "Chirurgiczne zwiększenie wzrostu z indywidualnym planowaniem proporcji ciała, kontrolowanym wydłużaniem kości i etapowym usprawnianiem czynnościowym.",
-      "hero": "limb-lengthening-card.jpg"
-    },
-    {
-      "slug": "limb-lengthening",
-      "title": "Zwiększenie wzrostu",
-      "summary": "Chirurgiczne zwiększenie wzrostu z indywidualnym planowaniem proporcji ciała, kontrolowanym wydłużaniem kości i etapowym usprawnianiem czynnościowym.",
-      "hero": "limb-lengthening-hero.jpg"
+      "hero": "limb-lengthening-card2.jpg"
     },
     {
       "slug": "revision-arthroplasty",
@@ -346,7 +340,7 @@
             },
             {
               "type": "caption",
-              "text": "Zdjęcie rentgenowskie przed operacją | Zdjęcie rentgenowskie po operacji"
+              "text": "Zdjęcie rentgenowskie po operacji"
             },
             {
               "type": "p",
@@ -1967,9 +1961,17 @@
             {
               "type": "p",
               "text": "W MRI stwierdzono również towarzyszące zmiany pourazowe i pooperacyjne."
+            },
+            {
+              "type": "caption",
+              "text": "MRI obu stawów kolanowych. Po prawej — powtórne uszkodzenie przeszczepu więzadła krzyżowego przedniego oraz towarzyszące uszkodzenia łąkotek po wcześniejszym leczeniu operacyjnym; po lewej — porównawcze badanie drugiego kolana."
             }
           ],
-          "divider": false
+          "divider": false,
+          "caseImages": [
+            "arthroscopy-case1.jpg",
+            "arthroscopy-case2.jpg"
+          ]
         },
         {
           "heading": "Co jest ważne w takiej sytuacji?",
@@ -1985,10 +1987,6 @@
             {
               "type": "p",
               "text": "MRI pokazuje strukturę uszkodzenia. Zadaniem chirurga jest ustalenie jego znaczenia klinicznego i wybór właściwej taktyki leczenia."
-            },
-            {
-              "type": "p",
-              "text": "Podpis pod zdjęciem: MRI prawego stawu kolanowego po wcześniejszym leczeniu operacyjnym. Widoczne są powtórne uszkodzenie przeszczepu więzadła krzyżowego przedniego oraz towarzyszące uszkodzenia łąkotek."
             }
           ],
           "divider": false
@@ -3415,7 +3413,11 @@
               "text": "Radiografia — stan wyjściowy / duży ubytek kości piszczelowej"
             }
           ],
-          "divider": false
+          "divider": false,
+          "caseImages": [
+            "trauma-reconstruction-case1a.jpg",
+            "trauma-reconstruction-case1b.jpg"
+          ]
         },
         {
           "heading": "Wybrana strategia rekonstrukcji",
@@ -3437,7 +3439,11 @@
               "text": "Radiografia — etap transportu kostnego w aparacie fiksacji zewnętrznej"
             }
           ],
-          "divider": false
+          "divider": false,
+          "caseImages": [
+            "trauma-reconstruction-case2a.jpg",
+            "trauma-reconstruction-case2b.jpg"
+          ]
         },
         {
           "heading": "Dlaczego to długotrwałe leczenie",
@@ -3473,7 +3479,11 @@
               "text": "Ostateczna radiografia po demontażu aparatu"
             }
           ],
-          "divider": false
+          "divider": false,
+          "caseImages": [
+            "trauma-reconstruction-case3a.jpg",
+            "trauma-reconstruction-case3b.jpg"
+          ]
         },
         {
           "heading": "Co pokazuje ten przypadek",
@@ -3976,10 +3986,7 @@
         {
           "heading": "Rekonstrukcja krytycznego ubytku kości piszczelowej indywidualnym implantem 3D",
           "body": [],
-          "divider": true,
-          "caseImages": [
-            "bone-defects-case1.jpeg"
-          ]
+          "divider": true
         },
         {
           "heading": "Od znacznej utraty kości do aktywnego życia",
@@ -3997,7 +4004,12 @@
               "text": "Rekonstrukcja miała na celu nie tylko zastąpienie utraconego odcinka kości, ale też odtworzenie ciągłości, stabilności i zdolności kończyny do obciążania."
             }
           ],
-          "divider": false
+          "divider": false,
+          "caseImages": [
+            "bone-defects-case1.jpeg",
+            "bone-defects-case2.jpg",
+            "bone-defects-case3.jpg"
+          ]
         },
         {
           "heading": "3 lata po rekonstrukcji",
@@ -4497,7 +4509,8 @@
           "caseImages": [
             "osteosynthesis-case-before.jpg",
             "osteosynthesis-case-after.jpg"
-          ]
+          ],
+          "caseAspect": "landscape"
         },
         {
           "heading": "Wynik",

@@ -56,15 +56,9 @@
     },
     {
       "slug": "limb-lengthening",
-      "title": "Extremitätenverlängerung",
+      "title": "Körpergrößenzunahme und ästhetische Extremitätenverlängerung",
       "summary": "Chirurgische Körpergrößenzunahme mit individueller Planung der Körperproportionen, kontrollierter Knochenverlängerung und stufenweiser funktioneller Erholung.",
-      "hero": "limb-lengthening-card.jpg"
-    },
-    {
-      "slug": "limb-lengthening",
-      "title": "Körpergrößenzunahme",
-      "summary": "Chirurgische Körpergrößenzunahme mit individueller Planung der Körperproportionen, kontrollierter Knochenverlängerung und stufenweiser funktioneller Erholung.",
-      "hero": "limb-lengthening-hero.jpg"
+      "hero": "limb-lengthening-card2.jpg"
     },
     {
       "slug": "revision-arthroplasty",
@@ -346,7 +340,7 @@
             },
             {
               "type": "caption",
-              "text": "Röntgenaufnahme vor der Operation | Röntgenaufnahme nach der Operation"
+              "text": "Röntgenaufnahme nach der Operation"
             },
             {
               "type": "p",
@@ -1967,9 +1961,17 @@
             {
               "type": "p",
               "text": "Im MRT zeigten sich außerdem begleitende posttraumatische und postoperative Veränderungen."
+            },
+            {
+              "type": "caption",
+              "text": "MRT beider Kniegelenke. Rechts — ein erneuter Schaden des vorderen Kreuzbandtransplantats sowie begleitende Meniskusschäden nach vorangegangener operativer Behandlung; links — eine vergleichende Aufnahme des anderen Knies."
             }
           ],
-          "divider": false
+          "divider": false,
+          "caseImages": [
+            "arthroscopy-case1.jpg",
+            "arthroscopy-case2.jpg"
+          ]
         },
         {
           "heading": "Worauf kommt es in einer solchen Situation an?",
@@ -1985,10 +1987,6 @@
             {
               "type": "p",
               "text": "Das MRT zeigt die Struktur der Schädigung. Die Aufgabe des Chirurgen ist es, ihre klinische Bedeutung zu bestimmen und die richtige Behandlungstaktik zu wählen."
-            },
-            {
-              "type": "p",
-              "text": "Bildunterschrift: MRT des rechten Kniegelenks nach vorangegangener operativer Behandlung. Sichtbar sind ein erneuter Schaden des vorderen Kreuzbandtransplantats sowie begleitende Meniskusschäden."
             }
           ],
           "divider": false
@@ -3415,7 +3413,11 @@
               "text": "Röntgenaufnahme — Ausgangszustand / großer Defekt des Schienbeins"
             }
           ],
-          "divider": false
+          "divider": false,
+          "caseImages": [
+            "trauma-reconstruction-case1a.jpg",
+            "trauma-reconstruction-case1b.jpg"
+          ]
         },
         {
           "heading": "Gewählte Rekonstruktionsstrategie",
@@ -3437,7 +3439,11 @@
               "text": "Röntgenaufnahme — Phase des Knochentransports im Fixateur externe"
             }
           ],
-          "divider": false
+          "divider": false,
+          "caseImages": [
+            "trauma-reconstruction-case2a.jpg",
+            "trauma-reconstruction-case2b.jpg"
+          ]
         },
         {
           "heading": "Warum diese Behandlung langwierig ist",
@@ -3473,7 +3479,11 @@
               "text": "Abschließende Röntgenaufnahme nach Entfernung des Fixateurs"
             }
           ],
-          "divider": false
+          "divider": false,
+          "caseImages": [
+            "trauma-reconstruction-case3a.jpg",
+            "trauma-reconstruction-case3b.jpg"
+          ]
         },
         {
           "heading": "Was dieser Fall zeigt",
@@ -3976,10 +3986,7 @@
         {
           "heading": "Rekonstruktion eines kritischen Defekts des Schienbeins mit individuellem 3D-Implantat",
           "body": [],
-          "divider": true,
-          "caseImages": [
-            "bone-defects-case1.jpeg"
-          ]
+          "divider": true
         },
         {
           "heading": "Von erheblichem Knochenverlust zurück ins aktive Leben",
@@ -3997,7 +4004,12 @@
               "text": "Die Rekonstruktion zielte nicht nur auf den Ersatz des verlorenen Knochenabschnitts, sondern auch auf die Wiederherstellung von Kontinuität, Stabilität und Belastbarkeit der Extremität."
             }
           ],
-          "divider": false
+          "divider": false,
+          "caseImages": [
+            "bone-defects-case1.jpeg",
+            "bone-defects-case2.jpg",
+            "bone-defects-case3.jpg"
+          ]
         },
         {
           "heading": "3 Jahre nach der Rekonstruktion",
@@ -4497,7 +4509,8 @@
           "caseImages": [
             "osteosynthesis-case-before.jpg",
             "osteosynthesis-case-after.jpg"
-          ]
+          ],
+          "caseAspect": "landscape"
         },
         {
           "heading": "Ergebnis",

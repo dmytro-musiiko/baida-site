@@ -6,10 +6,19 @@ export default function ImageLightbox({
   images,
   className,
   imgClassName = "w-full h-auto",
+  aspect,
+  fit = "cover",
+  letterboxBg = "bg-black",
 }: {
   images: string[];
   className?: string;
   imgClassName?: string;
+  /** Tailwind aspect-ratio class (e.g. "aspect-[3/4]"). When set, every thumbnail sits in this uniform box instead of keeping its natural size. */
+  aspect?: string;
+  /** "cover" crops to fill the box (default); "contain" letterboxes so nothing is cropped. */
+  fit?: "cover" | "contain";
+  /** Background shown behind a "contain"-fit image where it doesn't fill the box. */
+  letterboxBg?: string;
 }) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
@@ -36,9 +45,13 @@ export default function ImageLightbox({
             key={src}
             type="button"
             onClick={() => setOpenIndex(i)}
-            className="block w-full rounded-[8px] overflow-hidden border border-hairline cursor-zoom-in transition-transform hover:scale-[1.01]"
+            className={`block w-full self-start rounded-[8px] overflow-hidden border border-hairline cursor-zoom-in transition-transform hover:scale-[1.01] ${aspect ?? ""} ${aspect && fit === "contain" ? letterboxBg : ""}`}
           >
-            <img src={src} alt="" className={imgClassName} />
+            <img
+              src={src}
+              alt=""
+              className={aspect ? (fit === "contain" ? "w-full h-full object-contain" : "w-full h-full object-cover") : imgClassName}
+            />
           </button>
         ))}
       </div>

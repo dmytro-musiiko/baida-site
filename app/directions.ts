@@ -15,6 +15,8 @@ export interface Block {
   body: BodyItem[];
   divider: boolean;
   caseImages?: string[];
+  /** "landscape" for wide case photos (e.g. full-limb X-rays); defaults to portrait. */
+  caseAspect?: "landscape" | "portrait";
 }
 export interface Article {
   title: string;
