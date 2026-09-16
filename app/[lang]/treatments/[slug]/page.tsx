@@ -77,6 +77,15 @@ function groupBlocks(blocks: Block[]): BlockGroup[] {
 function BlockBody({ block }: { block: Block }) {
   return (
     <>
+      {block.diagram && (
+        <ImageLightbox
+          images={[`${BASE}/directions/${block.diagram}`]}
+          className="mb-4 grid grid-cols-1"
+          aspect="aspect-[3/2]"
+          fit="contain"
+          letterboxBg="bg-white"
+        />
+      )}
       {block.caseImages && block.caseImages.length > 0 && (
         <ImageLightbox
           images={block.caseImages.map((img) => `${BASE}/directions/${img}`)}

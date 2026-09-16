@@ -65,6 +65,12 @@
       "title": "Rewizyjna endoprotezoplastyka",
       "summary": "Powtórne operacje stawu biodrowego i kolanowego przy obluzowaniu, zużyciu, niestabilności, złamaniach okołoprotezowych i innych powikłaniach po pierwotnej endoprotezoplastyce.",
       "hero": "revision-arthroplasty-hero.jpg"
+    },
+    {
+      "slug": "3d-implants",
+      "title": "Indywidualne implanty 3D",
+      "summary": "Spersonalizowane rozwiązania rekonstrukcyjne dla złożonych przypadków ortopedycznych, gdy standardowy implant nie wystarcza.",
+      "hero": "3d-implants-hero.jpg"
     }
   ],
   "articles": {
@@ -73,10 +79,7 @@
       "lead": "Nowoczesne leczenie chirurgiczne zmniejszające ból, przywracające ruchomość i pozwalające wrócić do aktywnego życia.",
       "intro": "Jeśli ból stawu biodrowego ogranicza chodzenie, utrudnia codzienne życie, a leczenie zachowawcze nie przynosi już wystarczającego efektu, endoprotezoplastyka może stać się kolejnym etapem leczenia.",
       "hero": "hip-replacement-hero.jpg",
-      "gallery": [
-        "hip-replacement-planning.jpg",
-        "hip-replacement-access.jpg"
-      ],
+      "gallery": [],
       "blocks": [
         {
           "heading": "Kiedy endoprotezoplastyka staje się konieczna",
@@ -169,7 +172,8 @@
               "text": "Nie istnieje jeden uniwersalny endoprotez, jednakowo optymalny dla wszystkich pacjentów. Wybór konstrukcji, sposobu mocowania i pary trącej zależy od wieku, anatomii, jakości tkanki kostnej, poziomu aktywności i konkretnej sytuacji klinicznej."
             }
           ],
-          "divider": false
+          "divider": false,
+          "diagram": "hip-replacement-planning.jpg"
         },
         {
           "heading": "Co jest ważne w endoprotezoplastyce stawu biodrowego",
@@ -226,7 +230,8 @@
               "text": "Jednocześnie wybór dostępu nie powinien być determinowany wyłącznie rozmiarem czy umiejscowieniem przyszłej blizny. Priorytetem pozostają bezpieczeństwo operacji, precyzja ustawienia komponentów i wynik funkcjonalny."
             }
           ],
-          "divider": false
+          "divider": false,
+          "diagram": "hip-replacement-access.jpg"
         },
         {
           "heading": "Jak przebiega leczenie",
@@ -355,7 +360,8 @@
           "divider": false,
           "caseImages": [
             "hip-replacement-case-after.jpg"
-          ]
+          ],
+          "caseAspect": "landscape"
         },
         {
           "heading": "Najczęściej zadawane pytania",
@@ -804,7 +810,8 @@
             "knee-replacement-case-before1.jpg",
             "knee-replacement-case-before2.jpg",
             "knee-replacement-case-before3.jpg"
-          ]
+          ],
+          "caseAspect": "landscape"
         },
         {
           "heading": "Całkowita endoprotezoplastyka stawu kolanowego",
@@ -986,10 +993,7 @@
       "lead": "Nowoczesne leczenie chirurgiczne zmniejszające ból, przywracające ruchomość ramienia i pozwalające wrócić do codziennej aktywności.",
       "intro": "Jeśli ból barku stał się stały, przeszkadza w spaniu, unoszeniu ręki, ubieraniu się lub wykonywaniu zwykłych czynności, a leczenie zachowawcze nie przynosi już wystarczającego efektu, jednym z wariantów leczenia może być endoprotezoplastyka stawu barkowego.",
       "hero": "shoulder-replacement-hero.jpg",
-      "gallery": [
-        "shoulder-replacement-cuff.jpg",
-        "shoulder-replacement-types.jpg"
-      ],
+      "gallery": [],
       "blocks": [
         {
           "heading": "Kiedy endoprotezoplastyka staje się konieczna",
@@ -1011,7 +1015,8 @@
               "text": "Gdy możliwości leczenia zachowawczego lub oszczędzającego staw przestają wystarczająco kontrolować ból i przywracać funkcję, można rozważyć endoprotezoplastykę."
             }
           ],
-          "divider": false
+          "divider": false,
+          "diagram": "shoulder-replacement-cuff.jpg"
         },
         {
           "heading": "Kiedy warto się zgłosić",
@@ -1074,7 +1079,8 @@
               "text": "Dlatego różni pacjenci mogą wymagać zasadniczo różnych konstrukcji endoprotezy."
             }
           ],
-          "divider": false
+          "divider": false,
+          "diagram": "shoulder-replacement-types.jpg"
         },
         {
           "heading": "Endoprotezoplastyka anatomiczna",
@@ -1302,7 +1308,8 @@
             "shoulder-replacement-case-before.jpg",
             "shoulder-replacement-case-after1.jpg",
             "shoulder-replacement-case-after2.jpg"
-          ]
+          ],
+          "caseAspect": "landscape"
         },
         {
           "heading": "Najczęściej zadawane pytania",
@@ -1480,9 +1487,7 @@
       "lead": "Małoinwazyjne leczenie chirurgiczne uszkodzeń stawu kolanowego i barkowego przez niewielkie dostępy — z dokładną diagnostyką wewnątrzstawową i odtworzeniem uszkodzonych struktur.",
       "intro": "Ból, obrzęk, niestabilność, blokowanie lub ograniczenie ruchów w stawie nie zawsze wymagają dużej operacji otwartej.",
       "hero": "arthroscopy-hero.jpg",
-      "gallery": [
-        "arthroscopy-diagram.jpg"
-      ],
+      "gallery": [],
       "blocks": [
         {
           "heading": null,
@@ -1518,7 +1523,8 @@
               "text": "W ten sposób artroskopia pozwala nie tylko zobaczyć patologię wewnątrz stawu, ale też w odpowiednich przypadkach odtworzyć lub zrekonstruować uszkodzone struktury przez minimalne dostępy chirurgiczne."
             }
           ],
-          "divider": false
+          "divider": false,
+          "diagram": "arthroscopy-diagram.jpg"
         },
         {
           "heading": "Kiedy warto się zgłosić",
@@ -1783,7 +1789,8 @@
               "text": "Dlatego MRI pomaga podjąć decyzję, ale nie podejmuje jej zamiast lekarza."
             }
           ],
-          "divider": false
+          "divider": false,
+          "diagram": "arthroscopy-mri-decision.jpg"
         },
         {
           "heading": "Co może się zmienić po operacji",
@@ -2200,8 +2207,7 @@
       "intro": "Jeśli „haluks” się powiększa, obuwie staje się niewygodne, pojawia się ból lub deformacja innych palców, warto ocenić stopień zmian i ustalić optymalną taktykę leczenia.",
       "hero": "hallux-valgus-hero.jpg",
       "gallery": [
-        "hallux-valgus-diagram1.jpg",
-        "hallux-valgus-diagram2.jpg"
+        "hallux-valgus-diagram1.jpg"
       ],
       "blocks": [
         {
@@ -2353,7 +2359,8 @@
               "text": "Metodę operacji dobiera się pod konkretną deformację, a nie odwrotnie."
             }
           ],
-          "divider": false
+          "divider": false,
+          "diagram": "hallux-valgus-diagram2.jpg"
         },
         {
           "heading": "Funkcja i wygląd zewnętrzny stopy",
@@ -2672,10 +2679,7 @@
       "lead": "Choroba, w której wczesna diagnostyka może zasadniczo wpłynąć na wybór leczenia i możliwość zachowania własnego stawu biodrowego.",
       "intro": "Jeśli pojawił się ból w pachwinie lub stawie biodrowym, a w MRI wykryto jałową martwicę, ważne jest nie tylko potwierdzenie diagnozy, ale też ustalenie stadium choroby i stanu głowy kości udowej. Od tego w dużej mierze zależy dalsza taktyka.",
       "hero": "avn-hero.jpg",
-      "gallery": [
-        "avn-diagram1.jpg",
-        "avn-stages.jpg"
-      ],
+      "gallery": [],
       "blocks": [
         {
           "heading": "Czym jest jałowa martwica",
@@ -2738,7 +2742,8 @@
               "text": "Dlatego głównym pytaniem po ustaleniu diagnozy jest nie po prostu „czy jest martwica?”, lecz „na jakim jest stadium i czy można jeszcze zachować staw?”."
             }
           ],
-          "divider": false
+          "divider": false,
+          "diagram": "avn-stages.jpg"
         },
         {
           "heading": "Czy zawsze potrzebna jest endoprotezoplastyka?",
@@ -2772,7 +2777,8 @@
               "text": "Dlatego decyzja o leczeniu powinna być podejmowana po kompleksowej ocenie, a nie tylko na podstawie zapisu „jałowa martwica” w opisie MRI."
             }
           ],
-          "divider": false
+          "divider": false,
+          "diagram": "avn-diagram1.jpg"
         },
         {
           "heading": "Leczenie oszczędzające staw",
@@ -3074,10 +3080,7 @@
       "lead": "Rekonstrukcyjne leczenie chirurgiczne po powikłanych złamaniach i urazach — gdy kość zrosła się nieprawidłowo, złamanie się nie zrasta, kończyna jest zdeformowana, skrócona lub jej funkcja pozostaje ograniczona.",
       "intro": "Uraz i pierwotna operacja nie zawsze kończą leczenie. Jeśli po złamaniu utrzymują się ból, deformacja, utykanie, skrócenie kończyny lub trudności podczas chodzenia i obciążania, w wielu przypadkach możliwe jest leczenie rekonstrukcyjne.",
       "hero": "trauma-reconstruction-hero.jpg",
-      "gallery": [
-        "trauma-reconstruction-diagram1.jpg",
-        "trauma-reconstruction-diagram2.jpg"
-      ],
+      "gallery": [],
       "blocks": [
         {
           "heading": "Uraz już za nami, ale funkcja się nie przywróciła",
@@ -3157,7 +3160,8 @@
               "text": "Głównym celem nie jest po prostu zmiana zdjęcia rentgenowskiego, lecz maksymalne przywrócenie funkcji kończyny."
             }
           ],
-          "divider": false
+          "divider": false,
+          "diagram": "trauma-reconstruction-diagram2.jpg"
         },
         {
           "heading": "Nieprawidłowo zrośnięte złamania",
@@ -3286,7 +3290,8 @@
               "text": "To nowa sytuacja kliniczna, która wymaga nowego planu leczenia."
             }
           ],
-          "divider": false
+          "divider": false,
+          "diagram": "trauma-reconstruction-diagram1.jpg"
         },
         {
           "heading": "Jak przebiega leczenie",
@@ -3668,7 +3673,6 @@
       "intro": "Utrata znacznego fragmentu kości to jeden z najtrudniejszych problemów ortopedii rekonstrukcyjnej. Ale nawet duży ubytek kostny nie zawsze oznacza, że możliwości odtworzenia kończyny są wyczerpane.",
       "hero": "bone-defects-hero.jpg",
       "gallery": [
-        "bone-defects-diagram1.jpg",
         "bone-defects-diagram2.jpg"
       ],
       "blocks": [
@@ -3747,7 +3751,8 @@
               "text": "Dlatego głównym pytaniem jest nie tylko „ile centymetrów kości brakuje?”, lecz czy można stworzyć warunki do stabilnej i funkcjonalnej rekonstrukcji kończyny."
             }
           ],
-          "divider": false
+          "divider": false,
+          "diagram": "bone-defects-diagram1.jpg"
         },
         {
           "heading": "Co może dać leczenie rekonstrukcyjne",
@@ -4007,6 +4012,7 @@
           "divider": false,
           "caseImages": [
             "bone-defects-case1.jpeg",
+            "bone-defects-case-implant.jpg",
             "bone-defects-case2.jpg",
             "bone-defects-case3.jpg"
           ]
@@ -4023,7 +4029,10 @@
               "text": "Celem końcowym złożonej rekonstrukcji nie jest zdjęcie rentgenowskie. To funkcjonalna kończyna, która pozwala człowiekowi wrócić do aktywnego życia."
             }
           ],
-          "divider": false
+          "divider": false,
+          "caseImages": [
+            "bone-defects-patient-recovery.jpg"
+          ]
         },
         {
           "heading": "Najczęściej zadawane pytania",
@@ -4186,8 +4195,7 @@
       "intro": "Nie każde złamanie wymaga operacji. Ale jeśli odłamy są znacznie przemieszczone, złamanie jest niestabilne, uszkodzona jest powierzchnia stawowa lub leczenie zachowawcze nie pozwala utrzymać prawidłowego położenia kości, może być konieczna osteosynteza.",
       "hero": "osteosynthesis-hero.jpg",
       "gallery": [
-        "osteosynthesis-diagram1.jpg",
-        "osteosynthesis-diagram2.jpg"
+        "osteosynthesis-diagram1.jpg"
       ],
       "blocks": [
         {
@@ -4300,7 +4308,8 @@
               "text": "Jedną z zasadniczych cech nowoczesnej traumatologii jest możliwość stosowania różnych sposobów osteosyntezy w zależności od konkretnego typu uszkodzenia."
             }
           ],
-          "divider": false
+          "divider": false,
+          "diagram": "osteosynthesis-diagram2.jpg"
         },
         {
           "heading": "Płytki i śruby",
@@ -4725,10 +4734,7 @@
       "lead": "Chirurgiczne zwiększenie wzrostu z indywidualnym planowaniem proporcji ciała, kontrolowanym wydłużaniem kości i etapowym usprawnianiem czynnościowym.",
       "intro": "Estetyczne wydłużanie kończyn pozwala zwiększyć wzrost poprzez stopniowe wydłużanie kości udowych i/lub piszczelowych.",
       "hero": "limb-lengthening-hero.jpg",
-      "gallery": [
-        "limb-lengthening-stages.jpg",
-        "limb-lengthening-planning.jpg"
-      ],
+      "gallery": [],
       "blocks": [
         {
           "heading": null,
@@ -4800,7 +4806,8 @@
               "text": "Celem nie jest uzyskanie maksymalnej liczby centymetrów za wszelką cenę, lecz ustalenie uzasadnionego wydłużenia z uwzględnieniem anatomii, proporcji i bezpieczeństwa."
             }
           ],
-          "divider": false
+          "divider": false,
+          "diagram": "limb-lengthening-planning.jpg"
         },
         {
           "heading": "Udo czy podudzie?",
@@ -4836,7 +4843,8 @@
               "text": "Proces składa się z kilku kolejnych etapów."
             }
           ],
-          "divider": false
+          "divider": false,
+          "diagram": "limb-lengthening-stages.jpg"
         },
         {
           "heading": "01 — Planowanie",
@@ -5322,12 +5330,7 @@
       "lead": "Powtórne operacje stawu biodrowego i kolanowego przy obluzowaniu, zużyciu, niestabilności, złamaniach okołoprotezowych i innych powikłaniach po pierwotnej endoprotezoplastyce.",
       "intro": "Jeśli po wszczepieniu endoprotezy ponownie pojawił się ból, chodzenie stało się trudniejsze, wystąpiło uczucie niestabilności lub lekarz zalecił powtórną operację, przede wszystkim konieczne jest ustalenie przyczyny problemu.",
       "hero": "revision-arthroplasty-hero.jpg",
-      "gallery": [
-        "revision-arthroplasty-diagram1.jpg",
-        "revision-arthroplasty-diagram2.jpg",
-        "revision-arthroplasty-3d-steps.jpg",
-        "revision-arthroplasty-3d-when.jpg"
-      ],
+      "gallery": [],
       "blocks": [
         {
           "heading": null,
@@ -5377,7 +5380,8 @@
               "text": "Dlatego obecność bólu po endoprotezoplastyce jeszcze nie oznacza automatycznej konieczności wymiany całej protezy."
             }
           ],
-          "divider": false
+          "divider": false,
+          "diagram": "revision-arthroplasty-diagram2.jpg"
         },
         {
           "heading": "Endoproteza boli — czy oznacza to, że trzeba ją wymienić?",
@@ -5641,7 +5645,8 @@
               "text": "Zakres operacji ustalany jest w zależności od przyczyny niepowodzenia pierwotnej endoprotezoplastyki i stanu każdego komponentu z osobna."
             }
           ],
-          "divider": false
+          "divider": false,
+          "diagram": "revision-arthroplasty-diagram1.jpg"
         },
         {
           "heading": "Jak przebiega przygotowanie do rewizyjnej endoprotezoplastyki",
@@ -6010,25 +6015,16 @@
             }
           ],
           "divider": false
-        },
-        {
-          "heading": "Indywidualne implanty 3D",
-          "body": [],
-          "divider": true
-        },
-        {
-          "heading": null,
-          "body": [
-            {
-              "type": "p",
-              "text": "Spersonalizowane rozwiązania rekonstrukcyjne dla złożonych przypadków ortopedycznych, gdy standardowy implant nie wystarcza."
-            },
-            {
-              "type": "p",
-              "text": "Po ciężkim urazie, znacznej utracie tkanki kostnej lub kilku wcześniejszych operacjach anatomia może zmienić się na tyle, że standardowe konstrukcje seryjne nie pozwalają optymalnie rozwiązać zadania rekonstrukcyjnego."
-            }
-          ]
-        },
+        }
+      ]
+    },
+    "3d-implants": {
+      "title": "Indywidualne implanty 3D",
+      "lead": "Spersonalizowane rozwiązania rekonstrukcyjne dla złożonych przypadków ortopedycznych, gdy standardowy implant nie wystarcza.",
+      "intro": "Po ciężkim urazie, znacznej utracie tkanki kostnej lub kilku wcześniejszych operacjach anatomia może zmienić się na tyle, że standardowe konstrukcje seryjne nie pozwalają optymalnie rozwiązać zadania rekonstrukcyjnego.",
+      "hero": "3d-implants-hero.jpg",
+      "gallery": [],
+      "blocks": [
         {
           "heading": null,
           "body": [
@@ -6072,7 +6068,8 @@
               "text": "W takich przypadkach jednym z możliwych rozwiązań może być stworzenie konstrukcji dla konkretnego pacjenta, a nie dostosowywanie pacjenta do dostępnego standardowego implantu."
             }
           ],
-          "divider": false
+          "divider": false,
+          "diagram": "revision-arthroplasty-3d-when.jpg"
         },
         {
           "heading": "Czym jest indywidualny implant 3D",
@@ -6103,7 +6100,8 @@
         {
           "heading": "Od TK do indywidualnego implantu",
           "body": [],
-          "divider": true
+          "divider": true,
+          "diagram": "revision-arthroplasty-3d-steps.jpg"
         },
         {
           "heading": "01 — Tomografia komputerowa",

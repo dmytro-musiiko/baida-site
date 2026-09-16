@@ -65,6 +65,12 @@
       "title": "Revisionsendoprothetik",
       "summary": "Wiederholungsoperationen an Hüft- und Kniegelenk bei Lockerung, Verschleiß, Instabilität, Frakturen und anderen Komplikationen nach primärer Endoprothetik.",
       "hero": "revision-arthroplasty-hero.jpg"
+    },
+    {
+      "slug": "3d-implants",
+      "title": "Individuelle 3D-Implantate",
+      "summary": "Personalisierte rekonstruktive Lösungen für komplexe orthopädische Fälle, in denen ein Standardimplantat nicht ausreicht.",
+      "hero": "3d-implants-hero.jpg"
     }
   ],
   "articles": {
@@ -73,10 +79,7 @@
       "lead": "Moderne chirurgische Behandlung zur Schmerzlinderung, Wiederherstellung der Beweglichkeit und Rückkehr zu einem aktiven Leben.",
       "intro": "Wenn Hüftschmerzen das Gehen einschränken, den Alltag beeinträchtigen und eine konservative Behandlung keine ausreichende Wirkung mehr zeigt, kann die Endoprothetik der nächste Behandlungsschritt sein.",
       "hero": "hip-replacement-hero.jpg",
-      "gallery": [
-        "hip-replacement-planning.jpg",
-        "hip-replacement-access.jpg"
-      ],
+      "gallery": [],
       "blocks": [
         {
           "heading": "Wann eine Endoprothese notwendig wird",
@@ -169,7 +172,8 @@
               "text": "Es gibt keine einzige universelle Endoprothese, die für alle Patienten gleichermaßen optimal wäre. Die Wahl der Konstruktion, der Fixationsart und der Gleitpaarung hängt von Alter, Anatomie, Knochenqualität, Aktivitätsniveau und der konkreten klinischen Situation ab."
             }
           ],
-          "divider": false
+          "divider": false,
+          "diagram": "hip-replacement-planning.jpg"
         },
         {
           "heading": "Worauf es bei der Hüftendoprothetik ankommt",
@@ -226,7 +230,8 @@
               "text": "Dabei darf die Wahl des Zugangs nicht allein von Größe oder Lage der künftigen Narbe bestimmt werden. Priorität haben weiterhin die Sicherheit der Operation, die Präzision der Komponentenimplantation und das funktionelle Ergebnis."
             }
           ],
-          "divider": false
+          "divider": false,
+          "diagram": "hip-replacement-access.jpg"
         },
         {
           "heading": "Wie die Behandlung abläuft",
@@ -355,7 +360,8 @@
           "divider": false,
           "caseImages": [
             "hip-replacement-case-after.jpg"
-          ]
+          ],
+          "caseAspect": "landscape"
         },
         {
           "heading": "Häufig gestellte Fragen",
@@ -804,7 +810,8 @@
             "knee-replacement-case-before1.jpg",
             "knee-replacement-case-before2.jpg",
             "knee-replacement-case-before3.jpg"
-          ]
+          ],
+          "caseAspect": "landscape"
         },
         {
           "heading": "Totale Knieendoprothetik",
@@ -986,10 +993,7 @@
       "lead": "Moderne chirurgische Behandlung zur Schmerzlinderung, Wiederherstellung der Armbeweglichkeit und Rückkehr zur Alltagsaktivität.",
       "intro": "Wenn der Schulterschmerz dauerhaft geworden ist, den Schlaf stört, das Anheben des Arms, das Anziehen oder andere gewohnte Bewegungen erschwert und eine konservative Behandlung keine ausreichende Wirkung mehr zeigt, kann die Schulterendoprothetik eine der Behandlungsoptionen sein.",
       "hero": "shoulder-replacement-hero.jpg",
-      "gallery": [
-        "shoulder-replacement-cuff.jpg",
-        "shoulder-replacement-types.jpg"
-      ],
+      "gallery": [],
       "blocks": [
         {
           "heading": "Wann eine Endoprothese notwendig wird",
@@ -1011,7 +1015,8 @@
               "text": "Wenn die Möglichkeiten der konservativen oder gelenkerhaltenden Behandlung Schmerz und Funktion nicht mehr ausreichend kontrollieren können, kann eine Endoprothetik in Betracht gezogen werden."
             }
           ],
-          "divider": false
+          "divider": false,
+          "diagram": "shoulder-replacement-cuff.jpg"
         },
         {
           "heading": "Wann Sie sich vorstellen sollten",
@@ -1074,7 +1079,8 @@
               "text": "Deshalb können unterschiedliche Patienten grundsätzlich unterschiedliche Endoprothesenkonstruktionen benötigen."
             }
           ],
-          "divider": false
+          "divider": false,
+          "diagram": "shoulder-replacement-types.jpg"
         },
         {
           "heading": "Anatomische Endoprothetik",
@@ -1302,7 +1308,8 @@
             "shoulder-replacement-case-before.jpg",
             "shoulder-replacement-case-after1.jpg",
             "shoulder-replacement-case-after2.jpg"
-          ]
+          ],
+          "caseAspect": "landscape"
         },
         {
           "heading": "Häufig gestellte Fragen",
@@ -1480,9 +1487,7 @@
       "lead": "Minimalinvasive chirurgische Behandlung von Verletzungen des Knie- und Schultergelenks über kleine Zugänge — mit präziser intraartikulärer Diagnostik und Wiederherstellung geschädigter Strukturen.",
       "intro": "Schmerz, Schwellung, Instabilität, Blockierung oder Bewegungseinschränkung im Gelenk erfordern nicht immer eine große offene Operation.",
       "hero": "arthroscopy-hero.jpg",
-      "gallery": [
-        "arthroscopy-diagram.jpg"
-      ],
+      "gallery": [],
       "blocks": [
         {
           "heading": null,
@@ -1518,7 +1523,8 @@
               "text": "So ermöglicht die Arthroskopie nicht nur, die Pathologie im Gelenkinneren zu sehen, sondern in entsprechenden Fällen auch geschädigte Strukturen über minimale chirurgische Zugänge wiederherzustellen oder zu rekonstruieren."
             }
           ],
-          "divider": false
+          "divider": false,
+          "diagram": "arthroscopy-diagram.jpg"
         },
         {
           "heading": "Wann Sie sich vorstellen sollten",
@@ -1783,7 +1789,8 @@
               "text": "Das MRT hilft daher bei der Entscheidung, ersetzt aber nicht die Entscheidung des Arztes."
             }
           ],
-          "divider": false
+          "divider": false,
+          "diagram": "arthroscopy-mri-decision.jpg"
         },
         {
           "heading": "Was sich nach der Operation ändern kann",
@@ -2200,8 +2207,7 @@
       "intro": "Wenn der Ballen größer wird, Schuhe unbequem werden, Schmerzen auftreten oder sich andere Zehen verformen, sollte das Ausmaß der Veränderungen beurteilt und die optimale Behandlungstaktik festgelegt werden.",
       "hero": "hallux-valgus-hero.jpg",
       "gallery": [
-        "hallux-valgus-diagram1.jpg",
-        "hallux-valgus-diagram2.jpg"
+        "hallux-valgus-diagram1.jpg"
       ],
       "blocks": [
         {
@@ -2353,7 +2359,8 @@
               "text": "Die Operationsmethode wird der konkreten Deformität angepasst, nicht umgekehrt."
             }
           ],
-          "divider": false
+          "divider": false,
+          "diagram": "hallux-valgus-diagram2.jpg"
         },
         {
           "heading": "Funktion und äußeres Erscheinungsbild des Fußes",
@@ -2672,10 +2679,7 @@
       "lead": "Eine Erkrankung, bei der eine rechtzeitige Diagnostik die Behandlungswahl und die Möglichkeit, das eigene Hüftgelenk zu erhalten, grundlegend beeinflussen kann.",
       "intro": "Wenn Schmerzen in der Leiste oder im Hüftgelenk auftreten und im MRT eine Hüftkopfnekrose festgestellt wird, ist es wichtig, nicht nur die Diagnose zu bestätigen, sondern auch das Stadium der Erkrankung und den Zustand des Hüftkopfes zu bestimmen. Davon hängt maßgeblich die weitere Taktik ab.",
       "hero": "avn-hero.jpg",
-      "gallery": [
-        "avn-diagram1.jpg",
-        "avn-stages.jpg"
-      ],
+      "gallery": [],
       "blocks": [
         {
           "heading": "Was ist eine Hüftkopfnekrose",
@@ -2738,7 +2742,8 @@
               "text": "Die zentrale Frage nach Diagnosestellung ist daher nicht einfach „liegt eine Nekrose vor?“, sondern „in welchem Stadium befindet sie sich, und kann das Gelenk noch erhalten werden?“."
             }
           ],
-          "divider": false
+          "divider": false,
+          "diagram": "avn-stages.jpg"
         },
         {
           "heading": "Ist immer eine Endoprothetik notwendig?",
@@ -2772,7 +2777,8 @@
               "text": "Deshalb sollte die Behandlungsentscheidung nach umfassender Beurteilung getroffen werden, nicht allein aufgrund des Vermerks „Hüftkopfnekrose“ im MRT-Befund."
             }
           ],
-          "divider": false
+          "divider": false,
+          "diagram": "avn-diagram1.jpg"
         },
         {
           "heading": "Gelenkerhaltende Behandlung",
@@ -3074,10 +3080,7 @@
       "lead": "Wiederherstellende chirurgische Behandlung nach komplexen Frakturen und Verletzungen — wenn der Knochen fehlverheilt ist, eine Fraktur nicht zusammenwächst, die Extremität deformiert oder verkürzt ist oder ihre Funktion eingeschränkt bleibt.",
       "intro": "Die Verletzung und die primäre Operation beenden die Behandlung nicht immer. Bleiben nach einer Fraktur Schmerz, Deformität, Hinken, eine Verkürzung der Extremität oder Schwierigkeiten beim Gehen und Belasten bestehen, ist in vielen Fällen eine rekonstruktive Behandlung möglich.",
       "hero": "trauma-reconstruction-hero.jpg",
-      "gallery": [
-        "trauma-reconstruction-diagram1.jpg",
-        "trauma-reconstruction-diagram2.jpg"
-      ],
+      "gallery": [],
       "blocks": [
         {
           "heading": "Die Verletzung liegt bereits zurück, doch die Funktion ist nicht wiederhergestellt",
@@ -3157,7 +3160,8 @@
               "text": "Das Hauptziel ist es, nicht nur die Röntgenaufnahme zu verändern, sondern die Funktion der Extremität möglichst weitgehend wiederherzustellen."
             }
           ],
-          "divider": false
+          "divider": false,
+          "diagram": "trauma-reconstruction-diagram2.jpg"
         },
         {
           "heading": "Fehlverheilte Frakturen",
@@ -3286,7 +3290,8 @@
               "text": "Es handelt sich um eine neue klinische Situation, die einen neuen Behandlungsplan erfordert."
             }
           ],
-          "divider": false
+          "divider": false,
+          "diagram": "trauma-reconstruction-diagram1.jpg"
         },
         {
           "heading": "Wie die Behandlung abläuft",
@@ -3668,7 +3673,6 @@
       "intro": "Der Verlust eines erheblichen Knochenfragments ist eines der komplexesten Probleme der rekonstruktiven Orthopädie. Doch auch ein großer Knochendefekt bedeutet nicht immer, dass die Möglichkeiten zur Wiederherstellung der Extremität ausgeschöpft sind.",
       "hero": "bone-defects-hero.jpg",
       "gallery": [
-        "bone-defects-diagram1.jpg",
         "bone-defects-diagram2.jpg"
       ],
       "blocks": [
@@ -3747,7 +3751,8 @@
               "text": "Die zentrale Frage ist deshalb nicht nur „wie viele Zentimeter Knochen fehlen?“, sondern ob die Voraussetzungen für eine stabile und funktionelle Rekonstruktion der Extremität geschaffen werden können."
             }
           ],
-          "divider": false
+          "divider": false,
+          "diagram": "bone-defects-diagram1.jpg"
         },
         {
           "heading": "Was eine rekonstruktive Behandlung erreichen kann",
@@ -4007,6 +4012,7 @@
           "divider": false,
           "caseImages": [
             "bone-defects-case1.jpeg",
+            "bone-defects-case-implant.jpg",
             "bone-defects-case2.jpg",
             "bone-defects-case3.jpg"
           ]
@@ -4023,7 +4029,10 @@
               "text": "Das Endziel einer komplexen Rekonstruktion ist nicht das Röntgenbild. Es ist eine funktionsfähige Extremität, die dem Menschen die Rückkehr zu einem aktiven Leben ermöglicht."
             }
           ],
-          "divider": false
+          "divider": false,
+          "caseImages": [
+            "bone-defects-patient-recovery.jpg"
+          ]
         },
         {
           "heading": "Häufig gestellte Fragen",
@@ -4186,8 +4195,7 @@
       "intro": "Nicht jede Fraktur erfordert eine Operation. Sind die Fragmente jedoch erheblich verschoben, die Fraktur instabil, die Gelenkfläche geschädigt, oder erlaubt die konservative Behandlung keine Erhaltung der korrekten Knochenposition, kann eine Osteosynthese notwendig sein.",
       "hero": "osteosynthesis-hero.jpg",
       "gallery": [
-        "osteosynthesis-diagram1.jpg",
-        "osteosynthesis-diagram2.jpg"
+        "osteosynthesis-diagram1.jpg"
       ],
       "blocks": [
         {
@@ -4300,7 +4308,8 @@
               "text": "Eine der grundlegenden Besonderheiten der modernen Traumatologie ist die Möglichkeit, je nach konkretem Verletzungstyp unterschiedliche Osteosynthesemethoden anzuwenden."
             }
           ],
-          "divider": false
+          "divider": false,
+          "diagram": "osteosynthesis-diagram2.jpg"
         },
         {
           "heading": "Platten und Schrauben",
@@ -4725,10 +4734,7 @@
       "lead": "Chirurgische Körpergrößenzunahme mit individueller Planung der Körperproportionen, kontrollierter Knochenverlängerung und stufenweiser funktioneller Erholung.",
       "intro": "Die ästhetische Extremitätenverlängerung ermöglicht eine Körpergrößenzunahme durch schrittweise Verlängerung von Oberschenkel- und/oder Schienbeinknochen.",
       "hero": "limb-lengthening-hero.jpg",
-      "gallery": [
-        "limb-lengthening-stages.jpg",
-        "limb-lengthening-planning.jpg"
-      ],
+      "gallery": [],
       "blocks": [
         {
           "heading": null,
@@ -4800,7 +4806,8 @@
               "text": "Ziel ist es nicht, um jeden Preis die maximale Zentimeterzahl zu erreichen, sondern eine begründete Verlängerung unter Berücksichtigung von Anatomie, Proportionen und Sicherheit festzulegen."
             }
           ],
-          "divider": false
+          "divider": false,
+          "diagram": "limb-lengthening-planning.jpg"
         },
         {
           "heading": "Oberschenkel oder Unterschenkel?",
@@ -4836,7 +4843,8 @@
               "text": "Der Prozess besteht aus mehreren aufeinanderfolgenden Schritten."
             }
           ],
-          "divider": false
+          "divider": false,
+          "diagram": "limb-lengthening-stages.jpg"
         },
         {
           "heading": "01 — Planung",
@@ -5322,12 +5330,7 @@
       "lead": "Wiederholungsoperationen an Hüft- und Kniegelenk bei Lockerung, Verschleiß, Instabilität, Frakturen und anderen Komplikationen nach primärer Endoprothetik.",
       "intro": "Wenn nach Implantation einer Endoprothese erneut Schmerzen auftreten, das Gehen schwerer fällt, ein Instabilitätsgefühl entsteht oder der Arzt eine erneute Operation empfohlen hat, muss zunächst die Ursache des Problems bestimmt werden.",
       "hero": "revision-arthroplasty-hero.jpg",
-      "gallery": [
-        "revision-arthroplasty-diagram1.jpg",
-        "revision-arthroplasty-diagram2.jpg",
-        "revision-arthroplasty-3d-steps.jpg",
-        "revision-arthroplasty-3d-when.jpg"
-      ],
+      "gallery": [],
       "blocks": [
         {
           "heading": null,
@@ -5377,7 +5380,8 @@
               "text": "Schmerzen nach der Endoprothetik bedeuten daher nicht automatisch, dass die gesamte Prothese ausgetauscht werden muss."
             }
           ],
-          "divider": false
+          "divider": false,
+          "diagram": "revision-arthroplasty-diagram2.jpg"
         },
         {
           "heading": "Die Endoprothese schmerzt — bedeutet das, dass sie ausgetauscht werden muss?",
@@ -5641,7 +5645,8 @@
               "text": "Der Operationsumfang wird durch die Ursache des Versagens der Primärendoprothese und den Zustand jeder einzelnen Komponente bestimmt."
             }
           ],
-          "divider": false
+          "divider": false,
+          "diagram": "revision-arthroplasty-diagram1.jpg"
         },
         {
           "heading": "Wie die Vorbereitung zur Revisionsendoprothetik abläuft",
@@ -6010,25 +6015,16 @@
             }
           ],
           "divider": false
-        },
-        {
-          "heading": "Individuelle 3D-Implantate",
-          "body": [],
-          "divider": true
-        },
-        {
-          "heading": null,
-          "body": [
-            {
-              "type": "p",
-              "text": "Personalisierte rekonstruktive Lösungen für komplexe orthopädische Fälle, in denen ein Standardimplantat nicht ausreicht."
-            },
-            {
-              "type": "p",
-              "text": "Nach einer schweren Verletzung, erheblichem Knochenverlust oder mehreren vorangegangenen Operationen kann sich die Anatomie so stark verändern, dass standardmäßige Serienkonstruktionen keine optimale Lösung der rekonstruktiven Aufgabe ermöglichen."
-            }
-          ]
-        },
+        }
+      ]
+    },
+    "3d-implants": {
+      "title": "Individuelle 3D-Implantate",
+      "lead": "Personalisierte rekonstruktive Lösungen für komplexe orthopädische Fälle, in denen ein Standardimplantat nicht ausreicht.",
+      "intro": "Nach einer schweren Verletzung, erheblichem Knochenverlust oder mehreren vorangegangenen Operationen kann sich die Anatomie so stark verändern, dass standardmäßige Serienkonstruktionen keine optimale Lösung der rekonstruktiven Aufgabe ermöglichen.",
+      "hero": "3d-implants-hero.jpg",
+      "gallery": [],
+      "blocks": [
         {
           "heading": null,
           "body": [
@@ -6072,7 +6068,8 @@
               "text": "In solchen Fällen kann eine mögliche Lösung darin bestehen, eine Konstruktion für den konkreten Patienten zu entwerfen, statt den Patienten an ein vorhandenes Standardimplantat anzupassen."
             }
           ],
-          "divider": false
+          "divider": false,
+          "diagram": "revision-arthroplasty-3d-when.jpg"
         },
         {
           "heading": "Was ist ein individuelles 3D-Implantat",
@@ -6103,7 +6100,8 @@
         {
           "heading": "Von der CT zum individuellen Implantat",
           "body": [],
-          "divider": true
+          "divider": true,
+          "diagram": "revision-arthroplasty-3d-steps.jpg"
         },
         {
           "heading": "01 — Computertomographie",

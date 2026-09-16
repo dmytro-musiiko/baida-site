@@ -22,6 +22,38 @@ export default function ImageLightbox({
 }) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
+  // A grid sized for more photos than we actually have leaves empty trailing
+  // columns (or a short last row), pinning the real ones to the left. Any
+  // count that wouldn't cleanly fill the grid's own column count instead
+  // renders as one centered row, every item capped to a sensible width —
+  // except a lone educational diagram (fit="contain"), which spans the full
+  // row so it stays legible.
+  const gridColsMatch = (className ?? "").match(/grid-cols-(\d+)/g);
+  const maxGridCols = gridColsMatch
+    ? Math.max(...gridColsMatch.map((c) => parseInt(c.replace("grid-cols-", ""), 10)))
+    : images.length;
+  const strippedClassName = (className ?? "")
+    .replace(/\bgrid\b|grid-cols-\d+|sm:grid-cols-\d+/g, "")
+    .trim();
+  const tilesEvenly = images.length > 0 && images.length % maxGridCols === 0;
+  const isLoneDiagram = images.length === 1 && fit === "contain";
+  const needsCenteredRow = images.length > 0 && !tilesEvenly && !isLoneDiagram;
+
+  const gapMatch = (className ?? "").match(/gap-(\d+)/);
+  const gapRem = gapMatch ? parseInt(gapMatch[1], 10) * 0.25 : 0.75;
+  const perItemMaxWidthRem = images.length === 1 ? 36 : 22;
+
+  const wrapperClassName = isLoneDiagram || needsCenteredRow ? strippedClassName : className;
+  const wrapperStyle = needsCenteredRow
+    ? {
+        display: "grid",
+        gridTemplateColumns: `repeat(${images.length}, minmax(0, ${perItemMaxWidthRem}rem))`,
+        justifyContent: "center" as const,
+        gap: `${gapRem}rem`,
+      }
+    : undefined;
+  const singleItemClassName = "w-full";
+
   useEffect(() => {
     if (openIndex === null) return;
     const onKey = (e: KeyboardEvent) => {
@@ -39,13 +71,13 @@ export default function ImageLightbox({
 
   return (
     <>
-      <div className={className}>
+      <div className={wrapperClassName} style={wrapperStyle}>
         {images.map((src, i) => (
           <button
             key={src}
             type="button"
             onClick={() => setOpenIndex(i)}
-            className={`block w-full self-start rounded-[8px] overflow-hidden border border-hairline cursor-zoom-in transition-transform hover:scale-[1.01] ${aspect ?? ""} ${aspect && fit === "contain" ? letterboxBg : ""}`}
+            className={`block ${singleItemClassName} self-start rounded-[8px] overflow-hidden border border-hairline cursor-zoom-in transition-opacity hover:opacity-90 ${aspect ?? ""} ${aspect && fit === "contain" ? letterboxBg : ""}`}
           >
             <img
               src={src}

@@ -17,6 +17,8 @@ export interface Block {
   caseImages?: string[];
   /** "landscape" for wide case photos (e.g. full-limb X-rays); defaults to portrait. */
   caseAspect?: "landscape" | "portrait";
+  /** An educational diagram shown at the top of this block (instead of in the article-level gallery). */
+  diagram?: string;
 }
 export interface Article {
   title: string;

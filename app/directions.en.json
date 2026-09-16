@@ -65,6 +65,12 @@
       "title": "Revision Arthroplasty",
       "summary": "Repeat surgery on the hip and knee joints for loosening, wear, instability, fractures, and other complications after primary joint replacement.",
       "hero": "revision-arthroplasty-hero.jpg"
+    },
+    {
+      "slug": "3d-implants",
+      "title": "Custom 3D-printed implants",
+      "summary": "Personalized reconstructive solutions for complex orthopedic cases where a standard implant is not enough.",
+      "hero": "3d-implants-hero.jpg"
     }
   ],
   "articles": {
@@ -73,10 +79,7 @@
       "lead": "Modern surgical treatment to reduce pain, restore mobility, and return to an active life.",
       "intro": "When hip pain limits walking, interferes with daily life, and conservative treatment no longer provides sufficient relief, joint replacement may be the next step in treatment.",
       "hero": "hip-replacement-hero.jpg",
-      "gallery": [
-        "hip-replacement-planning.jpg",
-        "hip-replacement-access.jpg"
-      ],
+      "gallery": [],
       "blocks": [
         {
           "heading": "When hip replacement becomes necessary",
@@ -169,7 +172,8 @@
               "text": "There is no single implant that is equally optimal for every patient. The choice of design, fixation method, and bearing surface depends on age, anatomy, bone quality, activity level, and the specific clinical situation."
             }
           ],
-          "divider": false
+          "divider": false,
+          "diagram": "hip-replacement-planning.jpg"
         },
         {
           "heading": "What matters most in hip replacement",
@@ -226,7 +230,8 @@
               "text": "That said, the choice of approach should not be determined solely by the size or location of the future scar. Safety of the operation, precision of component placement, and functional outcome remain the priority."
             }
           ],
-          "divider": false
+          "divider": false,
+          "diagram": "hip-replacement-access.jpg"
         },
         {
           "heading": "How treatment proceeds",
@@ -355,7 +360,8 @@
           "divider": false,
           "caseImages": [
             "hip-replacement-case-after.jpg"
-          ]
+          ],
+          "caseAspect": "landscape"
         },
         {
           "heading": "Frequently asked questions",
@@ -804,7 +810,8 @@
             "knee-replacement-case-before1.jpg",
             "knee-replacement-case-before2.jpg",
             "knee-replacement-case-before3.jpg"
-          ]
+          ],
+          "caseAspect": "landscape"
         },
         {
           "heading": "Total knee replacement",
@@ -986,10 +993,7 @@
       "lead": "Modern surgical treatment to reduce pain, restore arm mobility, and return to everyday activity.",
       "intro": "When shoulder pain has become constant, interferes with sleep, raising your arm, getting dressed, or performing everyday tasks, and conservative treatment no longer provides sufficient relief, shoulder replacement may be one of the treatment options.",
       "hero": "shoulder-replacement-hero.jpg",
-      "gallery": [
-        "shoulder-replacement-cuff.jpg",
-        "shoulder-replacement-types.jpg"
-      ],
+      "gallery": [],
       "blocks": [
         {
           "heading": "When shoulder replacement becomes necessary",
@@ -1011,7 +1015,8 @@
               "text": "When conservative or joint-preserving treatment options no longer provide adequate pain control and functional recovery, shoulder replacement may be considered."
             }
           ],
-          "divider": false
+          "divider": false,
+          "diagram": "shoulder-replacement-cuff.jpg"
         },
         {
           "heading": "When it's time to see a specialist",
@@ -1074,7 +1079,8 @@
               "text": "This is why fundamentally different implant designs may be needed for different patients."
             }
           ],
-          "divider": false
+          "divider": false,
+          "diagram": "shoulder-replacement-types.jpg"
         },
         {
           "heading": "Anatomic shoulder replacement",
@@ -1302,7 +1308,8 @@
             "shoulder-replacement-case-before.jpg",
             "shoulder-replacement-case-after1.jpg",
             "shoulder-replacement-case-after2.jpg"
-          ]
+          ],
+          "caseAspect": "landscape"
         },
         {
           "heading": "Frequently asked questions",
@@ -1480,9 +1487,7 @@
       "lead": "Minimally invasive surgical treatment of knee and shoulder joint injuries through small incisions — with precise intra-articular diagnosis and repair of damaged structures.",
       "intro": "Pain, swelling, instability, locking, or restricted movement in a joint don't always require major open surgery.",
       "hero": "arthroscopy-hero.jpg",
-      "gallery": [
-        "arthroscopy-diagram.jpg"
-      ],
+      "gallery": [],
       "blocks": [
         {
           "heading": null,
@@ -1518,7 +1523,8 @@
               "text": "In this way, arthroscopy not only allows the pathology inside the joint to be visualized, but in appropriate cases also allows damaged structures to be repaired or reconstructed through minimal surgical access."
             }
           ],
-          "divider": false
+          "divider": false,
+          "diagram": "arthroscopy-diagram.jpg"
         },
         {
           "heading": "When to see a doctor",
@@ -1783,7 +1789,8 @@
               "text": "So an MRI helps inform the decision, but it does not make that decision instead of the doctor."
             }
           ],
-          "divider": false
+          "divider": false,
+          "diagram": "arthroscopy-mri-decision.jpg"
         },
         {
           "heading": "What can change after surgery",
@@ -2200,8 +2207,7 @@
       "intro": "If the bunion is getting bigger, shoes are becoming uncomfortable, or pain or deformity of the other toes has appeared, it's worth assessing the degree of change and determining the best treatment strategy.",
       "hero": "hallux-valgus-hero.jpg",
       "gallery": [
-        "hallux-valgus-diagram1.jpg",
-        "hallux-valgus-diagram2.jpg"
+        "hallux-valgus-diagram1.jpg"
       ],
       "blocks": [
         {
@@ -2353,7 +2359,8 @@
               "text": "The surgical method is chosen to fit the specific deformity — not the other way around."
             }
           ],
-          "divider": false
+          "divider": false,
+          "diagram": "hallux-valgus-diagram2.jpg"
         },
         {
           "heading": "Function and the appearance of the foot",
@@ -2672,10 +2679,7 @@
       "lead": "A condition in which timely diagnosis can fundamentally influence treatment choice and the possibility of preserving your own hip joint.",
       "intro": "If you have developed pain in the groin or hip joint, and an MRI has revealed avascular necrosis, it's important not only to confirm the diagnosis but also to determine the stage of the disease and the condition of the femoral head. This largely determines the further treatment strategy.",
       "hero": "avn-hero.jpg",
-      "gallery": [
-        "avn-diagram1.jpg",
-        "avn-stages.jpg"
-      ],
+      "gallery": [],
       "blocks": [
         {
           "heading": "What Is Avascular Necrosis",
@@ -2738,7 +2742,8 @@
               "text": "So the key question after diagnosis is not simply \"is there necrosis?\" but \"what stage is it at, and can the joint still be preserved?\""
             }
           ],
-          "divider": false
+          "divider": false,
+          "diagram": "avn-stages.jpg"
         },
         {
           "heading": "Is Hip Replacement Always Necessary?",
@@ -2772,7 +2777,8 @@
               "text": "This is why treatment decisions should be made after a comprehensive evaluation, not simply based on the words \"avascular necrosis\" appearing in an MRI report."
             }
           ],
-          "divider": false
+          "divider": false,
+          "diagram": "avn-diagram1.jpg"
         },
         {
           "heading": "Joint-Preserving Treatment",
@@ -3074,10 +3080,7 @@
       "lead": "Reconstructive surgical treatment after complex fractures and injuries — when a bone has healed incorrectly, a fracture fails to unite, a limb is deformed or shortened, or its function remains limited.",
       "intro": "An injury and the initial surgery do not always mark the end of treatment. If pain, deformity, limping, limb shortening, or difficulty walking and bearing weight persist after a fracture, reconstructive treatment is possible in many cases.",
       "hero": "trauma-reconstruction-hero.jpg",
-      "gallery": [
-        "trauma-reconstruction-diagram1.jpg",
-        "trauma-reconstruction-diagram2.jpg"
-      ],
+      "gallery": [],
       "blocks": [
         {
           "heading": "The injury is behind you, but function hasn't returned",
@@ -3157,7 +3160,8 @@
               "text": "The main goal is not simply to improve the appearance of an X-ray, but to restore the limb's function as fully as possible."
             }
           ],
-          "divider": false
+          "divider": false,
+          "diagram": "trauma-reconstruction-diagram2.jpg"
         },
         {
           "heading": "Malunited fractures",
@@ -3286,7 +3290,8 @@
               "text": "It's a new clinical situation that requires a new treatment plan."
             }
           ],
-          "divider": false
+          "divider": false,
+          "diagram": "trauma-reconstruction-diagram1.jpg"
         },
         {
           "heading": "How treatment proceeds",
@@ -3668,7 +3673,6 @@
       "intro": "Loss of a substantial segment of bone is one of the most challenging problems in reconstructive orthopedics. But even a large bone defect doesn't always mean the possibility of restoring the limb has run out.",
       "hero": "bone-defects-hero.jpg",
       "gallery": [
-        "bone-defects-diagram1.jpg",
         "bone-defects-diagram2.jpg"
       ],
       "blocks": [
@@ -3747,7 +3751,8 @@
               "text": "So the key question isn't only \"how many centimeters of bone are missing?\" but whether the conditions for a stable, functional limb reconstruction can be created."
             }
           ],
-          "divider": false
+          "divider": false,
+          "diagram": "bone-defects-diagram1.jpg"
         },
         {
           "heading": "What reconstructive treatment can achieve",
@@ -4007,6 +4012,7 @@
           "divider": false,
           "caseImages": [
             "bone-defects-case1.jpeg",
+            "bone-defects-case-implant.jpg",
             "bone-defects-case2.jpg",
             "bone-defects-case3.jpg"
           ]
@@ -4023,7 +4029,10 @@
               "text": "The ultimate goal of complex reconstruction isn't an X-ray. It's a functional limb that allows a person to return to an active life."
             }
           ],
-          "divider": false
+          "divider": false,
+          "caseImages": [
+            "bone-defects-patient-recovery.jpg"
+          ]
         },
         {
           "heading": "Frequently asked questions",
@@ -4186,8 +4195,7 @@
       "intro": "Not every fracture requires surgery. But if the fragments are significantly displaced, the fracture is unstable, the joint surface is damaged, or conservative treatment cannot maintain the correct position of the bone, osteosynthesis may be necessary.",
       "hero": "osteosynthesis-hero.jpg",
       "gallery": [
-        "osteosynthesis-diagram1.jpg",
-        "osteosynthesis-diagram2.jpg"
+        "osteosynthesis-diagram1.jpg"
       ],
       "blocks": [
         {
@@ -4300,7 +4308,8 @@
               "text": "One of the fundamental features of modern trauma surgery is the ability to use different osteosynthesis methods depending on the specific type of injury."
             }
           ],
-          "divider": false
+          "divider": false,
+          "diagram": "osteosynthesis-diagram2.jpg"
         },
         {
           "heading": "Plates and Screws",
@@ -4725,10 +4734,7 @@
       "lead": "Surgical height increase with individualized planning of body proportions, controlled bone lengthening, and staged functional recovery.",
       "intro": "Aesthetic limb lengthening allows an increase in height through the gradual lengthening of the thigh bones and/or shin bones.",
       "hero": "limb-lengthening-hero.jpg",
-      "gallery": [
-        "limb-lengthening-stages.jpg",
-        "limb-lengthening-planning.jpg"
-      ],
+      "gallery": [],
       "blocks": [
         {
           "heading": null,
@@ -4800,7 +4806,8 @@
               "text": "The goal is not to achieve the maximum number of centimeters at any cost, but to determine a well-founded lengthening that accounts for anatomy, proportions, and safety."
             }
           ],
-          "divider": false
+          "divider": false,
+          "diagram": "limb-lengthening-planning.jpg"
         },
         {
           "heading": "Thigh or shin?",
@@ -4836,7 +4843,8 @@
               "text": "The process consists of several consecutive stages."
             }
           ],
-          "divider": false
+          "divider": false,
+          "diagram": "limb-lengthening-stages.jpg"
         },
         {
           "heading": "01 — Planning",
@@ -5322,12 +5330,7 @@
       "lead": "Repeat surgery on the hip and knee for implant loosening, wear, instability, fractures, and other complications after primary arthroplasty.",
       "intro": "If pain has returned after your joint replacement, walking has become more difficult, you feel instability in the joint, or your doctor has recommended another operation, the first step is always to determine the cause of the problem.",
       "hero": "revision-arthroplasty-hero.jpg",
-      "gallery": [
-        "revision-arthroplasty-diagram1.jpg",
-        "revision-arthroplasty-diagram2.jpg",
-        "revision-arthroplasty-3d-steps.jpg",
-        "revision-arthroplasty-3d-when.jpg"
-      ],
+      "gallery": [],
       "blocks": [
         {
           "heading": null,
@@ -5377,7 +5380,8 @@
               "text": "So pain after joint replacement does not automatically mean the entire implant needs to be replaced."
             }
           ],
-          "divider": false
+          "divider": false,
+          "diagram": "revision-arthroplasty-diagram2.jpg"
         },
         {
           "heading": "Your implant hurts — does that mean it needs to be replaced?",
@@ -5641,7 +5645,8 @@
               "text": "The scope of surgery is determined by the reason the primary arthroplasty failed and by the condition of each component individually."
             }
           ],
-          "divider": false
+          "divider": false,
+          "diagram": "revision-arthroplasty-diagram1.jpg"
         },
         {
           "heading": "How preparation for revision arthroplasty works",
@@ -6010,25 +6015,16 @@
             }
           ],
           "divider": false
-        },
-        {
-          "heading": "Custom 3D-printed implants",
-          "body": [],
-          "divider": true
-        },
-        {
-          "heading": null,
-          "body": [
-            {
-              "type": "p",
-              "text": "Personalized reconstructive solutions for complex orthopedic cases where a standard implant is not enough."
-            },
-            {
-              "type": "p",
-              "text": "After a severe injury, significant bone loss, or several previous operations, the anatomy can change so much that standard off-the-shelf implants no longer offer the best solution to the reconstructive problem."
-            }
-          ]
-        },
+        }
+      ]
+    },
+    "3d-implants": {
+      "title": "Custom 3D-printed implants",
+      "lead": "Personalized reconstructive solutions for complex orthopedic cases where a standard implant is not enough.",
+      "intro": "After a severe injury, significant bone loss, or several previous operations, the anatomy can change so much that standard off-the-shelf implants no longer offer the best solution to the reconstructive problem.",
+      "hero": "3d-implants-hero.jpg",
+      "gallery": [],
+      "blocks": [
         {
           "heading": null,
           "body": [
@@ -6072,7 +6068,8 @@
               "text": "In such cases, one possible solution is to design a construct for the specific patient, rather than adapting the patient to an available standard implant."
             }
           ],
-          "divider": false
+          "divider": false,
+          "diagram": "revision-arthroplasty-3d-when.jpg"
         },
         {
           "heading": "What is a custom 3D-printed implant",
@@ -6103,7 +6100,8 @@
         {
           "heading": "From CT scan to custom implant",
           "body": [],
-          "divider": true
+          "divider": true,
+          "diagram": "revision-arthroplasty-3d-steps.jpg"
         },
         {
           "heading": "01 — Computed tomography",
