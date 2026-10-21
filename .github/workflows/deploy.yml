@@ -1,8 +1,10 @@
 name: Deploy to GitHub Pages
 
 on:
-  push:
-    branches: [main]
+  # Auto-deploy on push disabled 2026-10-21: the site now publishes from
+  # Dr. Baida's own repo/GitHub Pages. Kept as workflow_dispatch only so the
+  # code and deploy setup stay intact without this repo auto-republishing
+  # (and duplicating pages in Google) on every push to main.
   workflow_dispatch:
 
 permissions:
